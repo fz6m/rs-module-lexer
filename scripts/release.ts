@@ -44,6 +44,9 @@ const release = async () => {
 
   const isReleaseRoot = argv?.root
   if (isReleaseRoot) {
+    // build
+    await $`pnpm build`
+
     const optionalDependencies = dirs.reduce<Record<string, string>>(
       (memo, cur) => {
         const arch = path.basename(cur)
@@ -85,7 +88,7 @@ const release = async () => {
       if (!fs.existsSync(sourcePath)) {
         // ensure index.js
         const isIndex = file === 'index.js'
-        if (!isIndex) {
+        if (isIndex) {
           throw new Error(`File not found: ${sourcePath}`)
         }
         console.log(chalk.yellow(`File not found: ${sourcePath}, skip copy`))
