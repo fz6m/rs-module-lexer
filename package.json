@@ -1,0 +1,99 @@
+{
+  "name": "rs-module-lexer",
+  "version": "1.0.1",
+  "description": "ES module parser powered by Rust",
+  "keywords": [
+    "es-module-lexer",
+    "es-module-lexer-rust",
+    "es-module-parser",
+    "es-module-parser-rust",
+    "rs-module-parser",
+    "swc",
+    "rust"
+  ],
+  "homepage": "https://github.com/fz6m/rs-module-lexer#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fz6m/rs-module-lexer"
+  },
+  "license": "MIT",
+  "author": "fz6m",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "bench": "tsx ./scripts/bench.ts",
+    "build": "napi build --cargo-cwd crates/binding --platform --js index.js --release",
+    "build:deps": "dora build",
+    "build:dev": "napi build --cargo-cwd crates/binding --platform --js index.js",
+    "coverage": "vitest run --coverage",
+    "format": "prettier --write --parser typescript --cache \"./example/**/*.{ts,tsx}\"",
+    "preinstall": "husky install",
+    "prepublishOnly": "pnpm format && pnpm build",
+    "push": "vary push",
+    "release": "tsx ./scripts/release.ts",
+    "release:only": "vary release:only",
+    "release:root": "pnpm release --root",
+    "test": "vitest --run",
+    "vp": "vary vp"
+  },
+  "lint-staged": {
+    "*.ts?(x)": [
+      "prettier --cache --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@napi-rs/cli": "^2.14.8",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.14.6",
+    "@vitest/ui": "^0.29.3",
+    "@xn-sakina/dora": "^1.0.0",
+    "@xn-sakina/mental": "^4.0.2",
+    "@xn-sakina/vary": "^1.0.2",
+    "es-module-lexer": "^1.2.0",
+    "esbuild": "^0.17.12",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "lodash": "^4.17.21",
+    "prettier": "^2.8.5",
+    "sort-package-json": "^2.4.1",
+    "rs-module-lexer": "link:./",
+    "tsx": "^3.12.3",
+    "typescript": "^5.0.0",
+    "vitest": "^0.29.3",
+    "zx": "^7.2.1"
+  },
+  "packageManager": "pnpm@7.28.0",
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "napi": {
+    "name": "rs-module-lexer",
+    "triples": {
+      "defaults": false,
+      "additional": [
+        "x86_64-apple-darwin",
+        "aarch64-apple-darwin",
+        "x86_64-pc-windows-msvc",
+        "aarch64-pc-windows-msvc",
+        "x86_64-unknown-linux-gnu",
+        "aarch64-unknown-linux-gnu",
+        "x86_64-unknown-linux-musl",
+        "aarch64-unknown-linux-musl",
+        "armv7-unknown-linux-gnueabihf"
+      ]
+    },
+    "package": {
+      "name": "@xn-sakina/rml"
+    }
+  }
+}

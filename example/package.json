@@ -1,0 +1,13 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx ./index.ts",
+    "dev:es": "tsx ./es.ts"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.41",
+    "rs-module-lexer": "link:../"
+  }
+}

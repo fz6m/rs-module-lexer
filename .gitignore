@@ -1,0 +1,12 @@
+/target
+node_modules
+.DS_Store
+
+# release
+/index.js
+/index.d.ts
+
+# .node
+/*.node
+
+/dist
