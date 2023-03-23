@@ -273,7 +273,7 @@ jobs:
           run: |
             set -e
             apk add nodejs npm
-            npm i -g pnpm
+            npm i -g pnpm@7
             pnpm i
             pnpm test
 
