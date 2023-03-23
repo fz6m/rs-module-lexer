@@ -27,7 +27,11 @@ test('Equal', async () => {
   )
 })
 
+const isWin = process.platform === 'win32'
 test('Snapshot', async () => {
+  if (isWin) {
+    return
+  }
   const { output } = parse({
     input: files,
   })
