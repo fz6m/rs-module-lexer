@@ -1,7 +1,8 @@
-import 'zx/globals'
 import { test, expect } from 'vitest'
 import { isEqual } from './equal'
 import { parse } from '../'
+import path from 'path'
+import fs from 'fs'
 
 const samplesDir = path.join(__dirname, 'samples')
 const files = fs
