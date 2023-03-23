@@ -167,10 +167,6 @@ jobs:
     runs-on: ${{ matrix.settings.host }}
     steps:
       - uses: actions/checkout@v3
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         id: pnpm-install
@@ -179,7 +175,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: ${{ matrix.node }}
       - name: Install deps
         run: pnpm i
       - name: Download artifacts
@@ -208,17 +204,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
-        with:
-          run_install: false
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: Install deps
-        run: pnpm i
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
@@ -228,7 +213,7 @@ jobs:
         run: ls -R .
         shell: bash
       - name: Test bindings
-        run: docker run --rm -v $(pwd):/${{ env.APP_NAME }} -w /${{ env.APP_NAME }} node:${{ matrix.node }}-slim pnpm test
+        run: docker run --rm -v $(pwd):/${{ env.APP_NAME }} -w /${{ env.APP_NAME }} node:${{ matrix.node }}-slim sh -c "npm i -g pnpm@7 && pnpm i && pnpm test"
   
   test-linux-x64-musl-binding:
     name: Test bindings on x86_64-unknown-linux-musl - node@${{ matrix.node }}
@@ -245,17 +230,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
-        with:
-          run_install: false
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: Install deps
-        run: pnpm i
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
@@ -265,7 +239,7 @@ jobs:
         run: ls -R .
         shell: bash
       - name: Test bindings
-        run: docker run --rm -v $(pwd):/${{ env.APP_NAME }} -w /${{ env.APP_NAME }} node:${{ matrix.node }}-alpine pnpm test
+        run: docker run --rm -v $(pwd):/${{ env.APP_NAME }} -w /${{ env.APP_NAME }} node:${{ matrix.node }}-alpine sh -c "npm i -g pnpm@7 && pnpm i && pnpm test"
   
   test-linux-aarch64-musl-binding:
     name: Test bindings on aarch64-unknown-linux-musl - node@${{ matrix.node }}
@@ -283,17 +257,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
-        with:
-          run_install: false
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: Install deps
-        run: pnpm i
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
@@ -309,7 +272,8 @@ jobs:
           options: "-v ${{ github.workspace }}:/build -w /build"
           run: |
             set -e
-            apk add nodejs npm pnpm
+            apk add nodejs npm
+            npm i -g pnpm
             pnpm i
             pnpm test
 
@@ -329,17 +293,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
-        with:
-          run_install: false
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: Install deps
-        run: pnpm i
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
@@ -355,6 +308,7 @@ jobs:
           options: "-v ${{ github.workspace }}:/build -w /build"
           run: |
             set -e
+            npm i -g pnpm@7
             pnpm i
             pnpm test
             ls -la
