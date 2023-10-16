@@ -12,7 +12,7 @@ official = []
 parallel = []
 
 [dependencies]
-napi = { version = "2.11.4", features = [
+napi = { version = "2.13.3", features = [
     "napi8",
     "error_anyhow",
     "serde-json",
@@ -21,10 +21,10 @@ napi-derive = { workspaces = true }
 anyhow = { workspaces = true }
 serde_json = { workspace = true }
 serde = { workspace = true }
-swc_common = { version = "0.29.37" }
-swc_ecmascript = { version = "0.222.8", features = ["parser", "visit"] }
-rayon = "1.7.0"
+swc_common = { version = "0.33.0" }
+swc_ecmascript = { version = "0.236.1", features = ["parser", "visit"] }
+rayon = "1.8.0"
 lazy_static = "1.4.0"
 
 [target.'cfg(windows)'.dependencies]
-mimalloc = { version = "0.1.34", default-features = false }
+mimalloc = { version = "0.1.39", default-features = false }
