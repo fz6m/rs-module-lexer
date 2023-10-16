@@ -20,6 +20,10 @@ export const isEqual = async (filename: string, code: string) => {
   expect(output[0].imports).toEqual(result[0])
   // export
   try {
+    if (process.env.DEBUG_RESULT) {
+      console.log('output[0].exports: ', output[0].exports)
+      console.log('result[1]: ', result[1])
+    }
     expect(output[0].exports).toEqual(result[1])
   } catch {
     // export

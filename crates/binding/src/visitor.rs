@@ -86,7 +86,7 @@ impl ImportExportVisitor {
             let name = import.src.value.to_string();
             let import_span = self.get_real_span(import.span);
             let src_span = self.get_real_span_without_quotes(import.src.span);
-            let a = self.calc_assert(&import.asserts);
+            let a = self.calc_assert(&import.with);
             self.add_import(ImportSpecifier {
                 n: Some(name),
                 s: src_span.0,
@@ -120,7 +120,7 @@ impl ImportExportVisitor {
                 let name = import.src.value.to_string();
                 let src_span = self.get_real_span_without_quotes(import.src.span);
                 let import_span = self.get_real_span(import.span);
-                let a = self.calc_assert(&import.asserts);
+                let a = self.calc_assert(&import.with);
                 self.add_import(ImportSpecifier {
                     n: Some(name),
                     s: src_span.0,
@@ -299,26 +299,71 @@ impl ImportExportVisitor {
             ast::Decl::Class(decl) => self.add_export_from_ident(&decl.ident),
             ast::Decl::Fn(decl) => self.add_export_from_ident(&decl.ident),
             ast::Decl::Var(decl) => {
-                // support: export const a = 1, b = 2
                 decl.decls.iter().for_each(|decl| {
-                    // TODO: current support only one variable
-                    // Not support case: export const { a, b } = {}
-                    //                   export const [a, b] = []
-                    //                   ...
-                    if let ast::Pat::Ident(ident) = &decl.name {
-                        let name = ident.sym.to_string();
-                        let (start, end) = self.get_real_span(ident.span);
-                        self.add_export(ExportSpecifier {
-                            n: name.clone(),
-                            ln: Some(name),
-                            s: start,
-                            e: end,
-                            ls: start,
-                            le: end,
-                        })
+                    // support export const a = 1, b = 2
+                    match &decl.name {
+                        ast::Pat::Ident(ident) => {
+                            let name = ident.sym.to_string();
+                            let (start, end) = self.get_real_span(ident.span);
+                            self.add_export(ExportSpecifier {
+                                n: name.clone(),
+                                ln: Some(name),
+                                s: start,
+                                e: end,
+                                ls: start,
+                                le: end,
+                            })
+                        }
+                        ast::Pat::Object(pat) => {
+                            pat.props.iter().for_each(|prop| {
+                                match &prop {
+                                    // export const { a, b } = {}
+                                    ast::ObjectPatProp::Assign(assign) => {
+                                        let ident = &assign.key;
+                                        let name = ident.sym.to_string();
+                                        let (start, end) = self.get_real_span(ident.span);
+                                        self.add_export(ExportSpecifier {
+                                            n: name.clone(),
+                                            ln: Some(name),
+                                            s: start,
+                                            e: end,
+                                            ls: start,
+                                            le: end,
+                                        })
+                                    }
+                                    // TODO: Not support export const { a: b } = {}
+                                    // es-module-lexer parse this case will get name:`a`, not `b`, it's a bug.
+                                    ast::ObjectPatProp::KeyValue(_) => {}
+                                    // Not support case: export const { a, ...b } = {}
+                                    // es-module-lexer not support this case
+                                    ast::ObjectPatProp::Rest(_) => {}
+                                }
+                            })
+                        }
+                        ast::Pat::Array(pat) => {
+                            pat.elems.iter().for_each(|elm| {
+                                if elm.is_some() {
+                                    // only support export const [a, b] = []
+                                    if let ast::Pat::Ident(ident) = &elm.as_ref().unwrap() {
+                                        let name = ident.sym.to_string();
+                                        let (start, end) = self.get_real_span(ident.span);
+                                        self.add_export(ExportSpecifier {
+                                            n: name.clone(),
+                                            ln: Some(name),
+                                            s: start,
+                                            e: end,
+                                            ls: start,
+                                            le: end,
+                                        })
+                                    }
+                                }
+                            })
+                        }
+                        _ => {}
                     }
                 })
             }
+            ast::Decl::Using(_) => {}
             ast::Decl::TsEnum(decl) => {
                 let name = decl.id.sym.to_string();
                 let (start, end) = self.get_real_span(decl.id.span);
@@ -418,6 +463,7 @@ impl ImportExportVisitor {
 
 // utils
 impl ImportExportVisitor {
+    // legacy: imports.asserts
     fn calc_assert(&self, asserts: &Option<Box<ast::ObjectLit>>) -> i32 {
         if asserts.is_some() {
             if asserts.as_ref().is_some() {
@@ -524,7 +570,7 @@ impl VisitMut for ImportExportVisitor {
                         let name = src.value.to_string();
                         let src_span = self.get_real_span_without_quotes(src.span);
                         let export_span = self.get_real_span(export.span);
-                        let a = self.calc_assert(&export.asserts);
+                        let a = self.calc_assert(&export.with);
                         self.add_import(ImportSpecifier {
                             n: Some(name),
                             s: src_span.0,
@@ -564,7 +610,7 @@ impl VisitMut for ImportExportVisitor {
                 let name = export.src.value.to_string();
                 let (start, end) = self.get_real_span_without_quotes(export.src.span);
                 let (ss, se) = self.get_real_span(export.span);
-                let a = self.calc_assert(&export.asserts);
+                let a = self.calc_assert(&export.with);
                 self.add_import(ImportSpecifier {
                     n: Some(name),
                     s: start,
