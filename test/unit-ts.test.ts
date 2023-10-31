@@ -40,3 +40,27 @@ test('Complex tsx', () => {
   expect(output[0].exports.length).toEqual(1)
   expect(output[0].imports.length).toEqual(10)
 })
+
+// facade TS cases
+test('facade TS', () => {
+  const { output } = parseSingleFile(`
+export type A = 1
+export interface B {}  
+`)
+  expect(output[0].facade).toEqual(true)
+
+  // align with es-module-lexer
+  const { output: output1 } = parseSingleFile(``)
+  expect(output1[0].facade).toEqual(true)
+
+  const { output: output2 } = parseSingleFile(`
+export const a = 1
+`)
+  expect(output2[0].facade).toEqual(false)
+
+  const { output: output3 } = parseSingleFile(`
+export type * as A from 'a'
+export * as B from 'b'
+  `)
+  expect(output3[0].facade).toEqual(true)
+})
