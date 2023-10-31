@@ -14,8 +14,7 @@ export const isEqual = async (filename: string, code: string) => {
     ],
   })
   // facade
-  // not need check facade, it work very nice
-  // expect(output[0].facade).toEqual(result[2])
+  expect(output[0].facade).toEqual(result[2])
   // import
   expect(output[0].imports).toEqual(result[0])
   // export

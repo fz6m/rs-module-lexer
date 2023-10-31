@@ -389,7 +389,7 @@ impl ImportExportVisitor {
                         le: end,
                     })
                 }
-                // do not visit import / export within namespace 
+                // do not visit import / export within namespace
                 need_eager_return = true;
             }
             ast::Decl::TsInterface(_) => {}
@@ -530,23 +530,101 @@ impl ImportExportVisitor {
                 return find_start + idx as i32;
             }
             idx += 1;
-        };
+        }
         find_start
+    }
+
+    fn set_facade(&mut self, module: &mut ast::Module) {
+        let mut is_facade = true;
+        for item in module.body.iter() {
+            match item {
+                ast::ModuleItem::ModuleDecl(decl) => {
+                    match decl {
+                        ast::ModuleDecl::Import(_) => {
+                            continue;
+                        }
+                        // e.g. export const a = 1
+                        ast::ModuleDecl::ExportDecl(item) => {
+                            match item.decl {
+                                // export interface A {}
+                                ast::Decl::TsInterface(_) => {
+                                    continue;
+                                }
+                                // export type A = string
+                                ast::Decl::TsTypeAlias(_) => {
+                                    continue;
+                                }
+                                _ => {
+                                    is_facade = false;
+                                    break;
+                                }
+                            }
+                        }
+                        // e.g. export * from 'b'
+                        ast::ModuleDecl::ExportNamed(_) => {
+                            continue;
+                        }
+                        // e.g. export default a
+                        ast::ModuleDecl::ExportDefaultDecl(_) => {
+                            is_facade = false;
+                            break;
+                        }
+                        // e.g. export default 1
+                        ast::ModuleDecl::ExportDefaultExpr(_) => {
+                            is_facade = false;
+                            break;
+                        }
+                        // e.g. export * as a from 'b'
+                        ast::ModuleDecl::ExportAll(_) => {
+                            continue;
+                        }
+                        // e.g. import TypeScript = TypeScriptServices.TypeScript;
+                        // not support
+                        ast::ModuleDecl::TsImportEquals(_) => {
+                            is_facade = false;
+                            break;
+                        }
+                        // e.g. export = foo
+                        // not support
+                        ast::ModuleDecl::TsExportAssignment(_) => {
+                            is_facade = false;
+                            break;
+                        }
+                        // e.g. export as namespace a
+                        ast::ModuleDecl::TsNamespaceExport(_) => {
+                            continue;
+                        }
+                    }
+                }
+                ast::ModuleItem::Stmt(stmt) => {
+                    if let ast::Stmt::Expr(expr) = stmt {
+                        if let ast::Expr::Call(call) = expr.expr.as_ref() {
+                            let is_dynamic_import = call.callee.is_import();
+                            if is_dynamic_import {
+                                if call.args.len() == 1 {
+                                    if let ast::Expr::Lit(lit) = call.args[0].expr.as_ref() {
+                                        if let ast::Lit::Str(_) = lit {
+                                            continue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    is_facade = false;
+                    break;
+                }
+            }
+        }
+        self.facade = is_facade;
     }
 }
 
 // visit
 impl VisitMut for ImportExportVisitor {
-    // facade
     fn visit_mut_module(&mut self, module: &mut ast::Module) {
-        let is_facade = module.body.iter().all(|item| {
-            if let ast::ModuleItem::ModuleDecl(_) = &item {
-                true
-            } else {
-                false
-            }
-        });
-        self.facade = is_facade;
+        // facade
+        self.set_facade(module);
         module.visit_mut_children_with(self);
     }
 
@@ -601,7 +679,7 @@ impl VisitMut for ImportExportVisitor {
                 let need_eager_return = self.parse_export_decl(export);
                 if need_eager_return {
                     // skip visit children
-                    return
+                    return;
                 }
             }
             // export * from 'vv'
@@ -630,7 +708,7 @@ impl VisitMut for ImportExportVisitor {
             ast::ModuleDecl::TsExportAssignment(_) => {}
             // export as namespace a
             ast::ModuleDecl::TsNamespaceExport(_) => {}
-            // declare const a
+            // import TypeScript = TypeScriptServices.TypeScript;
             ast::ModuleDecl::TsImportEquals(_) => {}
         };
         decl.visit_mut_children_with(self)
