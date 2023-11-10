@@ -1,0 +1,132 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      rs-module-lexer:
+        specifier: ^2.1.1
+        version: registry.npmjs.org/rs-module-lexer@2.1.1
+
+packages:
+
+  registry.npmjs.org/@xn-sakina/rml-darwin-arm64@2.1.1:
+    resolution: {integrity: sha512-Ljog63oD8+riz/3zLN0pAgvJSaFTpJY4KxrH+TJnfEbUoRb7ZhmGEpYGl5imi43/9yNkGyAoF41ysIHxg0yEAw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-darwin-arm64/-/rml-darwin-arm64-2.1.1.tgz}
+    name: '@xn-sakina/rml-darwin-arm64'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-darwin-x64@2.1.1:
+    resolution: {integrity: sha512-uLeZKZFiygZntppOjbfGzU3YsFmx4joW/6UlKfCKwelrTrtKa3bYMz55NuFc2RW7IuuNrGEILwz+ZPUdfv3ykA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-darwin-x64/-/rml-darwin-x64-2.1.1.tgz}
+    name: '@xn-sakina/rml-darwin-x64'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-linux-arm-gnueabihf@2.1.1:
+    resolution: {integrity: sha512-Ou/h5ma/jsbgcWS//BdRh4bb/5RFRjebc1Yrlm6iyqSRNJqnY58hEl8pc9feOSkrjorvc8aAe5CWZPf7sZrzrA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm-gnueabihf/-/rml-linux-arm-gnueabihf-2.1.1.tgz}
+    name: '@xn-sakina/rml-linux-arm-gnueabihf'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-linux-arm64-gnu@2.1.1:
+    resolution: {integrity: sha512-hmNtRDxxNc9LVEr/tlzgHOG2wKM0w1rPdIu2zvIVpVi8JUFcenEcHGLrezFlQg8NK/BMQiAmMmMpxhB9Mr4wpA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm64-gnu/-/rml-linux-arm64-gnu-2.1.1.tgz}
+    name: '@xn-sakina/rml-linux-arm64-gnu'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-linux-arm64-musl@2.1.1:
+    resolution: {integrity: sha512-sYY5m7fK1VhLodt4IDB+XSTmvu2g0D5VbT30RpBhXlL3CI37fgLyNvO+NSn9J6b4xrGqzdkIv677JfkhM9hHGw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm64-musl/-/rml-linux-arm64-musl-2.1.1.tgz}
+    name: '@xn-sakina/rml-linux-arm64-musl'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-linux-x64-gnu@2.1.1:
+    resolution: {integrity: sha512-n9Q6DOUgc6U05YqgnwKmpMdrKk3K4JtUpB6Wee3kyxrQr1FKT6E5FXqzzO2q62AxXqWsc1WVNE6IWldURUI2Bg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-x64-gnu/-/rml-linux-x64-gnu-2.1.1.tgz}
+    name: '@xn-sakina/rml-linux-x64-gnu'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-linux-x64-musl@2.1.1:
+    resolution: {integrity: sha512-4qq3jw6jqrL0L1A3Q1zIIl1392uamXycb6gws+RsWnNnaogVHa/QD47w9xTsVRVYqEfsroV+84OOvNSpaoBrQQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-x64-musl/-/rml-linux-x64-musl-2.1.1.tgz}
+    name: '@xn-sakina/rml-linux-x64-musl'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-win32-arm64-msvc@2.1.1:
+    resolution: {integrity: sha512-QnsttcVOMvetJ0xZOsUSZ38hpAbydDGl4MwY4yGvKK0/6XbirKEq/bn3Zl9ABLX3elLaE/pghGSlxB9fsk70Qw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-win32-arm64-msvc/-/rml-win32-arm64-msvc-2.1.1.tgz}
+    name: '@xn-sakina/rml-win32-arm64-msvc'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/@xn-sakina/rml-win32-x64-msvc@2.1.1:
+    resolution: {integrity: sha512-AnNynVvyfp3mBUA0fQFqBth13pFcRjOhCDieF73UYYH3xDc/mowtjDO+kUWW9EtZH94CPDkT1Ei9WWESruOg6w==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xn-sakina/rml-win32-x64-msvc/-/rml-win32-x64-msvc-2.1.1.tgz}
+    name: '@xn-sakina/rml-win32-x64-msvc'
+    version: 2.1.1
+    engines: {node: '>=14'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmjs.org/rs-module-lexer@2.1.1:
+    resolution: {integrity: sha512-6F5a6PS3PJ/qZ0o+FKFcqABFBVsaMIOEMA4yBFyAwJnCpQ6a8CIk+ln3pRPrl0N2k6HgAupzXpQq4NuTVg5haQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/rs-module-lexer/-/rs-module-lexer-2.1.1.tgz}
+    name: rs-module-lexer
+    version: 2.1.1
+    engines: {node: '>=14'}
+    requiresBuild: true
+    optionalDependencies:
+      '@xn-sakina/rml-darwin-arm64': registry.npmjs.org/@xn-sakina/rml-darwin-arm64@2.1.1
+      '@xn-sakina/rml-darwin-x64': registry.npmjs.org/@xn-sakina/rml-darwin-x64@2.1.1
+      '@xn-sakina/rml-linux-arm-gnueabihf': registry.npmjs.org/@xn-sakina/rml-linux-arm-gnueabihf@2.1.1
+      '@xn-sakina/rml-linux-arm64-gnu': registry.npmjs.org/@xn-sakina/rml-linux-arm64-gnu@2.1.1
+      '@xn-sakina/rml-linux-arm64-musl': registry.npmjs.org/@xn-sakina/rml-linux-arm64-musl@2.1.1
+      '@xn-sakina/rml-linux-x64-gnu': registry.npmjs.org/@xn-sakina/rml-linux-x64-gnu@2.1.1
+      '@xn-sakina/rml-linux-x64-musl': registry.npmjs.org/@xn-sakina/rml-linux-x64-musl@2.1.1
+      '@xn-sakina/rml-win32-arm64-msvc': registry.npmjs.org/@xn-sakina/rml-win32-arm64-msvc@2.1.1
+      '@xn-sakina/rml-win32-x64-msvc': registry.npmjs.org/@xn-sakina/rml-win32-x64-msvc@2.1.1
+    dev: true

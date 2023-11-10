@@ -1,0 +1,17 @@
+{
+  "name": "wasm-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": ["unknown"],
+      "cpu": ["x64"]
+    }
+  },
+  "devDependencies": {
+    "rs-module-lexer": "^2.1.1"
+  }
+}
