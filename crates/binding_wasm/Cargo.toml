@@ -1,0 +1,11 @@
+[package]
+name = "binding_wasm"
+edition = "2021"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+core = { path = "../core", features = ["wasm"] }
+wasm-bindgen = { workspace = true }

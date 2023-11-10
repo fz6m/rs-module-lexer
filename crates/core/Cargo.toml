@@ -9,6 +9,7 @@ crate-type = ["cdylib", "lib"]
 [features]
 default = []
 node = ["napi", "napi-derive"]
+wasm = ["tsify", "wasm-bindgen"]
 
 [dependencies]
 anyhow = { workspaces = true }
@@ -20,3 +21,5 @@ rayon = "1.8.0"
 lazy_static = "1.4.0"
 napi = { workspace = true, optional = true }
 napi-derive = { workspace = true, optional = true }
+tsify = { version = "0.4.5", optional = true }
+wasm-bindgen = { workspace = true, optional = true}

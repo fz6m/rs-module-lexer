@@ -1,6 +1,6 @@
 #[macro_export]
 #[cfg(feature = "node")]
-macro_rules! with_napi {
+macro_rules! multi_env {
     ($(
         $items:item
     )*) => {
@@ -13,8 +13,25 @@ macro_rules! with_napi {
 }
 
 #[macro_export]
-#[cfg(not(feature = "node"))]
-macro_rules! with_napi {
+#[cfg(feature = "wasm")]
+macro_rules! multi_env {
+    ($(
+        $items:item
+    )*) => {
+        use tsify::Tsify;
+        use serde::{Deserialize, Serialize};
+        use wasm_bindgen::prelude::*;
+        $(
+            #[derive(Tsify, Serialize, Deserialize)]
+            #[tsify(into_wasm_abi, from_wasm_abi)]
+            $items
+        )*
+    };
+}
+
+#[macro_export]
+#[cfg(all(not(feature = "wasm"), not(feature = "node"),))]
+macro_rules! multi_env {
     ($($tokens:tt)*) => {
         $($tokens)*
     };

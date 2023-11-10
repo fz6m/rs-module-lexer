@@ -28,8 +28,10 @@
   "scripts": {
     "artifacts": "napi artifacts",
     "bench": "tsx ./scripts/bench.ts",
-    "build": "napi build --cargo-cwd crates/binding --platform --js index.js --release",
-    "build:dev": "napi build --cargo-cwd crates/binding --platform --js index.js",
+    "build": "napi build --cargo-cwd crates/binding_node --platform --js binding.js --release",
+    "build:dev": "napi build --cargo-cwd crates/binding_node --platform --js binding.js",
+    "build:wasm:dev": "cd crates/binding_wasm && wasm-pack build --target nodejs --verbose --out-dir ../../target/wasm --out-name index --dev",
+    "build:wasm:release": "cd crates/binding_wasm && wasm-pack build --target nodejs wasm-pack --verbose --out-dir ../../target/wasm --out-name index --release",
     "coverage": "vitest run --coverage",
     "format": "prettier --write --parser typescript --cache \"./example/**/*.{ts,tsx}\"",
     "preinstall": "husky install",

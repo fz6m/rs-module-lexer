@@ -1,6 +1,6 @@
-use crate::with_napi;
+use crate::multi_env;
 
-with_napi! {
+multi_env! {
 
 pub struct IConfig {
     pub input: Vec<ParseOptions>,
