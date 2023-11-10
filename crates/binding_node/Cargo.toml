@@ -1,0 +1,22 @@
+[package]
+name = "binding_node"
+edition = "2021"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+core = { path = "../core", features = ["node"] }
+napi = { workspace = true }
+napi-derive = { workspace = true }
+anyhow = { workspace = true }
+
+[target.'cfg(not(target_os = "linux"))'.dependencies]
+mimalloc-rust = { version = "0.2.1" }
+
+[target.'cfg(all(target_os = "linux", not(all(target_env = "musl", target_arch = "aarch64"))))'.dependencies]
+mimalloc-rust = { version = "0.2.1", features = ["local-dynamic-tls"] }
+
+[build-dependencies]
+napi-build = "2.0.1"

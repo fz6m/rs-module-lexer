@@ -6,24 +6,9 @@ use swc_ecmascript::parser::lexer::Lexer;
 use swc_ecmascript::parser::{EsConfig, Parser, StringInput, Syntax, TsConfig};
 use swc_ecmascript::visit::VisitMutWith;
 
-use crate::visitor::{ExportSpecifier, ImportExportVisitor, ImportSpecifier};
 use crate::constants::*;
-
-#[napi(object)]
-#[derive(Debug, Clone)]
-pub struct ParseOptions {
-    pub filename: String,
-    pub code: String,
-}
-
-#[derive(Debug)]
-#[napi(object)]
-pub struct ParseResult {
-    pub filename: String,
-    pub imports: Vec<ImportSpecifier>,
-    pub exports: Vec<ExportSpecifier>,
-    pub facade: bool,
-}
+use crate::decl::{ParseOptions, ParseResult};
+use crate::visitor::ImportExportVisitor;
 
 pub fn parse_code(opts: ParseOptions) -> Result<ParseResult, anyhow::Error> {
     let ParseOptions { filename, code } = opts;
@@ -68,16 +53,14 @@ pub fn parse_code(opts: ParseOptions) -> Result<ParseResult, anyhow::Error> {
     swc_common::GLOBALS.set(&Globals::new(), || {
         let mut module = module;
 
-        let mut visitor = ImportExportVisitor::new(
-            code, source_map, source_file
-        );
+        let mut visitor = ImportExportVisitor::new(code, source_map, source_file);
         module.visit_mut_with(&mut visitor);
 
         Ok(ParseResult {
             imports: visitor.imports,
             exports: visitor.exports,
             facade: visitor.facade,
-            filename
+            filename,
         })
     })
 }
