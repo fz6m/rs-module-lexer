@@ -1,9 +1,10 @@
 import { expect, test } from 'vitest'
-import { parse } from '../'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { getParser } from './equal'
 
-const parseSingleFile = (code: string) => {
+const parseSingleFile = async (code: string) => {
+  const parse = getParser()
   return parse({
     input: [
       {
@@ -17,8 +18,8 @@ const parseSingleFile = (code: string) => {
 // TODO: add more tests
 
 const FILENAME = 'index.tsx'
-test('Enum', () => {
-  const { output } = parseSingleFile(`
+test('Enum', async () => {
+  const { output } = await parseSingleFile(`
 export  enum   E 
 {
     a = 1
@@ -35,30 +36,30 @@ export namespace C {
 const fixture = (filename: string) => {
   return readFileSync(join(__dirname, './fixtures', filename), 'utf-8')
 }
-test('Complex tsx', () => {
-  const { output } = parseSingleFile(fixture('layout.tsx'))
+test('Complex tsx', async () => {
+  const { output } = await parseSingleFile(fixture('layout.tsx'))
   expect(output[0].exports.length).toEqual(1)
   expect(output[0].imports.length).toEqual(10)
 })
 
 // facade TS cases
-test('facade TS', () => {
-  const { output } = parseSingleFile(`
+test('facade TS', async () => {
+  const { output } = await parseSingleFile(`
 export type A = 1
 export interface B {}  
 `)
   expect(output[0].facade).toEqual(true)
 
   // align with es-module-lexer
-  const { output: output1 } = parseSingleFile(``)
+  const { output: output1 } = await parseSingleFile(``)
   expect(output1[0].facade).toEqual(true)
 
-  const { output: output2 } = parseSingleFile(`
+  const { output: output2 } = await parseSingleFile(`
 export const a = 1
 `)
   expect(output2[0].facade).toEqual(false)
 
-  const { output: output3 } = parseSingleFile(`
+  const { output: output3 } = await parseSingleFile(`
 export type * as A from 'a'
 export * as B from 'b'
   `)

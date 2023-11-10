@@ -1,15 +1,20 @@
 import { expect } from 'vitest'
 import { init, parse as esParse } from 'es-module-lexer'
 
-export const isEqual = async (filename: string, code: string) => {
+export const getParser = () => {
   let parseAsync: typeof import('../').parseAsync
   if (process.env.TEST_WASM) {
     parseAsync = require('../target/wasm').parseAsync
   } else {
     parseAsync = require('../').parseAsync
   }
+  return parseAsync
+}
+
+export const isEqual = async (filename: string, code: string) => {
   await init
   const result = esParse(code)
+  const parseAsync = getParser()
   const { output } = await parseAsync({
     input: [
       {

@@ -1,6 +1,5 @@
 import { test, expect } from 'vitest'
-import { isEqual } from './equal'
-import { parse } from '../'
+import { isEqual, getParser } from './equal'
 import path from 'path'
 import fs from 'fs'
 
@@ -23,16 +22,17 @@ test('Equal', async () => {
       const basename = path.basename(filename)
       console.log('> Equal', basename)
       await isEqual(filename, code)
-    })
+    }),
   )
 })
 
-const isWin = process.platform === 'win32'
+const isWin = process.platform === 'win32' || !!process.env.TEST_WASM
 test('Snapshot', async () => {
   if (isWin) {
     return
   }
-  const { output } = parse({
+  const parse = getParser()
+  const { output } = await parse({
     input: files,
   })
   output.forEach((file) => {

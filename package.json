@@ -47,7 +47,9 @@
     "release:wasm": "vary np --wasm",
     "test": "vitest --run",
     "test:wasm": "TEST_WASM=1 vitest --run",
-    "vp": "vary vp"
+    "vp": "vary vp",
+    "postinstall": "node postinstall.js",
+    "bootstrap:scripts": "DEBUG_VARY=1 vary np --wasm"
   },
   "lint-staged": {
     "*.ts?(x)": [
