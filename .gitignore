@@ -11,5 +11,3 @@ node_modules
 /dist
 /test/tmp.ts
 /scripts/.cache
-/postinstall.js
-/index.js
