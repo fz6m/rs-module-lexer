@@ -106,7 +106,7 @@ var getWasmName = function () {
 };
 var wasmName = getWasmName();
 var validateBinary = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var name_1, binding, triple, wasmBinding, env, _a, version, repository, coreDir, installDir, installedBinPath, reportText;
+    var name_1, binding, triple, wasmBinding, env, _a, version, repository, coreDir, installDir, installedBinPath, targetPath, reportText;
     var _b, _c;
     return __generator(this, function (_d) {
         try {
@@ -154,8 +154,12 @@ var validateBinary = function () { return __awaiter(void 0, void 0, void 0, func
             fs.writeFileSync(path.join(installDir, 'package.json'), '{}');
             child_process.execSync("npm install --no-save --loglevel=error --prefer-offline --no-audit --progress=false ".concat(wasmName, "@").concat(version), { cwd: installDir, stdio: 'pipe', env: env });
             installedBinPath = path.join(installDir, 'node_modules', wasmName);
+            targetPath = path.resolve(process.env.INIT_CWD, 'node_modules', wasmName);
+            if (!fs.existsSync(targetPath)) {
+                fs.mkdirSync(targetPath, { recursive: true });
+            }
             // INIT_CWD is injected via npm. If it doesn't exists, can't proceed.
-            fs.renameSync(installedBinPath, path.resolve(process.env.INIT_CWD, 'node_modules', wasmName));
+            fs.renameSync(installedBinPath, targetPath);
         }
         catch (error) {
             console.error(error);

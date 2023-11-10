@@ -63,7 +63,7 @@
     "@types/node": "^18.18.5",
     "@vitest/ui": "^0.34.6",
     "@xn-sakina/mental": "^4.0.2",
-    "@xn-sakina/vary": "^1.3.3",
+    "@xn-sakina/vary": "^1.3.4",
     "es-module-lexer": "^1.3.1",
     "esbuild": "^0.19.4",
     "husky": "^8.0.3",
