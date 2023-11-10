@@ -33,7 +33,9 @@
     "build": "napi build --cargo-cwd crates/binding_node --platform --js binding.js --release",
     "build:dev": "napi build --cargo-cwd crates/binding_node --platform --js binding.js",
     "build:wasm:dev": "cd crates/binding_wasm && wasm-pack build --target nodejs --verbose --out-dir ../../target/wasm --out-name index --dev",
-    "build:wasm": "cd crates/binding_wasm && wasm-pack build --target nodejs --verbose --out-dir ../../target/wasm --out-name index --release",
+    "build:wasm:release": "cd crates/binding_wasm && wasm-pack build --target nodejs --verbose --out-dir ../../target/wasm --out-name index --release",
+    "build:wasm": "pnpm build:wasm:release && pnpm build:wasm:opt",
+    "build:wasm:opt": "tsx ./scripts/wasmOpt.ts",
     "coverage": "vitest run --coverage",
     "format": "prettier --write --parser typescript --cache \"./example/**/*.{ts,tsx}\"",
     "preinstall": "husky install",
@@ -44,6 +46,7 @@
     "release:root": "vary np --root",
     "release:wasm": "vary np --wasm",
     "test": "vitest --run",
+    "test:wasm": "TEST_WASM=1 vitest --run",
     "vp": "vary vp"
   },
   "lint-staged": {

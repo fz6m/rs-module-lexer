@@ -312,6 +312,52 @@ jobs:
             pnpm i
             pnpm test
             ls -la
+  
+  test-wasm:
+    name: Test bindings on wasm - node@${{ matrix.node }}
+    needs:
+      - build
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["16"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        if: ${{ !matrix.settings.docker }}
+        with:
+          profile: minimal
+          override: true
+          target: ${{ matrix.settings.target }}
+      - name: Install npm deps
+        run: pnpm i
+      - name: Install rust target
+        run: rustup target add wasm32-wasi
+      - name: Cache cargo registry
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/registry
+          key: ${{ matrix.settings.target }}-node@16-cargo-registry-trimmed
+      - name: Cache cargo index
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/git
+          key: ${{ matrix.settings.target }}-node@16-cargo-index-trimmed
+      - name: Build wasm
+        run: pnpm build:wasm
+      - name: List packages
+        run: ls -R ./target/wasm
+        shell: bash
+      - name: Test wasm
+        run: pnpm test:wasm
 
   publish:
     name: Publish
@@ -324,6 +370,7 @@ jobs:
       - test-linux-x64-musl-binding
       - test-linux-aarch64-musl-binding
       - test-linux-arm-gnueabihf-binding
+      - test-wasm
 
     steps:
       - uses: actions/checkout@v3
