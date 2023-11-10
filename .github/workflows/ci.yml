@@ -328,11 +328,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: Install wasm-pack
-        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Install Rust
         uses: actions-rs/toolchain@v1
-        if: ${{ !matrix.settings.docker }}
         with:
           profile: minimal
           override: true
@@ -351,6 +348,8 @@ jobs:
         with:
           path: ~/.cargo/git
           key: ${{ matrix.settings.target }}-node@16-cargo-index-trimmed
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build wasm
         run: pnpm build:wasm
       - name: List packages
