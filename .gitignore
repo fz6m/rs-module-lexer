@@ -10,3 +10,5 @@ node_modules
 
 /dist
 /test/tmp.ts
+/postinstall.js
+/index.js

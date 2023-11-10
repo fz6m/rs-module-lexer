@@ -1,0 +1,8 @@
+{
+  "name": "helper",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc && cp dist/index.js ../../index.js && cp dist/postinstall.js ../../postinstall.js"
+  }
+}

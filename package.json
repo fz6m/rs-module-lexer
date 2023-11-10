@@ -23,6 +23,8 @@
   "files": [
     "index.js",
     "index.d.ts",
+    "binding.js",
+    "postinstall.js",
     "CHANGELOG.md"
   ],
   "scripts": {
@@ -35,7 +37,8 @@
     "coverage": "vitest run --coverage",
     "format": "prettier --write --parser typescript --cache \"./example/**/*.{ts,tsx}\"",
     "preinstall": "husky install",
-    "prepublishOnly": "pnpm format && pnpm build",
+    "build:helper": "cd ./scripts/helper && pnpm build",
+    "prepublishOnly": "pnpm format && pnpm build:helper && pnpm build",
     "push": "vary push",
     "release": "vary np",
     "release:only": "vary release:only",
