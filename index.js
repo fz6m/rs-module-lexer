@@ -51,7 +51,7 @@ var bindings = (function () {
         return binding;
     }
     catch (_) {
-        binding = require("./target/wasm");
+        binding = require(wasmPkgName);
     }
     finally {
         return binding;
