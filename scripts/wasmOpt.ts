@@ -1,10 +1,34 @@
 import { existsSync, mkdirSync } from 'fs'
+import os from 'os'
 import 'zx/globals'
+
+const platform = os.platform()
+const arch = os.arch()
 
 // https://github.com/rustwasm/wasm-pack/issues/864#issuecomment-957818452
 const run = async () => {
   const version = 'version_116'
-  const url = `https://github.com/WebAssembly/binaryen/releases/download/${version}/binaryen-${version}-x86_64-macos.tar.gz`
+  const platformMark =
+    platform === 'darwin'
+      ? 'macos'
+      : platform === 'linux'
+      ? 'linux'
+      : (() => {
+          throw new Error('Unsupported platform')
+        })()
+  const archMark =
+    arch === 'x64'
+      ? 'x86_64'
+      : arch === 'arm64'
+      ? 'arm64'
+      : (() => {
+          throw new Error('Unsupported arch')
+        })()
+  const url = `https://github.com/WebAssembly/binaryen/releases/download/${version}/binaryen-${version}-${archMark}-${platformMark}.tar.gz`
+  console.log(`Platform: ${platform}`)
+  console.log(`Arch: ${arch}`)
+  console.log(`Version: ${version}`)
+  console.log(`URL: ${url}`)
   const cacheDir = path.join(__dirname, './.cache')
   if (!existsSync(cacheDir)) {
     mkdirSync(cacheDir)
