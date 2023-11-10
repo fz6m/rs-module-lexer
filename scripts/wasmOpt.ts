@@ -48,7 +48,8 @@ const run = async () => {
     __dirname,
     `./.cache/binaryen-${version}/bin/wasm-opt`,
   )
-  await $`${optPath} -Oz -o ./target/wasm/index_bg.wasm ./target/wasm/index_bg.wasm`
+  const dir = argv.dir || 'wasm'
+  await $`${optPath} -Oz -o ./target/${dir}/index_bg.wasm ./target/${dir}/index_bg.wasm`
 }
 
 run()
