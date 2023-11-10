@@ -7,7 +7,7 @@ import { join } from 'path'
   await init
   let content = readFileSync(
     join(__dirname, '../crates/binding/tests/fixtures/index.tsx'),
-    'utf-8'
+    'utf-8',
   )
   // content = transformSync(content, {
   //   isModule: true,

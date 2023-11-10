@@ -5,7 +5,7 @@ import path from 'path'
 
 const filename = path.join(
   __dirname,
-  '../crates/binding/tests/fixtures/index.ts'
+  '../crates/binding/tests/fixtures/index.ts',
 )
 
 console.log(
@@ -16,5 +16,5 @@ console.log(
         code: fs.readFileSync(filename, 'utf8'),
       },
     ],
-  })
+  }),
 )
