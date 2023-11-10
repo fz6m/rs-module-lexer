@@ -1,11 +1,11 @@
 import { expect } from 'vitest'
-import { parse } from '../'
+import { parseAsync } from '../'
+import { init, parse as esParse } from 'es-module-lexer'
 
 export const isEqual = async (filename: string, code: string) => {
-  const es = await import('es-module-lexer')
-  await es.init
-  const result = es.parse(code)
-  const { output } = parse({
+  await init
+  const result = esParse(code)
+  const { output } = await parseAsync({
     input: [
       {
         filename,

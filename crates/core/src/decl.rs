@@ -2,6 +2,7 @@ use crate::multi_env;
 
 multi_env! {
 
+#[derive(Debug, Clone)]
 pub struct IConfig {
     pub input: Vec<ParseOptions>,
 }
