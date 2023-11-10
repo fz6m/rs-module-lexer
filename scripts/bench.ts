@@ -1,6 +1,6 @@
 import 'zx/globals'
 import { init, parse } from 'es-module-lexer'
-import { parse as rsParser } from 'rs-module-lexer'
+import { parseAsync as rsParser } from 'rs-module-lexer'
 import { transformSync } from 'esbuild'
 
 const bench = async () => {
@@ -27,7 +27,7 @@ const bench = async () => {
         transformSync(sample.code, {
           loader: 'ts',
           sourcemap: false,
-        }).code
+        }).code,
       )
     })
     const result = await Promise.all(tasks)
@@ -42,7 +42,7 @@ const bench = async () => {
   // 😅 if we parse js files, it is 2x slower than es-module-lexer
   const runrsModuleLexer = async () => {
     const start = Date.now()
-    const result = rsParser({
+    const result = await rsParser({
       input: samples,
     })
     const end = Date.now()

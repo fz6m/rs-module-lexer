@@ -29,9 +29,10 @@ const result = parse(js)
 ### Usage
 
 ```ts
-import { parse } from 'rs-module-lexer'
+import { parseAsync } from 'rs-module-lexer'
+// Sync: import { parse } from 'rs-module-lexer'
 
-const { output } = parse({
+const { output } = await parseAsync({
   input: [
     {
       filename: 'index.ts',
@@ -59,8 +60,8 @@ For details of the parse results, please see [`es-module-lexer`](https://github.
 - await init
 - const [imports, exports] = parse(code)
 
-+ import { parse } from 'rs-module-lexer'
-+ const { output } = parse({ input: [{ filename: 'index.ts', code }] })
++ import { parseAsync } from 'rs-module-lexer'
++ const { output } = await parseAsync({ input: [{ filename: 'index.ts', code }] })
 + const { imports, exports } = output[0]
 ```
 
@@ -68,20 +69,20 @@ For details of the parse results, please see [`es-module-lexer`](https://github.
 
 ### Benchmark
 
-if parse `ts(x)` files, it is `1x` faster than `es-module-lexer`
+parse `ts(x)` files:
 
 ```bash
 # parse 8 files 
-es-module-lexer average: 368ms
-rs-module-lexer average: 154.4ms 🎉
+es-module-lexer average: 383.6ms
+rs-module-lexer average: 70.6ms 🎉
 ```
 
-if parse `js` files, it is `2x` slower than `es-module-lexer`
+parse `js` files:
 
 ```bash
 # parse 8 files 
-es-module-lexer average: 52.2ms 🎉
-rs-module-lexer average: 158.9ms
+es-module-lexer average: 51.3ms 🎉
+rs-module-lexer average: 67.6ms
 ```
 
 ### License
