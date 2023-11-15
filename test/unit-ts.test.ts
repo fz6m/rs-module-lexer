@@ -72,6 +72,6 @@ test('syntax error', async () => {
 import af
   `)
   } catch (e: any) {
-    expect(e.message).contain(`import af`)
+    expect(e.toString()).contain('import af')
   }
 })

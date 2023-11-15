@@ -7,6 +7,7 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
+getrandom = { version = "0.2.11", features = ["js"] }
 core = { path = "../core", features = ["wasm"] }
 wasm-bindgen = { workspace = true }
 wasm-bindgen-futures = { version = "0.4.38" }
