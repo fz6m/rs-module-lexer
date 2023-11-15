@@ -65,3 +65,13 @@ export * as B from 'b'
   `)
   expect(output3[0].facade).toEqual(true)
 })
+
+test('syntax error', async () => {
+  try {
+    await parseSingleFile(`
+import af
+  `)
+  } catch (e: any) {
+    expect(e.message).contain(`import af`)
+  }
+})

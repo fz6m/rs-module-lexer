@@ -1,10 +1,17 @@
+use std::panic::{catch_unwind, AssertUnwindSafe};
 use std::path::PathBuf;
 
-use swc_common::comments::SingleThreadedComments;
-use swc_common::{sync::Lrc, FileName, Globals, SourceMap};
-use swc_ecmascript::parser::lexer::Lexer;
-use swc_ecmascript::parser::{EsConfig, Parser, StringInput, Syntax, TsConfig};
-use swc_ecmascript::visit::VisitMutWith;
+use anyhow::{anyhow, Context};
+use swc_common::{
+    comments::SingleThreadedComments, errors::Handler, sync::Lrc, FileName, SourceMap, GLOBALS,
+};
+use swc_compiler_base::IsModule;
+use swc_ecmascript::{
+    ast::EsVersion,
+    parser::{EsConfig, Syntax, TsConfig},
+    visit::VisitMutWith,
+};
+use swc_error_reporters::handler::{try_with_handler, HandlerOpts};
 
 use crate::constants::*;
 use crate::decl::{ParseOptions, ParseResult};
@@ -41,17 +48,17 @@ pub fn parse_code(opts: ParseOptions) -> Result<ParseResult, anyhow::Error> {
     );
     let comments = SingleThreadedComments::default();
 
-    let lexer = Lexer::new(
-        syntax,
-        Default::default(),
-        StringInput::from(&*source_file),
-        Some(&comments),
-    );
-
-    let mut parser = Parser::new_from(lexer);
-    let module = parser.parse_module().expect("failed to parse module");
-    swc_common::GLOBALS.set(&Globals::new(), || {
-        let mut module = module;
+    try_with(source_map.clone(), false, |handler| {
+        let mut module = swc_compiler_base::parse_js(
+            source_map.clone(),
+            source_file.clone(),
+            &handler,
+            EsVersion::EsNext,
+            syntax,
+            IsModule::Bool(true),
+            Some(&comments),
+        )
+        .context("failed to parse code")?;
 
         let mut visitor = ImportExportVisitor::new(code, source_map, source_file);
         module.visit_mut_with(&mut visitor);
@@ -89,4 +96,39 @@ pub fn parse_filename(filepath: &String) -> FileInfo {
         is_typescript,
         filename_path_buf,
     }
+}
+
+pub fn try_with<F, Ret>(
+    cm: Lrc<SourceMap>,
+    skip_filename: bool,
+    op: F,
+) -> Result<Ret, anyhow::Error>
+where
+    F: FnOnce(&Handler) -> Result<Ret, anyhow::Error>,
+{
+    GLOBALS.set(&Default::default(), || {
+        try_with_handler(
+            cm,
+            HandlerOpts {
+                skip_filename,
+                ..Default::default()
+            },
+            |handler| {
+                let result = catch_unwind(AssertUnwindSafe(|| op(handler)));
+
+                let p = match result {
+                    Ok(v) => return v,
+                    Err(v) => v,
+                };
+
+                if let Some(s) = p.downcast_ref::<String>() {
+                    Err(anyhow!("failed to handle: {}", s))
+                } else if let Some(s) = p.downcast_ref::<&str>() {
+                    Err(anyhow!("failed to handle: {}", s))
+                } else {
+                    Err(anyhow!("failed to handle with unknown panic message"))
+                }
+            },
+        )
+    })
 }
