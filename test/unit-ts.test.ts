@@ -1,4 +1,4 @@
-import { expect, test } from 'vitest'
+import { afterAll, expect, test, vi } from 'vitest'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import { getParser } from './equal'
@@ -74,4 +74,29 @@ import af
   } catch (e: any) {
     expect(e.toString()).contain('import af')
   }
+})
+
+test('using syntax', async () => {
+  const { output } = await parseSingleFile(`
+import { a } from 'a'
+const get = () => ({
+  [Symbol.dispose] () {
+    console.log('dispose!')
+  }
+});
+{
+  using resource = get();
+}
+`)
+  expect(output[0].imports.length).toEqual(1)
+})
+
+test('import with attrs', async () => {
+  const { output } = await parseSingleFile(`
+import json from './a.json' with { type: 'json' };
+import("foo.json", { with: { type: "json" } });
+`)
+  expect(output[0].imports.length).toEqual(2)
+  expect(output[0].imports[0].n).toEqual('./a.json')
+  expect(output[0].imports[1].n).toEqual('foo.json')
 })
