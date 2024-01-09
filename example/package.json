@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tsx ./index.ts",
+    "dev:error": "tsx ./error.ts",
     "dev:es": "tsx ./es.ts"
   },
   "devDependencies": {
