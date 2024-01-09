@@ -7,12 +7,12 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-getrandom = { version = "0.2.11", features = ["js"] }
+getrandom = { version = "0.2.12", features = ["js"] }
 core = { path = "../core", features = ["wasm"] }
 wasm-bindgen = { workspace = true }
-wasm-bindgen-futures = { version = "0.4.38" }
-js-sys = { version = "0.3.65" }
-serde-wasm-bindgen = "0.6.1"
+wasm-bindgen-futures = { version = "0.4.39" }
+js-sys = { version = "0.3.66" }
+serde-wasm-bindgen = "0.6.3"
 
 [package.metadata.wasm-pack.profile.release]
 wasm-opt = false

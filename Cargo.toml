@@ -4,16 +4,16 @@ cargo-features = ["strip"]
 members = ["crates/*"]
 
 [workspace.dependencies]
-serde = { version = "1.0.192", features = ["derive"] }
-serde_json = "1.0.108"
-anyhow = "1.0.75"
-wasm-bindgen = "0.2.88"
-napi = { version = "2.14.0", features = [
+serde = { version = "1.0.195", features = ["derive"] }
+serde_json = "1.0.111"
+anyhow = "1.0.79"
+wasm-bindgen = "0.2.89"
+napi = { version = "2.14.2", features = [
     "napi4",
     "error_anyhow",
     "serde-json",
 ] }
-napi-derive = "2.14.1"
+napi-derive = "2.14.6"
 
 [profile.release]
 lto = true
