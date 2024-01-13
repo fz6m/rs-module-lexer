@@ -8,10 +8,11 @@ rustflags = ["-C", "link-arg=-undefined", "-C", "link-arg=dynamic_lookup"]
 # windows
 [target.x86_64-pc-windows-msvc]
 linker = "rust-lld"
+rustflags = ["-C", "target-feature=+crt-static"]
 
 [target.aarch64-pc-windows-msvc]
 linker = "rust-lld"
-rustflags = []
+rustflags = ["-C", "target-feature=+crt-static"]
 
 # linux
 [target.x86_64-unknown-linux-gnu]
