@@ -5,6 +5,7 @@ exports[`Snapshot > angular.js 1`] = `
   "exports": [],
   "facade": false,
   "filename": "angular.js",
+  "hasModuleSyntax": false,
   "imports": [],
 }
 `;
@@ -14,6 +15,7 @@ exports[`Snapshot > angular.min.js 1`] = `
   "exports": [],
   "facade": false,
   "filename": "angular.min.js",
+  "hasModuleSyntax": false,
   "imports": [],
 }
 `;
@@ -3832,6 +3834,7 @@ exports[`Snapshot > d3.js 1`] = `
   ],
   "facade": false,
   "filename": "d3.js",
+  "hasModuleSyntax": true,
   "imports": [],
 }
 `;
@@ -7650,6 +7653,7 @@ exports[`Snapshot > d3.min.js 1`] = `
   ],
   "facade": false,
   "filename": "d3.min.js",
+  "hasModuleSyntax": true,
   "imports": [],
 }
 `;
@@ -7683,6 +7687,7 @@ exports[`Snapshot > magic-string.js 1`] = `
   ],
   "facade": false,
   "filename": "magic-string.js",
+  "hasModuleSyntax": true,
   "imports": [
     {
       "a": -1,
@@ -7726,6 +7731,7 @@ exports[`Snapshot > magic-string.min.js 1`] = `
   ],
   "facade": false,
   "filename": "magic-string.min.js",
+  "hasModuleSyntax": true,
   "imports": [
     {
       "a": -1,
@@ -7770,6 +7776,7 @@ exports[`Snapshot > rollup.js 1`] = `
   ],
   "facade": false,
   "filename": "rollup.js",
+  "hasModuleSyntax": true,
   "imports": [
     {
       "a": -1,
@@ -7859,6 +7866,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
   ],
   "facade": false,
   "filename": "rollup.min.js",
+  "hasModuleSyntax": true,
   "imports": [
     {
       "a": -1,
