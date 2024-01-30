@@ -49,15 +49,31 @@ describe('Lexer', () => {
     await isEqual(FILENAME, source)
   })
 
-  // 🤔 `assert { not: 'an assertion!' }` is wrong syntax
+  // 🟡 [ write `with` on the second line ]
+  //    ↑ This syntax is not supported in TypeScript, but is supported in Babel (use '@babel/plugin-syntax-import-attributes' plugin)
+  //      because swc basically follows the TS, so we ignore this case.
   test('Import assertions', async () => {
     const source = `
       import json from "./foo.json" with { type: "json" };
       import("foo.json" , { with: { type: "json" } });
 
       import test from './asdf'
-      // assert { not: 'an assertion!' }
+        // 🟡
+        // with { not: 'an assertion!' }
       export var p = 5;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  // 🟡 ↑ lbid.
+  test('Import attributes', async () => {
+    const source = `
+import json from "./foo.json" with { type: "json" };
+import("foo.json" , { with: { type: "json" } });
+import test from './asdf'
+  // 🟡
+  // with { not: 'an assertion!' }
+export var p = 5;
     `
     await isEqual(FILENAME, source)
   })
