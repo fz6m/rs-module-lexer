@@ -25,13 +25,15 @@ export const isEqual = async (filename: string, code: string) => {
   })
   // facade
   expect(output[0].facade).toEqual(result[2])
+  // hasModuleSyntax
+  expect(output[0].hasModuleSyntax).toEqual(result[3])
   // import
   expect(output[0].imports).toEqual(result[0])
   // export
   try {
     if (process.env.DEBUG_RESULT) {
-      console.log('output[0].exports: ', output[0].exports)
-      console.log('result[1]: ', result[1])
+      console.log('rs-module-lexer: ', output[0].exports)
+      console.log('es-module-lexer: ', result[1])
     }
     expect(output[0].exports).toEqual(result[1])
   } catch {
