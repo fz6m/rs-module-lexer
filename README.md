@@ -58,31 +58,24 @@ For details of the parse results, please see [`es-module-lexer`](https://github.
 ```diff
 - import { init, parse } from 'es-module-lexer'
 - await init
-- const [imports, exports] = parse(code)
+- const [imports, exports, facade, hasModuleSyntax] = parse(code)
 
 + import { parseAsync } from 'rs-module-lexer'
 + const { output } = await parseAsync({ input: [{ filename: 'index.ts', code }] })
-+ const { imports, exports } = output[0]
++ const { imports, exports, facade, hasModuleSyntax } = output[0]
 ```
 
 `rs-module-lexer` can parse multiple files at once, the syntax is auto detect based on `filename`.
 
 ### Benchmark
 
-parse `ts(x)` files:
-
 ```bash
-# parse 8 files 
-es-module-lexer average: 383.6ms
-rs-module-lexer average: 70.6ms 🎉
-```
-
-parse `js` files:
-
-```bash
-# parse 8 files 
-es-module-lexer average: 51.3ms 🎉
-rs-module-lexer average: 67.6ms
+[TS]
+es-module-lexer average: 158.7ms 
+rs-module-lexer average: 22.8ms 🎉
+[JS]
+es-module-lexer average: 29.1ms 
+rs-module-lexer average: 21.8ms 🎉
 ```
 
 ### License

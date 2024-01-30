@@ -3,7 +3,7 @@ import { init, parse } from 'es-module-lexer'
 import { parseAsync as rsParser } from 'rs-module-lexer'
 import { transformSync } from 'esbuild'
 
-const bench = async () => {
+const bench = async (isTS = false) => {
   const samplesDir = path.join(__dirname, '../test/samples')
   const samples = fs
     .readdirSync(samplesDir)
@@ -23,23 +23,22 @@ const bench = async () => {
     const start = Date.now()
     const tasks = samples.map((sample) => {
       return parse(
-        // sample.code
-        transformSync(sample.code, {
-          loader: 'ts',
-          sourcemap: false,
-        }).code,
+        isTS
+          ? transformSync(sample.code, {
+              loader: 'ts',
+              sourcemap: false,
+            }).code
+          : sample.code,
       )
     })
     const result = await Promise.all(tasks)
     const end = Date.now()
     const diff = end - start
-    console.log(`es-module-lexer: ${diff}ms`)
+    // console.log(`es-module-lexer: ${diff}ms`)
     return diff
   }
 
   // use rs-module-lexer
-  // 🤔 if we parse ts files, it is 1x faster than es-module-lexer
-  // 😅 if we parse js files, it is 2x slower than es-module-lexer
   const runrsModuleLexer = async () => {
     const start = Date.now()
     const result = await rsParser({
@@ -47,7 +46,7 @@ const bench = async () => {
     })
     const end = Date.now()
     const diff = end - start
-    console.log(`rs-module-lexer: ${diff}ms`)
+    // console.log(`rs-module-lexer: ${diff}ms`)
     return diff
   }
 
@@ -59,8 +58,19 @@ const bench = async () => {
     esModuleLexerTotal += await runEsModuleLexer()
     rsModuleLexerTotal += await runrsModuleLexer()
   }
-  console.log(`es-module-lexer average: ${esModuleLexerTotal / times}ms`)
-  console.log(`rs-module-lexer average: ${rsModuleLexerTotal / times}ms`)
+
+  const esAve = esModuleLexerTotal / times
+  const rsAve = rsModuleLexerTotal / times
+  const esWin = esAve < rsAve ? '🎉' : ''
+  const rsWin = esAve > rsAve ? '🎉' : ''
+  console.log(`[${isTS ? 'TS' : 'JS'}]`)
+  console.log(`es-module-lexer average: ${esAve}ms ${esWin}`)
+  console.log(`rs-module-lexer average: ${rsAve}ms ${rsWin}`)
 }
 
-bench()
+const run = async () => {
+  await bench(false)
+  await bench(true)
+}
+
+run()
