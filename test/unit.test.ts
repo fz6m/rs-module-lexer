@@ -3,6 +3,16 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  // 🟡 `es-module-lexer` seems to be parsed incorrectly.
+  test.skip(`Simple export destructuring`, async () => {
+    const source = `
+      export const{URI,Utils,...Another}=LIB
+      export var p, { z } = {};
+      export var { aa, qq: { z } } = { qq: {} }, pp = {};
+    `
+    await isEqual(FILENAME, source)
+  })
+
   test(`Export default cases`, async () => {
     const source = `
           export default "export default a"
