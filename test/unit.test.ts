@@ -8,6 +8,31 @@ describe('Lexer', () => {
     await isEqual(FILENAME, source)
   })
 
+  test(`Dynamic import expression range 2`, async () => {
+    const source = 'import(/* comment */ `asdf` /* comment */)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 3`, async () => {
+    const source = 'import(`asdf` // comment\n)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 4`, async () => {
+    const source = 'import("foo" + /* comment */ "bar")'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 5`, async () => {
+    const source = 'import((() => { return "foo" })() /* comment */)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 6`, async () => {
+    const source = 'import(/* comment */ `asdf` /* comment */ /* comment 2 */)'
+    await isEqual(FILENAME, source)
+  })
+
   // 🟡 `es-module-lexer` seems to be parsed incorrectly.
   test.skip(`Simple export destructuring`, async () => {
     const source = `

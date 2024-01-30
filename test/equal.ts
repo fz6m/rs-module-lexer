@@ -28,12 +28,16 @@ export const isEqual = async (filename: string, code: string) => {
   // hasModuleSyntax
   expect(output[0].hasModuleSyntax).toEqual(result[3])
   // import
+  if (process.env.DEBUG_RESULT) {
+    console.log('rs-module-lexer imports: ', output[0].imports)
+    console.log('es-module-lexer imports: ', result[0])
+  }
   expect(output[0].imports).toEqual(result[0])
   // export
   try {
     if (process.env.DEBUG_RESULT) {
-      console.log('rs-module-lexer: ', output[0].exports)
-      console.log('es-module-lexer: ', result[1])
+      console.log('rs-module-lexer exports: ', output[0].exports)
+      console.log('es-module-lexer exports: ', result[1])
     }
     expect(output[0].exports).toEqual(result[1])
   } catch {

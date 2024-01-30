@@ -1,11 +1,14 @@
 use std::cmp;
 
-use swc_common::{sync::Lrc, SourceFile, SourceMap, Span};
+use swc_common::{
+    Spanned,
+    {sync::Lrc, SourceFile, SourceMap, Span},
+};
 use swc_ecmascript::ast;
 use swc_ecmascript::visit::{VisitMut, VisitMutWith};
 
 use crate::constants::*;
-use crate::decl::{ImportSpecifier, ExportSpecifier};
+use crate::decl::{ExportSpecifier, ImportSpecifier};
 
 pub struct ImportExportVisitor {
     pub imports: Vec<ImportSpecifier>,
@@ -711,27 +714,32 @@ impl VisitMut for ImportExportVisitor {
                     let d = self.find_code_idx_by_string(import_end, *BRACKET_LEFT);
 
                     let mut name = None;
-                    // offset 1 for `(`
-                    let mut start = d + 1;
-                    let mut end = se - 1;
-
                     let mut a = *NOT;
-                    if let ast::Expr::Lit(lit) = arg.expr.as_ref() {
-                        if let ast::Lit::Str(src) = lit {
-                            name = Some(src.value.to_string());
 
-                            // not need trim quotes
-                            (start, end) = self.get_real_span(src.span);
+                    let (start, end) = self.get_real_span(arg.span());
 
-                            // calc assert
-                            let second_arg = call.args.get(1);
-                            if let Some(arg) = second_arg {
-                                // support object only
-                                if let ast::Expr::Object(obj) = arg.expr.as_ref() {
-                                    let obj_span = self.get_real_span(obj.span);
-                                    a = obj_span.0;
-                                }
+                    // get static value
+                    match arg.expr.as_ref() {
+                        // import('abc')
+                        ast::Expr::Lit(lit) => {
+                            if let ast::Lit::Str(src) = lit {
+                                name = Some(src.value.to_string());
                             }
+                        }
+                        // import(`abc`)
+                        ast::Expr::Tpl(_tpl) => {
+                            // TODO: actually, we know what is in there. but `es-module-lexer` does not know.
+                        }
+                        _ => {}
+                    }
+
+                    // calc assert
+                    let second_arg = call.args.get(1);
+                    if let Some(arg) = second_arg {
+                        // support object only
+                        if let ast::Expr::Object(obj) = arg.expr.as_ref() {
+                            let obj_span = self.get_real_span(obj.span);
+                            a = obj_span.0;
                         }
                     }
 
