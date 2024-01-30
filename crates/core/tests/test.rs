@@ -1,6 +1,9 @@
 use std::fs;
 
-use core::{parse, IConfig, parser::ParseOptions};
+use core::{
+    decl::{IConfig, ParseOptions},
+    parse,
+};
 
 #[test]
 fn test() {
@@ -14,9 +17,7 @@ fn test() {
         code,
     };
     let res = parse(IConfig {
-        input: vec![
-            parse_opts
-        ]
+        input: vec![parse_opts],
     });
     println!("{:#?}", res.unwrap().output[0]);
 }

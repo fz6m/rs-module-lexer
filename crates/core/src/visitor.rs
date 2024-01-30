@@ -501,13 +501,11 @@ impl ImportExportVisitor {
         find_start
     }
 
-    fn detect_module(&mut self, module: &mut ast::Module) {
+    fn detect_facade(&mut self, module: &mut ast::Module) {
         let mut is_facade = true;
-        let mut has_module_syntax = false;
         for item in module.body.iter() {
             match item {
                 ast::ModuleItem::ModuleDecl(decl) => {
-                    has_module_syntax = true;
                     match decl {
                         // import ...
                         ast::ModuleDecl::Import(_) => {
@@ -587,6 +585,17 @@ impl ImportExportVisitor {
             }
         }
         self.facade = is_facade;
+    }
+
+    fn detect_syntax(&mut self, module: &mut ast::Module) {
+        let mut has_module_syntax = false;
+        for item in module.body.iter() {
+            // `import` or `export`
+            if let ast::ModuleItem::ModuleDecl(_) = item {
+                has_module_syntax = true;
+                break;
+            }
+        }
         self.has_module_syntax = has_module_syntax;
     }
 }
@@ -594,7 +603,8 @@ impl ImportExportVisitor {
 // visit
 impl VisitMut for ImportExportVisitor {
     fn visit_mut_module(&mut self, module: &mut ast::Module) {
-        self.detect_module(module);
+        self.detect_facade(module);
+        self.detect_syntax(module);
         module.visit_mut_children_with(self);
     }
 
