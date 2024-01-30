@@ -862,6 +862,37 @@ test('Export default', async () => {
   await isEqual(FILENAME, source)
 })
 
+describe('ESM Syntax detection', () => {
+  test('hasModuleSyntax import1', async () => {
+    const source = 'import foo from "./foo"'
+    await isEqual(FILENAME, source)
+  })
+  test('hasModuleSyntax import2', async () => {
+    const source = 'const foo = "import"'
+    await isEqual(FILENAME, source)
+  })
+  test('hasModuleSyntax import3', async () => {
+    const source = 'import("./foo")'
+    await isEqual(FILENAME, source)
+  })
+  test('hasModuleSyntax import4', async () => {
+    const source = 'import.meta.url'
+    await isEqual(FILENAME, source)
+  })
+  test('hasModuleSyntax export1', async () => {
+    const source = 'export const foo = "foo"'
+    await isEqual(FILENAME, source)
+  })
+  test('hasModuleSyntax export2', async () => {
+    const source = 'export {}'
+    await isEqual(FILENAME, source)
+  })
+  test('hasModuleSyntax export3', async () => {
+    const source = 'export * from "./foo"'
+    await isEqual(FILENAME, source)
+  })
+})
+
 describe('Invalid syntax', () => {
   test('Unterminated object', async () => {
     const source = `
