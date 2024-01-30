@@ -3,6 +3,11 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  test(`Dynamic import expression range`, async () => {
+    const source = `import(("asdf"))  aaaa`
+    await isEqual(FILENAME, source)
+  })
+
   // 🟡 `es-module-lexer` seems to be parsed incorrectly.
   test.skip(`Simple export destructuring`, async () => {
     const source = `
