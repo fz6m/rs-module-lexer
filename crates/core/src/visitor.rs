@@ -587,6 +587,10 @@ impl ImportExportVisitor {
         self.facade = is_facade;
     }
 
+    fn set_module_syntax(&mut self, value: bool) {
+        self.has_module_syntax = value;
+    }
+
     fn detect_syntax(&mut self, module: &mut ast::Module) {
         let mut has_module_syntax = false;
         for item in module.body.iter() {
@@ -596,7 +600,7 @@ impl ImportExportVisitor {
                 break;
             }
         }
-        self.has_module_syntax = has_module_syntax;
+        self.set_module_syntax(has_module_syntax);
     }
 }
 
@@ -759,6 +763,8 @@ impl VisitMut for ImportExportVisitor {
             d: *NOT_BECAUSE_META,
             a: *NOT,
         });
+        // `import.meta` can only appear in module
+        self.set_module_syntax(true);
         meta.visit_mut_children_with(self);
     }
 }
