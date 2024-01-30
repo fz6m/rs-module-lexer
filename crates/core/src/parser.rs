@@ -64,10 +64,11 @@ pub fn parse_code(opts: ParseOptions) -> Result<ParseResult, anyhow::Error> {
         module.visit_mut_with(&mut visitor);
 
         Ok(ParseResult {
+            filename,
             imports: visitor.imports,
             exports: visitor.exports,
             facade: visitor.facade,
-            filename,
+            has_module_syntax: visitor.has_module_syntax,
         })
     })
 }

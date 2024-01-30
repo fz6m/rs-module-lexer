@@ -11,6 +11,7 @@ pub struct ImportExportVisitor {
     pub imports: Vec<ImportSpecifier>,
     pub exports: Vec<ExportSpecifier>,
     pub facade: bool,
+    pub has_module_syntax: bool,
 
     code_utf16: Vec<u16>,
     source_map: Lrc<SourceMap>,
@@ -24,6 +25,7 @@ impl ImportExportVisitor {
             imports: vec![],
             exports: vec![],
             facade: false,
+            has_module_syntax: false,
 
             code_utf16,
             source_map,
@@ -499,12 +501,15 @@ impl ImportExportVisitor {
         find_start
     }
 
-    fn set_facade(&mut self, module: &mut ast::Module) {
+    fn detect_module(&mut self, module: &mut ast::Module) {
         let mut is_facade = true;
+        let mut has_module_syntax = false;
         for item in module.body.iter() {
             match item {
                 ast::ModuleItem::ModuleDecl(decl) => {
+                    has_module_syntax = true;
                     match decl {
+                        // import ...
                         ast::ModuleDecl::Import(_) => {
                             continue;
                         }
@@ -582,14 +587,14 @@ impl ImportExportVisitor {
             }
         }
         self.facade = is_facade;
+        self.has_module_syntax = has_module_syntax;
     }
 }
 
 // visit
 impl VisitMut for ImportExportVisitor {
     fn visit_mut_module(&mut self, module: &mut ast::Module) {
-        // facade
-        self.set_facade(module);
+        self.detect_module(module);
         module.visit_mut_children_with(self);
     }
 

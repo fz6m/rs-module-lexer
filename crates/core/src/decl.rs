@@ -24,6 +24,7 @@ pub struct ParseResult {
     pub imports: Vec<ImportSpecifier>,
     pub exports: Vec<ExportSpecifier>,
     pub facade: bool,
+    pub has_module_syntax: bool,
 }
 
 #[derive(Debug)]
