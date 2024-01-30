@@ -24,6 +24,7 @@ macro_rules! multi_env {
         $(
             #[derive(Tsify, Serialize, Deserialize)]
             #[tsify(into_wasm_abi, from_wasm_abi)]
+            #[serde(rename_all = "camelCase")]
             $items
         )*
     };
