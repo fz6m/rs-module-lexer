@@ -97,11 +97,12 @@ var pkg = require(path.join(__dirname, './package.json'));
 var pkgName = pkg.name;
 var binaryEnv = pkgName.replace('-', '_').toUpperCase() + '_BINARY_PATH';
 var getWasmName = function () {
-    var _a;
+    var _a, _b, _c, _d;
     if ((_a = pkg === null || pkg === void 0 ? void 0 : pkg.vary) === null || _a === void 0 ? void 0 : _a.wasmName) {
         return pkg.vary.wasmName;
     }
-    var wasmPkgName = "".concat(pkg.napi.package.name, "-wasm");
+    var packageName = ((_c = (_b = pkg.napi) === null || _b === void 0 ? void 0 : _b.package) === null || _c === void 0 ? void 0 : _c.name) || ((_d = pkg.napi) === null || _d === void 0 ? void 0 : _d.packageName);
+    var wasmPkgName = "".concat(packageName, "-wasm");
     return wasmPkgName;
 };
 var wasmName = getWasmName();
