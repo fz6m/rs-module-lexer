@@ -2,6 +2,7 @@ cargo-features = ["strip"]
 
 [workspace]
 members = ["crates/*"]
+resolver = "2"
 
 [workspace.dependencies]
 serde = { version = "1.0.196", features = ["derive"] }
