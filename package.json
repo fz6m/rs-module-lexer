@@ -66,7 +66,7 @@
     "@types/node": "^20.12.8",
     "@xn-sakina/mental": "^4.2.1",
     "@xn-sakina/vary": "^1.4.0",
-    "es-module-lexer": "1.4.2",
+    "es-module-lexer": "1.5.2",
     "esbuild": "^0.20.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",

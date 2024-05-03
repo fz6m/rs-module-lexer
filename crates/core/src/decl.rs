@@ -2,6 +2,37 @@ use crate::multi_env;
 
 multi_env! {
 
+#[derive(Debug)]
+pub enum ImportType {
+    #[doc = "
+        A normal static using any syntax variations
+            import .. from 'module'
+    "]
+    Static = 1,
+    #[doc = "
+        A dynamic import expression `import(specifier)` or `import(specifier, opts)`
+    "]
+    Dynamic = 2,
+    #[doc = "
+        An import.meta expression
+    "]
+    ImportMeta = 3,
+    #[doc = "
+        A source phase import 
+            import source x from 'module'
+    "]
+    StaticSourcePhase = 4,
+    #[doc = "
+        A dynamic source phase import
+            import.source('module')
+    "]
+    DynamicSourcePhase = 5,
+}
+
+}
+
+multi_env! {
+
 #[derive(Debug, Clone)]
 pub struct IConfig {
     pub input: Vec<ParseOptions>,
@@ -29,35 +60,37 @@ pub struct ParseResult {
 
 #[derive(Debug)]
 pub struct ImportSpecifier {
-    /// source name
+    #[doc = " Source name "]
     pub n: Option<String>,
-    /// source start index
+    #[doc = " Source start index "]
     pub s: i32,
-    /// source end index
+    #[doc = " Source end index "]
     pub e: i32,
-    /// import start index
+    #[doc = " Import start index "]
     pub ss: i32,
-    /// import end index
+    #[doc = " Import end index "]
     pub se: i32,
-    /// dynamic import start index
+    #[doc = " Dynamic import start index "]
     pub d: i32,
-    /// assert object start index (include `{}`)
+    #[doc = " Assert object start index (include `{}`) "]
     pub a: i32,
+    #[doc = " Type of import statement "]
+    pub t: ImportType,
 }
 
 #[derive(Debug)]
 pub struct ExportSpecifier {
-    /// export name
+    #[doc = " Export name "]
     pub n: String,
-    /// export origin name
+    #[doc = " Export origin name "]
     pub ln: Option<String>,
-    /// export name start index
+    #[doc = " Export name start index "]
     pub s: i32,
-    /// export name end index
+    #[doc = " Export name end index "]
     pub e: i32,
-    /// export origin name start index
+    #[doc = " Export origin name start index "]
     pub ls: i32,
-    /// export origin name end index
+    #[doc = " Export origin name end index "]
     pub le: i32,
 }
 

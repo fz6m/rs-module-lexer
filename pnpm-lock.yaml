@@ -27,8 +27,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       es-module-lexer:
-        specifier: 1.4.2
-        version: 1.4.2
+        specifier: 1.5.2
+        version: 1.5.2
       esbuild:
         specifier: ^0.20.2
         version: 0.20.2
@@ -855,8 +855,8 @@ packages:
     resolution: {integrity: sha512-y/B5POM2iBnIxCiernH1G7rC9qQoM77lLIMQLuob0zhp8C56Po81+2Nj0WFKnd0pNReDTnkYryc+zhOzpEIROg==, tarball: https://registry.npmjs.org/es-abstract/-/es-abstract-1.21.2.tgz}
     engines: {node: '>= 0.4'}
 
-  es-module-lexer@1.4.2:
-    resolution: {integrity: sha512-7nOqkomXZEaxUDJw21XZNtRk739QvrPSoZoRtbsEfcii00vdzZUh6zh1CQwHhrib8MdEtJfv5rJiGeb4KuV/vw==, tarball: https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-1.4.2.tgz}
+  es-module-lexer@1.5.2:
+    resolution: {integrity: sha512-l60ETUTmLqbVbVHv1J4/qj+M8nq7AwMzEcg3kmJDt9dCNrTk+yHcYFf/Kw75pMDwd9mPcIGCG5LcS20SxYRzFA==, tarball: https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-1.5.2.tgz}
 
   es-set-tostringtag@2.0.1:
     resolution: {integrity: sha512-g3OMbtlwY3QewlqAiMLI47KywjWZoEytKr8pf6iTC8uJq5bIAH52Z9pnQ8pVL6whrCto53JZDuUIsifGeLorTg==, tarball: https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.0.1.tgz}
@@ -2843,7 +2843,7 @@ snapshots:
       unbox-primitive: 1.0.2
       which-typed-array: 1.1.9
 
-  es-module-lexer@1.4.2: {}
+  es-module-lexer@1.5.2: {}
 
   es-set-tostringtag@2.0.1:
     dependencies:

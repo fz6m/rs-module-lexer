@@ -4,11 +4,11 @@ use swc_common::{
     Spanned,
     {sync::Lrc, SourceFile, SourceMap, Span},
 };
-use swc_ecmascript::ast;
+use swc_ecmascript::ast::{self, ImportPhase};
 use swc_ecmascript::visit::{VisitMut, VisitMutWith};
 
 use crate::constants::*;
-use crate::decl::{ExportSpecifier, ImportSpecifier};
+use crate::decl::{ExportSpecifier, ImportSpecifier, ImportType};
 
 pub struct ImportExportVisitor {
     pub imports: Vec<ImportSpecifier>,
@@ -65,6 +65,7 @@ impl ImportExportVisitor {
                 se: import_span.1,
                 d: *NOT,
                 a,
+                t: ImportType::Static,
             });
             return;
         }
@@ -91,15 +92,36 @@ impl ImportExportVisitor {
                 let src_span = self.get_real_span_without_quotes(import.src.span);
                 let import_span = self.get_real_span(import.span);
                 let a = self.calc_assert(&import.with);
-                self.add_import(ImportSpecifier {
-                    n: Some(name),
-                    s: src_span.0,
-                    e: src_span.1,
-                    ss: import_span.0,
-                    se: import_span.1,
-                    d: *NOT,
-                    a,
-                })
+
+                let mut t: Option<ImportType> = None;
+
+                match import.phase {
+                    ImportPhase::Defer => {
+                        // import defer a from './xxx'
+                        // TODO: wait `es-module-lexer` support this case
+                    }
+                    ImportPhase::Evaluation => {
+                        // import a from './xxx'
+                        t = Some(ImportType::Static);
+                    }
+                    ImportPhase::Source => {
+                        // import source a from './xxx'
+                        t = Some(ImportType::StaticSourcePhase);
+                    }
+                }
+
+                if t.is_some() {
+                    self.add_import(ImportSpecifier {
+                        n: Some(name),
+                        s: src_span.0,
+                        e: src_span.1,
+                        ss: import_span.0,
+                        se: import_span.1,
+                        d: *NOT,
+                        a,
+                        t: t.unwrap(),
+                    })
+                }
             }
         }
     }
@@ -644,6 +666,7 @@ impl VisitMut for ImportExportVisitor {
                             se: export_span.1,
                             d: *NOT,
                             a,
+                            t: ImportType::Static,
                         })
                     }
                 }
@@ -684,6 +707,7 @@ impl VisitMut for ImportExportVisitor {
                     se,
                     d: *NOT,
                     a,
+                    t: ImportType::Static,
                 });
             }
             // export default function a () {}
@@ -701,7 +725,7 @@ impl VisitMut for ImportExportVisitor {
         decl.visit_mut_children_with(self)
     }
 
-    // dynamic import
+    // dynamic import or import phase
     fn visit_mut_expr(&mut self, node: &mut ast::Expr) {
         if let ast::Expr::Call(call) = node {
             if let ast::Callee::Import(import) = call.callee {
@@ -743,15 +767,36 @@ impl VisitMut for ImportExportVisitor {
                         }
                     }
 
-                    self.add_import(ImportSpecifier {
-                        n: name,
-                        s: start,
-                        e: end,
-                        ss,
-                        se,
-                        d,
-                        a,
-                    })
+                    let mut t: Option<ImportType> = None;
+
+                    match import.phase {
+                        ImportPhase::Defer => {
+                            // import.defer('...')
+                            // https://github.com/swc-project/swc/blob/a9bab833ba6370a66ab8d7ac209d89ad2ea4c005/crates/swc_ecma_parser/src/parser/expr.rs#L2084
+                            // do nothing
+                        }
+                        ImportPhase::Evaluation => {
+                            // import('...')
+                            t = Some(ImportType::Dynamic);
+                        }
+                        ImportPhase::Source => {
+                            // import.source('...')
+                            t = Some(ImportType::DynamicSourcePhase);
+                        }
+                    }
+
+                    if t.is_some() {
+                        self.add_import(ImportSpecifier {
+                            n: name,
+                            s: start,
+                            e: end,
+                            ss,
+                            se,
+                            d,
+                            a,
+                            t: t.unwrap(),
+                        });
+                    }
                 }
             }
         }
@@ -770,6 +815,7 @@ impl VisitMut for ImportExportVisitor {
             se: end,
             d: *NOT_BECAUSE_META,
             a: *NOT,
+            t: ImportType::ImportMeta,
         });
         // `import.meta` can only appear in module
         self.set_module_syntax(true);

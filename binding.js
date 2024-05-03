@@ -310,8 +310,9 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { parse, parseAsync, getTargetTriple } = nativeBinding
+const { ImportType, parse, parseAsync, getTargetTriple } = nativeBinding
 
+module.exports.ImportType = ImportType
 module.exports.parse = parse
 module.exports.parseAsync = parseAsync
 module.exports.getTargetTriple = getTargetTriple

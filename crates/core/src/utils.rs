@@ -2,12 +2,23 @@
 #[cfg(feature = "node")]
 macro_rules! multi_env {
     ($(
-        $items:item
+        $(#[$enum_attr:meta])*
+        $vis:vis enum $enum_name:ident { $($enum_content:tt)* }
     )*) => {
-        use napi_derive::napi;
         $(
-            #[napi(object)]
-            $items
+            #[napi_derive::napi]
+            $(#[$enum_attr])*
+            $vis enum $enum_name { $($enum_content)* }
+        )*
+    };
+    ($(
+        $(#[$struct_attr:meta])*
+        $vis:vis struct $struct_name:ident { $($struct_content:tt)* }
+    )*) => {
+        $(
+            #[napi_derive::napi(object)]
+            $(#[$struct_attr])*
+            $vis struct $struct_name { $($struct_content)* }
         )*
     };
 }
@@ -31,7 +42,7 @@ macro_rules! multi_env {
 }
 
 #[macro_export]
-#[cfg(all(not(feature = "wasm"), not(feature = "node"),))]
+#[cfg(all(not(feature = "wasm"), not(feature = "node")))]
 macro_rules! multi_env {
     ($($tokens:tt)*) => {
         $($tokens)*
