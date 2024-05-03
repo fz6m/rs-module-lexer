@@ -45,7 +45,7 @@ const { output } = await parseAsync({
   ],
 })
 
-// [ { n: 'react', s: 67, e: 72, ss: 41, se: 73, d: -1, a: -1 } ]
+// [ { n: 'react', s: 67, e: 72, ss: 41, se: 73, d: -1, a: -1, t: 1 } ]
 console.log(output[0].imports)
 // [ { n: 'member', ln: 'member', s: 22, e: 28, ls: 22, le: 28 } ]
 console.log(output[0].exports)
@@ -71,11 +71,11 @@ For details of the parse results, please see [`es-module-lexer`](https://github.
 
 ```bash
 [TS]
-es-module-lexer average: 158.7ms 
-rs-module-lexer average: 22.8ms 🎉
+es-module-lexer average: 171.6ms 
+rs-module-lexer average: 24.7ms 🎉
 [JS]
-es-module-lexer average: 29.1ms 
-rs-module-lexer average: 21.8ms 🎉
+es-module-lexer average: 32.6ms 
+rs-module-lexer average: 23.9ms 🎉
 ```
 
 ### License

@@ -13,7 +13,7 @@ const { output } = parse({
   ],
 })
 
-// [ { n: 'react', s: 67, e: 72, ss: 41, se: 73, d: -1, a: -1 } ]
+// [ { n: 'react', s: 67, e: 72, ss: 41, se: 73, d: -1, a: -1, t: 1 } ]
 console.log(output[0].imports)
 // [ { n: 'member', ln: 'member', s: 22, e: 28, ls: 22, le: 28 } ]
 console.log(output[0].exports)
