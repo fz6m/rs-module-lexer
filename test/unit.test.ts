@@ -153,6 +153,22 @@ export var p = 5;
     await isEqual(FILENAME, source)
   })
 
+  test('Regexp default export', async () => {
+    const source = `
+      export default /[\`]/
+      export default 1/2
+      export default /* asdf */ 1/2
+      export default /* asdf */ /regex/
+      export default
+      // line comment
+      /regex/
+      export default
+      // line comment
+      1 / 2
+    `
+    await isEqual(FILENAME, source)
+  })
+
   test('Regexp keyword prefixes', async () => {
     const source = `
       x: while (true) {
