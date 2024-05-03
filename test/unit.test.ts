@@ -3,6 +3,18 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  test(`Source phase imports`, async () => {
+    const source = `
+      import source
+        source from 'specifier'
+      
+      import source blah from './x.js' with { type: 'css' }
+      import.source('blah');
+    
+    `
+    await isEqual(FILENAME, source)
+  })
+
   test(`Dynamic import expression range`, async () => {
     const source = `import(("asdf"))  aaaa`
     await isEqual(FILENAME, source)
