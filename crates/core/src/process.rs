@@ -9,7 +9,7 @@ pub fn parse(config: IConfig) -> Result<IResult, anyhow::Error> {
     let iterator = input.par_iter();
 
     let output = iterator
-        .map(|opts| -> Result<ParseResult, anyhow::Error> { parse_code(opts.clone()) })
+        .map(|opts| -> Result<ParseResult, anyhow::Error> { parse_code(opts) })
         .collect::<Result<Vec<ParseResult>, anyhow::Error>>()?;
 
     let result = IResult { output };

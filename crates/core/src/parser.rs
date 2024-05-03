@@ -17,9 +17,9 @@ use crate::constants::*;
 use crate::decl::{ParseOptions, ParseResult};
 use crate::visitor::ImportExportVisitor;
 
-pub fn parse_code(opts: ParseOptions) -> Result<ParseResult, anyhow::Error> {
+pub fn parse_code(opts: &ParseOptions) -> Result<ParseResult, anyhow::Error> {
     let ParseOptions { filename, code } = opts;
-    let file_info = parse_filename(&filename);
+    let file_info = parse_filename(filename.as_str());
     let FileInfo {
         is_jsx,
         is_typescript,
@@ -60,11 +60,11 @@ pub fn parse_code(opts: ParseOptions) -> Result<ParseResult, anyhow::Error> {
         )
         .context("failed to parse code")?;
 
-        let mut visitor = ImportExportVisitor::new(code, source_map, source_file);
+        let mut visitor = ImportExportVisitor::new(code.clone(), source_map, source_file);
         module.visit_mut_with(&mut visitor);
 
         Ok(ParseResult {
-            filename,
+            filename: filename.to_owned(),
             imports: visitor.imports,
             exports: visitor.exports,
             facade: visitor.facade,
@@ -82,7 +82,7 @@ pub struct FileInfo {
     pub is_typescript: bool,
 }
 
-pub fn parse_filename(filepath: &String) -> FileInfo {
+pub fn parse_filename(filepath: &str) -> FileInfo {
     let filename = filepath.split('/').last().unwrap();
     let extension = filename.split('.').last().unwrap();
     let is_typescript = TS_EXTS.contains(&extension);
