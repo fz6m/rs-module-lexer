@@ -821,6 +821,16 @@ impl VisitMut for ImportExportVisitor {
         node.visit_mut_children_with(self);
     }
 
+    fn visit_mut_import_phase(&mut self, phase: &mut ImportPhase) {
+        match phase {
+            ImportPhase::Defer => {}
+            ImportPhase::Evaluation => {}
+            ImportPhase::Source => {
+                // FIXME: maybe we should set has_module_syntax to true
+            }
+        }
+    }
+
     // import.meta.xxx
     // import.meta
     fn visit_mut_meta_prop_expr(&mut self, meta: &mut ast::MetaPropExpr) {
