@@ -3,6 +3,11 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  test(`Regex case`, async () => {
+    const source = `for(let t of/[0-9]+/g.exec(e)){}`
+    await isEqual(FILENAME, source)
+  })
+
   test(`Source phase imports`, async () => {
     const source = `
       import source
