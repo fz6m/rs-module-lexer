@@ -9,7 +9,7 @@ crate-type = ["cdylib", "lib"]
 [features]
 default = []
 node = ["napi", "napi-derive"]
-wasm = ["tsify", "wasm-bindgen"]
+wasm = ["tsify-next", "wasm-bindgen", "serde_repr"]
 
 [dependencies]
 swc_common = { version = "0.33.26" }
@@ -25,5 +25,6 @@ lazy_static = "1.4.0"
 napi = { workspace = true, optional = true }
 napi-derive = { workspace = true, optional = true }
 
-tsify = { version = "0.4.5", optional = true }
+tsify-next = { version = "0.5.3", optional = true }
+serde_repr = { version = "0.1.19", optional = true }
 wasm-bindgen = { workspace = true, optional = true}

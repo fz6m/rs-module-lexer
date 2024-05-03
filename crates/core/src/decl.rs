@@ -2,7 +2,7 @@ use crate::multi_env;
 
 multi_env! {
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum ImportType {
     #[doc = "
         A normal static using any syntax variations
