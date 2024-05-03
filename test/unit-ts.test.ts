@@ -1,4 +1,4 @@
-import { afterAll, expect, test, vi } from 'vitest'
+import { expect, test } from 'vitest'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import { getParser } from './equal'
@@ -112,3 +112,5 @@ export const { a: b } = {}
   expect(output[0].exports[0].s).toEqual(18)
   expect(output[0].exports[0].e).toEqual(19)
 })
+
+// TODO: import defer test case
