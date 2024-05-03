@@ -100,3 +100,15 @@ import("foo.json", { with: { type: "json" } });
   expect(output[0].imports[0].n).toEqual('./a.json')
   expect(output[0].imports[1].n).toEqual('foo.json')
 })
+
+test('edge case: export kv, value must is ident', async () => {
+  const { output } = await parseSingleFile(
+    `
+export const { a: b } = {}
+`.trimStart(),
+  )
+  expect(output[0].exports.length).toEqual(1)
+  expect(output[0].exports[0].n).toEqual('b')
+  expect(output[0].exports[0].s).toEqual(18)
+  expect(output[0].exports[0].e).toEqual(19)
+})

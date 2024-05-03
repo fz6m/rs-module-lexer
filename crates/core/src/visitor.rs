@@ -323,11 +323,29 @@ impl ImportExportVisitor {
                                             le: end,
                                         })
                                     }
-                                    // TODO: Not support export const { a: b } = {}
-                                    // es-module-lexer parse this case will get name:`a`, not `b`, it's a bug.
-                                    ast::ObjectPatProp::KeyValue(_) => {}
+                                    ast::ObjectPatProp::KeyValue(kv) => {
+                                        match kv.value.as_ref() {
+                                            // FIXME: es-module-lexer parse this case will get name:`a`, not `b`, it's a bug.
+                                            ast::Pat::Ident(ident) => {
+                                                // only support value is ident
+                                                let name = ident.sym.to_string();
+                                                let (start, end) = self.get_real_span(ident.span);
+                                                self.add_export(ExportSpecifier {
+                                                    n: name.clone(),
+                                                    ln: Some(name),
+                                                    s: start,
+                                                    e: end,
+                                                    ls: start,
+                                                    le: end,
+                                                })
+                                            }
+                                            _ => {
+                                                // Not support
+                                            }
+                                        }
+                                    }
                                     // Not support case: export const { a, ...b } = {}
-                                    // es-module-lexer not support this case
+                                    // es-module-lexer not support find the `b` index
                                     ast::ObjectPatProp::Rest(_) => {}
                                 }
                             })
