@@ -32,6 +32,7 @@ const run = async () => {
     const indexDtsPath = path.join(dir, 'index.d.ts')
     if (!fs.existsSync(indexDtsPath)) {
       // ignore
+      return
     }
     await fs.writeFile(indexDtsPath, `${newContent}\n`, 'utf-8')
     console.log(`Update dts ${path.relative(root, indexDtsPath)}`)
