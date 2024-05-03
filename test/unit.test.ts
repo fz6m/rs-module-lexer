@@ -3,6 +3,22 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  test('import types', async () => {
+    const input = `
+      // dynamic
+      const { a } = await import('a');
+      const { b } = await import.source('b');
+      // static
+      import b from 'b';
+      import { c } from 'c';
+      import source z from 'z';
+      // meta
+      import.meta.url
+    `
+
+    await isEqual(FILENAME, input)
+  })
+
   test(`Regex case`, async () => {
     const source = `for(let t of/[0-9]+/g.exec(e)){}`
     await isEqual(FILENAME, source)
