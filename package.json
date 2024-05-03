@@ -69,7 +69,7 @@
     "@xn-sakina/vary": "^1.4.0",
     "es-module-lexer": "1.5.2",
     "esbuild": "^0.20.2",
-    "husky": "^9.0.11",
+    "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
     "lodash": "^4.17.21",
     "prettier": "^3.2.5",
@@ -79,6 +79,7 @@
     "vitest": "0.29.8",
     "zx": "^7.2.3"
   },
+  "//": "Do not upgrade 'husky' version, because it's using new es syntax",
   "packageManager": "pnpm@9.0.6",
   "engines": {
     "node": ">=14"
