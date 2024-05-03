@@ -7697,6 +7697,7 @@ exports[`Snapshot > magic-string.js 1`] = `
       "s": 24,
       "se": 40,
       "ss": 0,
+      "t": 1,
     },
   ],
 }
@@ -7741,6 +7742,7 @@ exports[`Snapshot > magic-string.min.js 1`] = `
       "s": 19,
       "se": 35,
       "ss": 0,
+      "t": 1,
     },
   ],
 }
@@ -7786,6 +7788,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "s": 194,
       "se": 199,
       "ss": 176,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7795,6 +7798,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "s": 275,
       "se": 280,
       "ss": 201,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7804,6 +7808,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "s": 389,
       "se": 392,
       "ss": 282,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7813,6 +7818,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "s": 414,
       "se": 421,
       "ss": 394,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7822,6 +7828,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "s": 445,
       "se": 452,
       "ss": 423,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7831,6 +7838,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "s": 484,
       "se": 491,
       "ss": 454,
+      "t": 1,
     },
   ],
 }
@@ -7876,6 +7884,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "s": 17,
       "se": 22,
       "ss": 0,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7885,6 +7894,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "s": 87,
       "se": 92,
       "ss": 23,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7894,6 +7904,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "s": 188,
       "se": 191,
       "ss": 93,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7903,6 +7914,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "s": 211,
       "se": 218,
       "ss": 192,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7912,6 +7924,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "s": 240,
       "se": 247,
       "ss": 219,
+      "t": 1,
     },
     {
       "a": -1,
@@ -7921,6 +7934,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "s": 273,
       "se": 280,
       "ss": 248,
+      "t": 1,
     },
   ],
 }
