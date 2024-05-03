@@ -829,6 +829,7 @@ impl VisitMut for ImportExportVisitor {
                 // FIXME: maybe we should set has_module_syntax to true
             }
         }
+        phase.visit_mut_children_with(self);
     }
 
     // import.meta.xxx
