@@ -24,6 +24,11 @@ describe('Lexer', () => {
     await isEqual(FILENAME, source)
   })
 
+  test('keyword case', async () => {
+    const source = 'const of=1;console.log(1+of/1)'
+    await isEqual(FILENAME, source)
+  })
+
   test(`Source phase imports`, async () => {
     const source = `
       import source
