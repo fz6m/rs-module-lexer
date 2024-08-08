@@ -43,7 +43,7 @@ pub fn parse_code(opts: &ParseOptions) -> Result<ParseResult, anyhow::Error> {
 
     let source_map = Lrc::new(SourceMap::default());
     let source_file = source_map.new_source_file(
-        FileName::Real(filename_path_buf.clone()),
+        Lrc::new(FileName::Real(filename_path_buf.clone())),
         code.clone().into(),
     );
     let comments = SingleThreadedComments::default();
