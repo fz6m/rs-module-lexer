@@ -178,6 +178,11 @@ export var p = 5;
     await isEqual(FILENAME, source)
   })
 
+  test.only('keyword case again', async () => {
+    const source = `if (of / 2) {}`
+    await isEqual(FILENAME, source)
+  })
+
   test('Regexp case', async () => {
     const source = `
       class Number {
