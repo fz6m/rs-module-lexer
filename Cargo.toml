@@ -17,4 +17,9 @@ napi = { version = "2.16.8", default-features = false, features = [
 napi-derive = "2.16.10"
 
 [profile.release]
-lto = true
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = "symbols"
+debug = false
+panic = "abort"
