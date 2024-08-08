@@ -7,12 +7,12 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-getrandom = { version = "0.2.15", features = ["js"] }
 core = { path = "../core", features = ["wasm"] }
-wasm-bindgen = { workspace = true, features = ["enable-interning"] }
+getrandom = { version = "0.2.15", features = ["js"] }
 wasm-bindgen-futures = { version = "0.4.42" }
 js-sys = { version = "0.3.69" }
 serde-wasm-bindgen = "0.6.5"
+wasm-bindgen = { workspace = true, features = ["enable-interning"] }
 
 [package.metadata.wasm-pack.profile.release]
 wasm-opt = false

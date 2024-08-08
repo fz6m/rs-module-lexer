@@ -16,16 +16,17 @@ swc_common = { version = "0.37.2" }
 swc_ecmascript = { version = "0.249.0", features = ["parser", "visit"] }
 swc_compiler_base = { version = "0.16.0" }
 swc_error_reporters = { version = "0.21.0" }
-anyhow = { version = "1.0.86" }
-serde_json = { workspace = true }
-serde = { workspace = true }
 rayon = "1.10.0"
 lazy_static = "1.5.0"
-hstr = "0.2.10"
+anyhow = { workspace = true }
+serde_json = { workspace = true }
+serde = { workspace = true }
 
+# node binding deps
 napi = { workspace = true, optional = true }
 napi-derive = { workspace = true, optional = true }
 
+# wasm binding deps
 tsify-next = { version = "0.5.4", optional = true }
 serde_repr = { version = "0.1.19", optional = true }
 wasm-bindgen = { workspace = true, optional = true }
