@@ -1,13 +1,12 @@
 cargo-features = ["strip"]
 
 [workspace]
-members = ["crates/*"]
+members = ["crates/core", "crates/binding_node", "crates/binding_wasm"]
 resolver = "2"
 
 [workspace.dependencies]
 serde = { version = "1.0.205", features = ["derive"] }
 serde_json = "1.0.122"
-anyhow = "1.0.86"
 wasm-bindgen = "0.2.92"
 napi = { version = "2.16.8", default-features = false, features = [
     "napi4",
@@ -23,3 +22,7 @@ codegen-units = 1
 strip = "symbols"
 debug = false
 panic = "abort"
+
+# https://github.com/dudykr/ddbase/pull/38#discussion_r1709957806
+[patch.crates-io]
+hstr = { git = "https://github.com/dudykr/ddbase.git", rev = "9c7923bc20ad9ab9f938359cd70a90e1e7d204ca", subdir = "crates/hstr" }

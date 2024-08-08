@@ -10,7 +10,7 @@ crate-type = ["cdylib"]
 core = { path = "../core", features = ["node"] }
 napi = { workspace = true }
 napi-derive = { workspace = true }
-anyhow = { workspace = true }
+anyhow = { version = "1.0.86" }
 
 [target.'cfg(not(target_os = "linux"))'.dependencies]
 mimalloc-rust = { version = "0.2.1" }
