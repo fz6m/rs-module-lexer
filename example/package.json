@@ -8,7 +8,7 @@
     "dev:es": "tsx ./es.ts"
   },
   "devDependencies": {
-    "@swc/core": "^1.4.17",
+    "@swc/core": "^1.7.6",
     "rs-module-lexer": "link:../"
   }
 }
