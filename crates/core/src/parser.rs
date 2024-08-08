@@ -8,7 +8,7 @@ use swc_common::{
 use swc_compiler_base::IsModule;
 use swc_ecmascript::{
     ast::EsVersion,
-    parser::{EsConfig, Syntax, TsConfig},
+    parser::{EsSyntax, Syntax, TsSyntax},
     visit::VisitMutWith,
 };
 use swc_error_reporters::handler::{try_with_handler, HandlerOpts};
@@ -28,13 +28,13 @@ pub fn parse_code(opts: &ParseOptions) -> Result<ParseResult, anyhow::Error> {
     } = file_info;
 
     let syntax = if is_typescript {
-        Syntax::Typescript(TsConfig {
+        Syntax::Typescript(TsSyntax {
             tsx: is_jsx,
             decorators: true,
             ..Default::default()
         })
     } else {
-        Syntax::Es(EsConfig {
+        Syntax::Es(EsSyntax {
             jsx: is_jsx,
             export_default_from: true,
             ..Default::default()
