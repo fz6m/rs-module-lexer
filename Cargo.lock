@@ -340,8 +340,9 @@ checksum = "d231dfb89cfffdbc30e7fc41579ed6066ad03abda9e567ccafae602b97ec5024"
 
 [[package]]
 name = "hstr"
-version = "0.2.10"
-source = "git+https://github.com/dudykr/ddbase.git?rev=9c7923bc20ad9ab9f938359cd70a90e1e7d204ca#9c7923bc20ad9ab9f938359cd70a90e1e7d204ca"
+version = "0.2.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dae404c0c5d4e95d4858876ab02eecd6a196bb8caa42050dfa809938833fc412"
 dependencies = [
  "hashbrown",
  "new_debug_unreachable",

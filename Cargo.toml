@@ -23,7 +23,3 @@ codegen-units = 1
 strip = "symbols"
 debug = false
 panic = "abort"
-
-# https://github.com/dudykr/ddbase/pull/38#discussion_r1709957806
-[patch.crates-io]
-hstr = { git = "https://github.com/dudykr/ddbase.git", rev = "9c7923bc20ad9ab9f938359cd70a90e1e7d204ca" }
