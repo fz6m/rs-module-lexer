@@ -9,8 +9,8 @@ crate-type = ["cdylib"]
 [dependencies]
 core = { path = "../core", features = ["wasm"] }
 getrandom = { version = "0.2.15", features = ["js"] }
-wasm-bindgen-futures = { version = "0.4.42" }
-js-sys = { version = "0.3.69" }
+wasm-bindgen-futures = { version = "0.4.49" }
+js-sys = { version = "0.3.76" }
 serde-wasm-bindgen = "0.6.5"
 wasm-bindgen = { workspace = true, features = ["enable-interning"] }
 
