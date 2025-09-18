@@ -71,11 +71,11 @@ For details of the parse results, please see [`es-module-lexer`](https://github.
 
 ```bash
 [TS]
-es-module-lexer average: 171.6ms 
-rs-module-lexer average: 24.7ms 🎉
+es-module-lexer average: 262.2ms 
+rs-module-lexer average: 23.2ms 🎉
 [JS]
-es-module-lexer average: 32.6ms 
-rs-module-lexer average: 23.9ms 🎉
+es-module-lexer average: 38.2ms 
+rs-module-lexer average: 24.1ms 🎉
 ```
 
 ### License
