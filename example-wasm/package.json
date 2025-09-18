@@ -12,7 +12,7 @@
     }
   },
   "devDependencies": {
-    "rs-module-lexer": "2.5.1"
+    "rs-module-lexer": "2.6.0"
   },
   "packageManager": "pnpm@9.7.0"
 }
