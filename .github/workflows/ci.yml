@@ -44,18 +44,27 @@ jobs:
             target: 'x86_64-unknown-linux-gnu'
             docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-debian
             build: |
+              npm install -g corepack@latest
+              corepack --version
+              corepack enable
               pnpm build --target x86_64-unknown-linux-gnu
               strip rs-module-lexer.linux-x64-gnu.node
           - host: ubuntu-latest
             target: 'x86_64-unknown-linux-musl'
             docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-alpine
             build: |
+              npm install -g corepack@latest
+              corepack --version
+              corepack enable
               pnpm build
               llvm-strip -x rs-module-lexer.linux-x64-musl.node
           - host: ubuntu-latest
             target: 'aarch64-unknown-linux-gnu'
             docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-debian-aarch64
             build: |
+              npm install -g corepack@latest
+              corepack --version
+              corepack enable
               rustup target add aarch64-unknown-linux-gnu
               pnpm build --target aarch64-unknown-linux-gnu
               llvm-strip -x rs-module-lexer.linux-arm64-gnu.node
@@ -71,6 +80,9 @@ jobs:
             target: 'aarch64-unknown-linux-musl'
             docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-alpine
             build: |
+              npm install -g corepack@latest
+              corepack --version
+              corepack enable
               rustup toolchain install $(cat ./rust-toolchain)
               rustup target add aarch64-unknown-linux-musl
               pnpm build --target aarch64-unknown-linux-musl
