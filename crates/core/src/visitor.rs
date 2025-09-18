@@ -93,12 +93,12 @@ impl ImportExportVisitor {
                 let import_span = self.get_real_span(import.span);
                 let a = self.calc_assert(&import.with);
 
-                let mut t: Option<ImportType> = None;
+                let t: Option<ImportType>;
 
                 match import.phase {
                     ImportPhase::Defer => {
                         // import defer a from './xxx'
-                        // TODO: wait `es-module-lexer` support this case
+                        t = Some(ImportType::StaticDeferPhase);
                     }
                     ImportPhase::Evaluation => {
                         // import a from './xxx'
@@ -785,13 +785,12 @@ impl VisitMut for ImportExportVisitor {
                         }
                     }
 
-                    let mut t: Option<ImportType> = None;
+                    let t: Option<ImportType>;
 
                     match import.phase {
                         ImportPhase::Defer => {
                             // import.defer('...')
-                            // https://github.com/swc-project/swc/blob/a9bab833ba6370a66ab8d7ac209d89ad2ea4c005/crates/swc_ecma_parser/src/parser/expr.rs#L2084
-                            // do nothing
+                            t = Some(ImportType::DynamicDeferPhase);
                         }
                         ImportPhase::Evaluation => {
                             // import('...')

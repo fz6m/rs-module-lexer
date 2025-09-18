@@ -27,6 +27,16 @@ pub enum ImportType {
             import.source('module')
     "]
     DynamicSourcePhase = 5,
+    #[doc = "
+        A static defer phase import
+            import defer x from 'module'
+    "]
+    StaticDeferPhase = 6,
+    #[doc = "
+        A dynamic defer phase import
+            import.defer('module')
+    "]
+    DynamicDeferPhase = 7,
 }
 
 }

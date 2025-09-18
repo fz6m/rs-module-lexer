@@ -3,6 +3,19 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  test(`Defer phase imports`, async () => {
+    const source = `
+      import defer
+        * as foo from 'specifier'
+      
+      import defer * as blah from './x.js' with { type: 'css' }
+      import defer from 'x'
+      import.defer('blah');
+    
+    `
+    await isEqual(FILENAME, source)
+  })
+
   test('import types', async () => {
     const input = `
       // dynamic
@@ -35,8 +48,10 @@ describe('Lexer', () => {
         source from 'specifier'
       
       import source blah from './x.js' with { type: 'css' }
+
+      import source from 'x'
+
       import.source('blah');
-    
     `
     await isEqual(FILENAME, source)
   })
