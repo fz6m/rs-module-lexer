@@ -80,7 +80,7 @@
     "zx": "^7.2.3"
   },
   "//": "Do not upgrade 'husky' version, because it's using new es syntax",
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@10.13.1",
   "engines": {
     "node": ">=14"
   },
