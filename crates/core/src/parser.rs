@@ -5,7 +5,7 @@ use anyhow::{anyhow, Context};
 use swc_common::{
     comments::SingleThreadedComments, errors::Handler, sync::Lrc, FileName, SourceMap, GLOBALS,
 };
-use swc_compiler_base::IsModule;
+use swc_config::is_module::IsModule;
 use swc_ecmascript::{
     ast::EsVersion,
     parser::{EsSyntax, Syntax, TsSyntax},
@@ -44,7 +44,7 @@ pub fn parse_code(opts: &ParseOptions) -> Result<ParseResult, anyhow::Error> {
     let source_map = Lrc::new(SourceMap::default());
     let source_file = source_map.new_source_file(
         Lrc::new(FileName::Real(filename_path_buf.clone())),
-        code.clone().into(),
+        code.clone(),
     );
     let comments = SingleThreadedComments::default();
 
@@ -107,29 +107,31 @@ pub fn try_with<F, Ret>(
 where
     F: FnOnce(&Handler) -> Result<Ret, anyhow::Error>,
 {
-    GLOBALS.set(&Default::default(), || {
-        try_with_handler(
-            cm,
-            HandlerOpts {
-                skip_filename,
-                ..Default::default()
-            },
-            |handler| {
-                let result = catch_unwind(AssertUnwindSafe(|| op(handler)));
+    GLOBALS
+        .set(&Default::default(), || {
+            try_with_handler(
+                cm,
+                HandlerOpts {
+                    skip_filename,
+                    ..Default::default()
+                },
+                |handler| {
+                    let result = catch_unwind(AssertUnwindSafe(|| op(handler)));
 
-                let p = match result {
-                    Ok(v) => return v,
-                    Err(v) => v,
-                };
+                    let p = match result {
+                        Ok(v) => return v,
+                        Err(v) => v,
+                    };
 
-                if let Some(s) = p.downcast_ref::<String>() {
-                    Err(anyhow!("failed to handle: {}", s))
-                } else if let Some(s) = p.downcast_ref::<&str>() {
-                    Err(anyhow!("failed to handle: {}", s))
-                } else {
-                    Err(anyhow!("failed to handle with unknown panic message"))
-                }
-            },
-        )
-    })
+                    if let Some(s) = p.downcast_ref::<String>() {
+                        Err(anyhow!("failed to handle: {}", s))
+                    } else if let Some(s) = p.downcast_ref::<&str>() {
+                        Err(anyhow!("failed to handle: {}", s))
+                    } else {
+                        Err(anyhow!("failed to handle with unknown panic message"))
+                    }
+                },
+            )
+        })
+        .map_err(|e| e.to_pretty_error())
 }

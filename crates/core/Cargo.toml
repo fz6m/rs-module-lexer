@@ -12,11 +12,12 @@ node = ["napi", "napi-derive"]
 wasm = ["tsify-next", "wasm-bindgen", "serde_repr"]
 
 [dependencies]
-swc_common = { version = "5.0.0" }
-swc_ecmascript = { version = "8.0.0", features = ["parser", "visit"] }
-swc_compiler_base = { version = "7.0.0" }
-swc_error_reporters = { version = "6.0.0" }
-rayon = "1.10.0"
+swc_common = { version = "14.0.4" }
+swc_ecmascript = { version = "38.0.0", features = ["parser", "visit"] }
+swc_compiler_base = { version = "35.0.0" }
+swc_error_reporters = { version = "16.0.1" }
+swc_config = { version = "3.1.2" }
+rayon = "1.11.0"
 lazy_static = "1.5.0"
 anyhow = { workspace = true }
 serde_json = { workspace = true }
@@ -27,6 +28,6 @@ napi = { workspace = true, optional = true }
 napi-derive = { workspace = true, optional = true }
 
 # wasm binding deps
-tsify-next = { version = "0.5.4", optional = true }
-serde_repr = { version = "0.1.19", optional = true }
+tsify-next = { version = "0.5.6", optional = true }
+serde_repr = { version = "0.1.20", optional = true }
 wasm-bindgen = { workspace = true, optional = true }

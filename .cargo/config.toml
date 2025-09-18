@@ -32,3 +32,7 @@ rustflags = ["-C", "target-feature=-crt-static", "-C", "link-arg=-lgcc"]
 [target.armv7-unknown-linux-gnueabihf]
 linker = "arm-linux-gnueabihf-gcc"
 rustflags = []
+
+# wasm
+[target.wasm32-unknown-unknown]
+rustflags = ["-Zshare-generics=y", "--cfg", 'getrandom_backend="wasm_js"']
