@@ -9,106 +9,106 @@ importers:
   .:
     devDependencies:
       rs-module-lexer:
-        specifier: 2.6.0
-        version: 2.6.0
+        specifier: 2.8.0
+        version: 2.8.0
 
 packages:
 
-  '@xn-sakina/rml-darwin-arm64@2.6.0':
-    resolution: {integrity: sha512-RuFHj6ro6Q24gPqNQGvH4uxpsvbgqBBy+ZUK+jbMuMaw4wyti7F6klQWuikBJAxhWpmRbhAB/jrq0PC82qlh5A==, tarball: https://registry.npmjs.org/@xn-sakina/rml-darwin-arm64/-/rml-darwin-arm64-2.6.0.tgz}
+  '@xn-sakina/rml-darwin-arm64@2.8.0':
+    resolution: {integrity: sha512-B8XpWn/t3vALCePi8DnbHQWVQnmKybwPIKbfzL1L75w2V/ELXn0OguFayujf2eZdmCIBPC+Drqxztn6fDV08Ww==, tarball: https://registry.npmjs.org/@xn-sakina/rml-darwin-arm64/-/rml-darwin-arm64-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [arm64]
     os: [darwin]
 
-  '@xn-sakina/rml-darwin-x64@2.6.0':
-    resolution: {integrity: sha512-85bsP7viqtgw5nVYBdl8I4c2+q4sYFcBMTeFnTf4RqhUUwBLerP7D+XXnWwv3waO+aZ0Fe0ij9Fji3oTiREOCg==, tarball: https://registry.npmjs.org/@xn-sakina/rml-darwin-x64/-/rml-darwin-x64-2.6.0.tgz}
+  '@xn-sakina/rml-darwin-x64@2.8.0':
+    resolution: {integrity: sha512-02UG6vhkzoTgQwkPJH8cnz7Pmqs0BChv4dq13pYqUtSSJr9BgPkSA5U8lXXmD76HpUOdN1ZH4K1jr2NOhwbPCw==, tarball: https://registry.npmjs.org/@xn-sakina/rml-darwin-x64/-/rml-darwin-x64-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [x64]
     os: [darwin]
 
-  '@xn-sakina/rml-linux-arm-gnueabihf@2.6.0':
-    resolution: {integrity: sha512-ySI529TPraG1Mf/YiKhLLNGJ1js0Y3BnZRAihUpF4IlyFKmeL3slXEdvK2tVndyX2O21EYWv/DcSAmFMNOolfA==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm-gnueabihf/-/rml-linux-arm-gnueabihf-2.6.0.tgz}
+  '@xn-sakina/rml-linux-arm-gnueabihf@2.8.0':
+    resolution: {integrity: sha512-T2S2aGm7mcyIUxkMAni+ClgWp4G8zDe6eApQRNK77G6D/6m25YDrMn+YmVs3TJOA9Qi4RoNaztihni6+B+IOHQ==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm-gnueabihf/-/rml-linux-arm-gnueabihf-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [arm]
     os: [linux]
 
-  '@xn-sakina/rml-linux-arm64-gnu@2.6.0':
-    resolution: {integrity: sha512-Ytzkmty4vVWAqe+mbu/ql5dqwUH49eVgPT38uJK78LTZRsdogxlQbuAoLKlb/N8CIXAE7BRoywz3lSEGToXylw==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm64-gnu/-/rml-linux-arm64-gnu-2.6.0.tgz}
+  '@xn-sakina/rml-linux-arm64-gnu@2.8.0':
+    resolution: {integrity: sha512-Vr9lz9vCXXDHaOzAChoxgPeCFn2vTLsZjmxJFBXXcUyN2ixoZacreHE2aro/XdOuX5yNClsIWsTrkZoBY3kAEw==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm64-gnu/-/rml-linux-arm64-gnu-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [arm64]
     os: [linux]
 
-  '@xn-sakina/rml-linux-arm64-musl@2.6.0':
-    resolution: {integrity: sha512-DIBSDWlTmWk+r6Xp7mL9Cw8DdWNyJGg7YhOV1sSSRykdGs2TNtS3z0nbHRuUBMqrbtDk0IwqFSepLx12Bix/zw==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm64-musl/-/rml-linux-arm64-musl-2.6.0.tgz}
+  '@xn-sakina/rml-linux-arm64-musl@2.8.0':
+    resolution: {integrity: sha512-GFDdj1+bzMwoyPhybM83f4aDrLLROYHVcC1+xHNa/zaRp/CI4j66fQwvw1YrTgs+Vk6ZLCm+HtKlA/BO8B9NjQ==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-arm64-musl/-/rml-linux-arm64-musl-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [arm64]
     os: [linux]
 
-  '@xn-sakina/rml-linux-x64-gnu@2.6.0':
-    resolution: {integrity: sha512-8Pks6hMicFGWYQmylKul7Gmn64pG4HkRL7skVWEPAF0LZHeI5yvV/EnQUnXXbxPp4Viy2H4420jl6BVS7Uetng==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-x64-gnu/-/rml-linux-x64-gnu-2.6.0.tgz}
+  '@xn-sakina/rml-linux-x64-gnu@2.8.0':
+    resolution: {integrity: sha512-2Lha6vIfI5pdIE2Odqovs9KHuJT8S7ql313pYXhUjsxi+da965kLfK1xk0dWs9eo6aEFp4+9Ny+XIIjG2agDZw==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-x64-gnu/-/rml-linux-x64-gnu-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [x64]
     os: [linux]
 
-  '@xn-sakina/rml-linux-x64-musl@2.6.0':
-    resolution: {integrity: sha512-xHX/rNKcATVrJt2no0FdO6kqnV4P5cP/3MgHA0KwhD/YJmWa66JIfWtzrPv9n/s0beGSorLkh8PLt5lVLFGvlQ==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-x64-musl/-/rml-linux-x64-musl-2.6.0.tgz}
+  '@xn-sakina/rml-linux-x64-musl@2.8.0':
+    resolution: {integrity: sha512-F2/JCzyqOEfFe62WbSf+4/rcK7pyjYpABGmopUJon5GSUVGXRVQOfkkqg6ceufw1ipQUCWsU3Cj0vmd0yvzkmg==, tarball: https://registry.npmjs.org/@xn-sakina/rml-linux-x64-musl/-/rml-linux-x64-musl-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [x64]
     os: [linux]
 
-  '@xn-sakina/rml-win32-arm64-msvc@2.6.0':
-    resolution: {integrity: sha512-aIOu5frDsxRp5naN6YjBtbCHS4K2WHIx2EClGclv3wGFrOn1oSROxpVOV/MODUuWITj/26pWbZ/tnbvva6ZV8A==, tarball: https://registry.npmjs.org/@xn-sakina/rml-win32-arm64-msvc/-/rml-win32-arm64-msvc-2.6.0.tgz}
+  '@xn-sakina/rml-win32-arm64-msvc@2.8.0':
+    resolution: {integrity: sha512-ikmzMj9OwRMMtFmE7D4aSi1K1G8C350orJz9ngLTj39p7l0NQeXQfQ0SOah5RQSNWV00XJriJBzVHkWS701xeA==, tarball: https://registry.npmjs.org/@xn-sakina/rml-win32-arm64-msvc/-/rml-win32-arm64-msvc-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [arm64]
     os: [win32]
 
-  '@xn-sakina/rml-win32-x64-msvc@2.6.0':
-    resolution: {integrity: sha512-XXbzy2gLEs6PpHdM2IUC5QujOIjz6LpSQpJ+ow43gVc7BhagIF5YlMyTFZCbJehjK9yNgPCzdrzsukCjsH5kIA==, tarball: https://registry.npmjs.org/@xn-sakina/rml-win32-x64-msvc/-/rml-win32-x64-msvc-2.6.0.tgz}
+  '@xn-sakina/rml-win32-x64-msvc@2.8.0':
+    resolution: {integrity: sha512-xeyoBIfccb7prfiUVLv0K+1HlLT4vnDfXHSkLpsp4wI0LtYR7sYbiGaMVgNdgR2nDHC+W+65inUHvhY5m7pbnw==, tarball: https://registry.npmjs.org/@xn-sakina/rml-win32-x64-msvc/-/rml-win32-x64-msvc-2.8.0.tgz}
     engines: {node: '>=14'}
     cpu: [x64]
     os: [win32]
 
-  rs-module-lexer@2.6.0:
-    resolution: {integrity: sha512-aT0lO0icZ3Hq0IWvo+ORgVc6BJDoKfaDBdRIDQkL2PtBnFQJ0DuvExiiWI4GxjEjH8Yyro++NPArHFaD8bvS9w==, tarball: https://registry.npmjs.org/rs-module-lexer/-/rs-module-lexer-2.6.0.tgz}
+  rs-module-lexer@2.8.0:
+    resolution: {integrity: sha512-/KvawAdE1TpykHA2mJwKcqqcgPj0Rqn0Dj7qqClHOTat17yZSmWFtE0eLmpzMnHQrQbPk0hY1e9ppK+3o3M0Uw==, tarball: https://registry.npmjs.org/rs-module-lexer/-/rs-module-lexer-2.8.0.tgz}
     engines: {node: '>=14'}
 
 snapshots:
 
-  '@xn-sakina/rml-darwin-arm64@2.6.0':
+  '@xn-sakina/rml-darwin-arm64@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-darwin-x64@2.6.0':
+  '@xn-sakina/rml-darwin-x64@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-linux-arm-gnueabihf@2.6.0':
+  '@xn-sakina/rml-linux-arm-gnueabihf@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-linux-arm64-gnu@2.6.0':
+  '@xn-sakina/rml-linux-arm64-gnu@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-linux-arm64-musl@2.6.0':
+  '@xn-sakina/rml-linux-arm64-musl@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-linux-x64-gnu@2.6.0':
+  '@xn-sakina/rml-linux-x64-gnu@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-linux-x64-musl@2.6.0':
+  '@xn-sakina/rml-linux-x64-musl@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-win32-arm64-msvc@2.6.0':
+  '@xn-sakina/rml-win32-arm64-msvc@2.8.0':
     optional: true
 
-  '@xn-sakina/rml-win32-x64-msvc@2.6.0':
+  '@xn-sakina/rml-win32-x64-msvc@2.8.0':
     optional: true
 
-  rs-module-lexer@2.6.0:
+  rs-module-lexer@2.8.0:
     optionalDependencies:
-      '@xn-sakina/rml-darwin-arm64': 2.6.0
-      '@xn-sakina/rml-darwin-x64': 2.6.0
-      '@xn-sakina/rml-linux-arm-gnueabihf': 2.6.0
-      '@xn-sakina/rml-linux-arm64-gnu': 2.6.0
-      '@xn-sakina/rml-linux-arm64-musl': 2.6.0
-      '@xn-sakina/rml-linux-x64-gnu': 2.6.0
-      '@xn-sakina/rml-linux-x64-musl': 2.6.0
-      '@xn-sakina/rml-win32-arm64-msvc': 2.6.0
-      '@xn-sakina/rml-win32-x64-msvc': 2.6.0
+      '@xn-sakina/rml-darwin-arm64': 2.8.0
+      '@xn-sakina/rml-darwin-x64': 2.8.0
+      '@xn-sakina/rml-linux-arm-gnueabihf': 2.8.0
+      '@xn-sakina/rml-linux-arm64-gnu': 2.8.0
+      '@xn-sakina/rml-linux-arm64-musl': 2.8.0
+      '@xn-sakina/rml-linux-x64-gnu': 2.8.0
+      '@xn-sakina/rml-linux-x64-musl': 2.8.0
+      '@xn-sakina/rml-win32-arm64-msvc': 2.8.0
+      '@xn-sakina/rml-win32-x64-msvc': 2.8.0
