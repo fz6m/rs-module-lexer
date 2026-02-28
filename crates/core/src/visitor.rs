@@ -6,9 +6,19 @@ use swc_common::{
 };
 use swc_ecmascript::ast::{self, ImportPhase};
 use swc_ecmascript::visit::{VisitMut, VisitMutWith};
+use swc_atoms::Wtf8Atom;
 
 use crate::constants::*;
 use crate::decl::{ExportSpecifier, ImportSpecifier, ImportType};
+
+pub trait Wtf8AtomExt {
+    fn to_string(&self) -> String;
+}
+impl Wtf8AtomExt for Wtf8Atom {
+    fn to_string(&self) -> String {
+        self.to_string_lossy().to_string()
+    }
+}
 
 pub struct ImportExportVisitor {
     pub imports: Vec<ImportSpecifier>,
