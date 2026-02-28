@@ -1,6 +1,6 @@
 {
   "name": "rs-module-lexer",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "ES module parser powered by Rust",
   "keywords": [
     "es-module-lexer",
