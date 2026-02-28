@@ -1,12 +1,12 @@
 use std::cmp;
 
+use swc_atoms::Wtf8Atom;
 use swc_common::{
     Spanned,
     {sync::Lrc, SourceFile, SourceMap, Span},
 };
 use swc_ecmascript::ast::{self, ImportPhase};
 use swc_ecmascript::visit::{VisitMut, VisitMutWith};
-use swc_atoms::Wtf8Atom;
 
 use crate::constants::*;
 use crate::decl::{ExportSpecifier, ImportSpecifier, ImportType};
@@ -67,6 +67,7 @@ impl ImportExportVisitor {
             let import_span = self.get_real_span(import.span);
             let src_span = self.get_real_span_without_quotes(import.src.span);
             let a = self.calc_assert(&import.with);
+            let attrs = self.get_attrs(&import.with);
             self.add_import(ImportSpecifier {
                 n: Some(name),
                 s: src_span.0,
@@ -76,6 +77,7 @@ impl ImportExportVisitor {
                 d: *NOT,
                 a,
                 t: ImportType::Static,
+                at: attrs,
             });
             return;
         }
@@ -102,6 +104,7 @@ impl ImportExportVisitor {
                 let src_span = self.get_real_span_without_quotes(import.src.span);
                 let import_span = self.get_real_span(import.span);
                 let a = self.calc_assert(&import.with);
+                let attrs = self.get_attrs(&import.with);
 
                 let t: Option<ImportType>;
 
@@ -130,6 +133,7 @@ impl ImportExportVisitor {
                         d: *NOT,
                         a,
                         t: t.unwrap(),
+                        at: attrs,
                     })
                 }
             }
@@ -497,6 +501,55 @@ impl ImportExportVisitor {
         }
     }
 
+    fn get_attrs(&self, asserts: &Option<Box<ast::ObjectLit>>) -> Option<Vec<Vec<String>>> {
+        if asserts.as_ref().is_some() {
+            let mut attrs = vec![];
+            asserts.as_ref().unwrap().props.iter().for_each(|obj| {
+                if let swc_ecmascript::ast::PropOrSpread::Prop(prop) = obj {
+                    match prop.as_ref() {
+                        swc_ecmascript::ast::Prop::KeyValue(kv) => {
+                            let mut attr_key: Option<String> = None;
+                            match &kv.key {
+                                // e.g. with { type: 'json' }
+                                //             ^^^^
+                                swc_ecmascript::ast::PropName::Ident(ident) => {
+                                    attr_key = Some(ident.sym.to_string());
+                                }
+                                // e.g. with { "type": 'json' }
+                                //             ^^^^^^
+                                swc_ecmascript::ast::PropName::Str(str) => {
+                                    attr_key = Some(str.value.to_string());
+                                }
+                                _ => {}
+                            }
+                            let mut attr_value: Option<String> = None;
+                            match kv.value.as_ref() {
+                                // e.g. with { type: 'json' }
+                                //                   ^^^^^^
+                                swc_ecmascript::ast::Expr::Lit(lit) => {
+                                    lit.as_str().map(|s| attr_value = Some(s.value.to_string()));
+                                }
+                                _ => {}
+                            }
+                            if attr_key.is_some() && attr_value.is_some() {
+                                let mut attr_pair = Vec::with_capacity(2);
+                                attr_pair.push(attr_key.unwrap().to_string());
+                                attr_pair.push(attr_value.unwrap().to_string());
+                                attrs.push(attr_pair);
+                            }
+                        }
+                        _ => {
+                            // ignore
+                        }
+                    }
+                }
+            });
+            Some(attrs)
+        } else {
+            None
+        }
+    }
+
     fn is_whitespace_by_u16(&self, value: u16) -> bool {
         let value_utf16 = [value];
         let is_whitespace = String::from_utf16(&value_utf16);
@@ -686,6 +739,7 @@ impl VisitMut for ImportExportVisitor {
                         let src_span = self.get_real_span_without_quotes(src.span);
                         let export_span = self.get_real_span(export.span);
                         let a = self.calc_assert(&export.with);
+                        let attrs = self.get_attrs(&export.with);
                         self.add_import(ImportSpecifier {
                             n: Some(name),
                             s: src_span.0,
@@ -695,6 +749,7 @@ impl VisitMut for ImportExportVisitor {
                             d: *NOT,
                             a,
                             t: ImportType::Static,
+                            at: attrs,
                         })
                     }
                 }
@@ -727,6 +782,7 @@ impl VisitMut for ImportExportVisitor {
                 let (start, end) = self.get_real_span_without_quotes(export.src.span);
                 let (ss, se) = self.get_real_span(export.span);
                 let a = self.calc_assert(&export.with);
+                let attrs = self.get_attrs(&export.with);
                 self.add_import(ImportSpecifier {
                     n: Some(name),
                     s: start,
@@ -736,6 +792,7 @@ impl VisitMut for ImportExportVisitor {
                     d: *NOT,
                     a,
                     t: ImportType::Static,
+                    at: attrs,
                 });
             }
             // export default function a () {}
@@ -767,6 +824,7 @@ impl VisitMut for ImportExportVisitor {
 
                     let mut name = None;
                     let mut a = *NOT;
+                    let attrs = None;
 
                     let (start, end) = self.get_real_span(arg.span());
 
@@ -822,6 +880,7 @@ impl VisitMut for ImportExportVisitor {
                             d,
                             a,
                             t: t.unwrap(),
+                            at: attrs,
                         });
                     }
                 }
@@ -854,6 +913,7 @@ impl VisitMut for ImportExportVisitor {
             d: *NOT_BECAUSE_META,
             a: *NOT,
             t: ImportType::ImportMeta,
+            at: None,
         });
         // `import.meta` can only appear in module
         self.set_module_syntax(true);

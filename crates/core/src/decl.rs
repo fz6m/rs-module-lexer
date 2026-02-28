@@ -86,6 +86,8 @@ pub struct ImportSpecifier {
     pub a: i32,
     #[doc = " Type of import statement "]
     pub t: ImportType,
+    #[doc = " Import attributes "]
+    pub at: Option<Vec<Vec<String>>>,
 }
 
 #[derive(Debug)]

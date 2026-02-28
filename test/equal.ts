@@ -32,7 +32,14 @@ export const isEqual = async (filename: string, code: string) => {
     console.log('rs-module-lexer imports: ', output[0].imports)
     console.log('es-module-lexer imports: ', result[0])
   }
-  expect(output[0].imports).toEqual(result[0])
+  const rsImports = output[0].imports.map((i) => {
+    if (!i.at) {
+      // @ts-expect-error
+      i.at = null
+    }
+    return i
+  })
+  expect(rsImports).toEqual(result[0])
   // export
   try {
     if (process.env.DEBUG_RESULT) {

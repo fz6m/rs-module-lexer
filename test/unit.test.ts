@@ -16,6 +16,19 @@ describe('Lexer', () => {
     await isEqual(FILENAME, source)
   })
 
+  test(`Import attributes parsing`, async () => {
+    const source = `
+      import foo from 'module' with { type: "json" }
+      import bar from 'module2' with { type: 'css', integrity: "sha384-abc" }
+      import { baz } from 'module3' with { "custom-key": "value" }
+      import * as ns from 'module4' with { type: "json" }
+      import 'module5' with { type: "json" }
+      import noAttrs from 'module6'
+    `
+
+    await isEqual(FILENAME, source)
+  })
+
   test('import types', async () => {
     const input = `
       // dynamic
