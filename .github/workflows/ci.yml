@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         settings:
-          - host: macos-14 # use x86 arch
+          - host: macos-15-intel # use x86 arch
             target: 'x86_64-apple-darwin'
             build: |
               pnpm build
