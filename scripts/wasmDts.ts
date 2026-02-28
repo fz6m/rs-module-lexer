@@ -17,6 +17,12 @@ const run = async () => {
     } else if (line.includes(`ImportType`)) {
       line = line.replace('ImportType', [1, 2, 3, 4, 5].join(' | '))
       newLines.push(line)
+    } else if (line.includes(`at: string[][] | null;`)) {
+      line = line.replace(
+        `at: string[][] | null;`,
+        'at: Array<[string, string]> | undefined;',
+      )
+      newLines.push(line)
     } else {
       // push
       newLines.push(line)

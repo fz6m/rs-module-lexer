@@ -2,8 +2,7 @@ import 'zx/globals'
 
 const run = async () => {
   const rootDts = path.join(__dirname, '../index.d.ts')
-  const wasmDts = path.join(__dirname, '../target/wasm/index.d.ts')
-  const notFound = !fs.existsSync(rootDts) && !fs.existsSync(wasmDts)
+  const notFound = !fs.existsSync(rootDts)
   if (notFound) {
     throw new Error('index.d.ts not found, please build first')
   }
@@ -25,12 +24,7 @@ const run = async () => {
     fs.writeFileSync(file, newContent, 'utf-8')
     console.log('🟢 index.d.ts has been post-processed successfully')
   }
-  if (fs.existsSync(rootDts)) {
-    patch(rootDts)
-  }
-  if (fs.existsSync(wasmDts)) {
-    patch(wasmDts)
-  }
+  patch(rootDts)
 }
 
 run()
