@@ -29,9 +29,8 @@
   ],
   "scripts": {
     "artifacts": "napi artifacts",
-    "build": "tsx ./scripts/build.ts",
+    "build": "napi build --cargo-cwd crates/binding_node --platform --js binding.js --release",
     "build:postprocess": "tsx ./scripts/postprocess.ts",
-    "build:napi": "napi build --cargo-cwd crates/binding_node --platform --js binding.js --release",
     "build:dev": "napi build --cargo-cwd crates/binding_node --platform --js binding.js",
     "build:wasm:dts": "tsx ./scripts/wasmDts.ts",
     "build:wasm:dev": "cd crates/binding_wasm && wasm-pack build --target nodejs --verbose --out-dir ../../target/wasm --out-name index --dev",

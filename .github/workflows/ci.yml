@@ -23,6 +23,7 @@ jobs:
             target: 'x86_64-apple-darwin'
             build: |
               pnpm build
+              pnpm build:postprocess
               strip -x *.node
           - host: macos-latest
             target: 'aarch64-apple-darwin'
@@ -33,13 +34,18 @@ jobs:
               SYSROOT=$(xcrun --sdk macosx --show-sdk-path);
               export CFLAGS="-isysroot $SYSROOT -isystem $SYSROOT";
               pnpm build --target aarch64-apple-darwin
+              pnpm build:postprocess
               strip -x *.node
           - host: windows-latest
             target: 'x86_64-pc-windows-msvc'
-            build: pnpm build
+            build: |
+              pnpm build
+              pnpm build:postprocess
           - host: windows-latest
             target: 'aarch64-pc-windows-msvc'
-            build: pnpm build --target aarch64-pc-windows-msvc
+            build: |
+              pnpm build --target aarch64-pc-windows-msvc
+              pnpm build:postprocess
           - host: ubuntu-latest
             target: 'x86_64-unknown-linux-gnu'
             docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-debian
@@ -48,6 +54,7 @@ jobs:
               corepack --version
               corepack enable
               pnpm build --target x86_64-unknown-linux-gnu
+              pnpm build:postprocess
               strip rs-module-lexer.linux-x64-gnu.node
           - host: ubuntu-latest
             target: 'x86_64-unknown-linux-musl'
@@ -57,6 +64,7 @@ jobs:
               corepack --version
               corepack enable
               pnpm build
+              pnpm build:postprocess
               llvm-strip -x rs-module-lexer.linux-x64-musl.node
           - host: ubuntu-latest
             target: 'aarch64-unknown-linux-gnu'
@@ -67,6 +75,7 @@ jobs:
               corepack enable
               rustup target add aarch64-unknown-linux-gnu
               pnpm build --target aarch64-unknown-linux-gnu
+              pnpm build:postprocess
               llvm-strip -x rs-module-lexer.linux-arm64-gnu.node
           - host: ubuntu-latest
             target: 'armv7-unknown-linux-gnueabihf'
@@ -75,6 +84,7 @@ jobs:
               sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf -y
             build: |
               pnpm build --target armv7-unknown-linux-gnueabihf
+              pnpm build:postprocess
               arm-linux-gnueabihf-strip rs-module-lexer.linux-arm-gnueabihf.node
           - host: ubuntu-latest
             target: 'aarch64-unknown-linux-musl'
@@ -86,6 +96,7 @@ jobs:
               rustup toolchain install $(cat ./rust-toolchain)
               rustup target add aarch64-unknown-linux-musl
               pnpm build --target aarch64-unknown-linux-musl
+              pnpm build:postprocess
               /aarch64-linux-musl-cross/bin/aarch64-linux-musl-strip *.node
 
     name: stable - ${{ matrix.settings.target }} - node@18
