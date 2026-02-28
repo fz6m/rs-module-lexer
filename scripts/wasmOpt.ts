@@ -6,7 +6,7 @@ const platform = os.platform()
 const arch = os.arch()
 
 const run = async () => {
-  const version = 'version_126'
+  const version = 'version_124'
   const platformMark =
     platform === 'darwin'
       ? 'macos'
