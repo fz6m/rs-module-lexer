@@ -1,12 +1,10 @@
 # rs-module-lexer
 
-ES module parser powered by Rust.
+ES module parser powered by Rust. Drop-in compatible with [es-module-lexer](https://github.com/guybedford/es-module-lexer).
 
-This package is a Rust version of [es-module-lexer](https://github.com/guybedford/es-module-lexer)
+### Why
 
-### Motivation
-
-`es-module-lexer` cannot parse `jsx` / `ts` / `tsx` files, we need transform `ts` to `js` using `esbuild` / `swc` first, and then parse :
+`es-module-lexer` only handles plain JS. Parsing `ts` / `tsx` / `jsx` requires a separate transform step first:
 
 ```ts
 import { parse } from 'es-module-lexer'
@@ -14,16 +12,22 @@ import { transformSync } from 'esbuild'
 
 // 1. transform ts to js
 const js = transformSync(ts)
-// 2. parse modules
+// 2. parse imports
 const result = parse(js)
 ```
 
-`rs-module-lexer` resolved this problem, it can parse the `ts(x)` file directly.
+`rs-module-lexer` collapses that into a single call. It parses `ts(x)` / `js(x)` directly, powered by SWC.
+
+### Just Use It
+
+Tools like [Oxc](https://github.com/oxc-project/oxc) and [SWC](https://github.com/swc-project/swc) already handle import parsing well, and sure, you could vibe one up. But even then, you still own the edge cases, spec drift, and the transform pipeline. This library takes care of all that, and it is compatible with the `es-module-lexer` data structure out of the box.
+
+SWC is not as performance-optimized as Oxc, but import parsing is never the bottleneck in a real build pipeline. Good enough is good enough here.
 
 ### Install
 
 ```bash
-  pnpm i -D rs-module-lexer
+pnpm i -D rs-module-lexer
 ```
 
 ### Usage
@@ -51,9 +55,11 @@ console.log(output[0].imports)
 console.log(output[0].exports)
 ```
 
-For details of the parse results, please see [`es-module-lexer`](https://github.com/guybedford/es-module-lexer).
+For the full result shape, see [`es-module-lexer`](https://github.com/guybedford/es-module-lexer).
 
-#### Migration from `es-module-lexer`
+The API accepts multiple files in one call. Syntax is auto-detected from the `filename` extension.
+
+#### Migrate from `es-module-lexer`
 
 ```diff
 - import { init, parse } from 'es-module-lexer'
@@ -63,19 +69,6 @@ For details of the parse results, please see [`es-module-lexer`](https://github.
 + import { parseAsync } from 'rs-module-lexer'
 + const { output } = await parseAsync({ input: [{ filename: 'index.ts', code }] })
 + const { imports, exports, facade, hasModuleSyntax } = output[0]
-```
-
-`rs-module-lexer` can parse multiple files at once, the syntax is auto detect based on `filename`.
-
-### Benchmark
-
-```bash
-[TS]
-es-module-lexer average: 262.2ms 
-rs-module-lexer average: 23.2ms 🎉
-[JS]
-es-module-lexer average: 38.2ms 
-rs-module-lexer average: 24.1ms 🎉
 ```
 
 ### License

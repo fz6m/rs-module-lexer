@@ -29,7 +29,6 @@
   ],
   "scripts": {
     "artifacts": "napi artifacts",
-    "bench": "tsx ./scripts/bench.ts",
     "build": "pnpm build:napi && pnpm build:postprocess",
     "build:postprocess": "tsx ./scripts/postprocess.ts",
     "build:napi": "napi build --cargo-cwd crates/binding_node --platform --js binding.js --release",
