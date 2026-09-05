@@ -30,6 +30,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480434,
       "n": "version",
       "s": 480434,
+      "ss": 480425,
     },
     {
       "e": 480464,
@@ -38,6 +39,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480443,
       "n": "bisect",
       "s": 480458,
+      "ss": 480425,
     },
     {
       "e": 480477,
@@ -46,6 +48,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480466,
       "n": "bisectRight",
       "s": 480466,
+      "ss": 480425,
     },
     {
       "e": 480489,
@@ -54,6 +57,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480479,
       "n": "bisectLeft",
       "s": 480479,
+      "ss": 480425,
     },
     {
       "e": 480500,
@@ -62,6 +66,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480491,
       "n": "ascending",
       "s": 480491,
+      "ss": 480425,
     },
     {
       "e": 480510,
@@ -70,6 +75,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480502,
       "n": "bisector",
       "s": 480502,
+      "ss": 480425,
     },
     {
       "e": 480517,
@@ -78,6 +84,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480512,
       "n": "cross",
       "s": 480512,
+      "ss": 480425,
     },
     {
       "e": 480529,
@@ -86,6 +93,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480519,
       "n": "descending",
       "s": 480519,
+      "ss": 480425,
     },
     {
       "e": 480540,
@@ -94,6 +102,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480531,
       "n": "deviation",
       "s": 480531,
+      "ss": 480425,
     },
     {
       "e": 480548,
@@ -102,6 +111,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480542,
       "n": "extent",
       "s": 480542,
+      "ss": 480425,
     },
     {
       "e": 480559,
@@ -110,6 +120,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480550,
       "n": "histogram",
       "s": 480550,
+      "ss": 480425,
     },
     {
       "e": 480606,
@@ -118,6 +129,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480561,
       "n": "thresholdFreedmanDiaconis",
       "s": 480581,
+      "ss": 480425,
     },
     {
       "e": 480631,
@@ -126,6 +138,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480608,
       "n": "thresholdScott",
       "s": 480617,
+      "ss": 480425,
     },
     {
       "e": 480649,
@@ -134,6 +147,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480633,
       "n": "thresholdSturges",
       "s": 480633,
+      "ss": 480425,
     },
     {
       "e": 480654,
@@ -142,6 +156,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480651,
       "n": "max",
       "s": 480651,
+      "ss": 480425,
     },
     {
       "e": 480660,
@@ -150,6 +165,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480656,
       "n": "mean",
       "s": 480656,
+      "ss": 480425,
     },
     {
       "e": 480668,
@@ -158,6 +174,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480662,
       "n": "median",
       "s": 480662,
+      "ss": 480425,
     },
     {
       "e": 480675,
@@ -166,6 +183,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480670,
       "n": "merge",
       "s": 480670,
+      "ss": 480425,
     },
     {
       "e": 480680,
@@ -174,6 +192,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480677,
       "n": "min",
       "s": 480677,
+      "ss": 480425,
     },
     {
       "e": 480687,
@@ -182,6 +201,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480682,
       "n": "pairs",
       "s": 480682,
+      "ss": 480425,
     },
     {
       "e": 480696,
@@ -190,6 +210,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480689,
       "n": "permute",
       "s": 480689,
+      "ss": 480425,
     },
     {
       "e": 480719,
@@ -198,6 +219,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480698,
       "n": "quantile",
       "s": 480711,
+      "ss": 480425,
     },
     {
       "e": 480738,
@@ -206,6 +228,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480721,
       "n": "range",
       "s": 480733,
+      "ss": 480425,
     },
     {
       "e": 480744,
@@ -214,6 +237,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480740,
       "n": "scan",
       "s": 480740,
+      "ss": 480425,
     },
     {
       "e": 480753,
@@ -222,6 +246,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480746,
       "n": "shuffle",
       "s": 480746,
+      "ss": 480425,
     },
     {
       "e": 480758,
@@ -230,6 +255,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480755,
       "n": "sum",
       "s": 480755,
+      "ss": 480425,
     },
     {
       "e": 480765,
@@ -238,6 +264,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480760,
       "n": "ticks",
       "s": 480760,
+      "ss": 480425,
     },
     {
       "e": 480780,
@@ -246,6 +273,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480767,
       "n": "tickIncrement",
       "s": 480767,
+      "ss": 480425,
     },
     {
       "e": 480790,
@@ -254,6 +282,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480782,
       "n": "tickStep",
       "s": 480782,
+      "ss": 480425,
     },
     {
       "e": 480801,
@@ -262,6 +291,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480792,
       "n": "transpose",
       "s": 480792,
+      "ss": 480425,
     },
     {
       "e": 480811,
@@ -270,6 +300,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480803,
       "n": "variance",
       "s": 480803,
+      "ss": 480425,
     },
     {
       "e": 480816,
@@ -278,6 +309,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480813,
       "n": "zip",
       "s": 480813,
+      "ss": 480425,
     },
     {
       "e": 480825,
@@ -286,6 +318,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480818,
       "n": "axisTop",
       "s": 480818,
+      "ss": 480425,
     },
     {
       "e": 480836,
@@ -294,6 +327,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480827,
       "n": "axisRight",
       "s": 480827,
+      "ss": 480425,
     },
     {
       "e": 480848,
@@ -302,6 +336,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480838,
       "n": "axisBottom",
       "s": 480838,
+      "ss": 480425,
     },
     {
       "e": 480858,
@@ -310,6 +345,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480850,
       "n": "axisLeft",
       "s": 480850,
+      "ss": 480425,
     },
     {
       "e": 480865,
@@ -318,6 +354,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480860,
       "n": "brush",
       "s": 480860,
+      "ss": 480425,
     },
     {
       "e": 480873,
@@ -326,6 +363,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480867,
       "n": "brushX",
       "s": 480867,
+      "ss": 480425,
     },
     {
       "e": 480881,
@@ -334,6 +372,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480875,
       "n": "brushY",
       "s": 480875,
+      "ss": 480425,
     },
     {
       "e": 480897,
@@ -342,6 +381,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480883,
       "n": "brushSelection",
       "s": 480883,
+      "ss": 480425,
     },
     {
       "e": 480904,
@@ -350,6 +390,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480899,
       "n": "chord",
       "s": 480899,
+      "ss": 480425,
     },
     {
       "e": 480912,
@@ -358,6 +399,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480906,
       "n": "ribbon",
       "s": 480906,
+      "ss": 480425,
     },
     {
       "e": 480918,
@@ -366,6 +408,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480914,
       "n": "nest",
       "s": 480914,
+      "ss": 480425,
     },
     {
       "e": 480932,
@@ -374,6 +417,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480920,
       "n": "set",
       "s": 480929,
+      "ss": 480425,
     },
     {
       "e": 480946,
@@ -382,6 +426,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480934,
       "n": "map",
       "s": 480943,
+      "ss": 480425,
     },
     {
       "e": 480952,
@@ -390,6 +435,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480948,
       "n": "keys",
       "s": 480948,
+      "ss": 480425,
     },
     {
       "e": 480960,
@@ -398,6 +444,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480954,
       "n": "values",
       "s": 480954,
+      "ss": 480425,
     },
     {
       "e": 480969,
@@ -406,6 +453,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480962,
       "n": "entries",
       "s": 480962,
+      "ss": 480425,
     },
     {
       "e": 480976,
@@ -414,6 +462,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480971,
       "n": "color",
       "s": 480971,
+      "ss": 480425,
     },
     {
       "e": 480981,
@@ -422,6 +471,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480978,
       "n": "rgb",
       "s": 480978,
+      "ss": 480425,
     },
     {
       "e": 480986,
@@ -430,6 +480,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480983,
       "n": "hsl",
       "s": 480983,
+      "ss": 480425,
     },
     {
       "e": 480991,
@@ -438,6 +489,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480988,
       "n": "lab",
       "s": 480988,
+      "ss": 480425,
     },
     {
       "e": 480996,
@@ -446,6 +498,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480993,
       "n": "hcl",
       "s": 480993,
+      "ss": 480425,
     },
     {
       "e": 481001,
@@ -454,6 +507,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 480998,
       "n": "lch",
       "s": 480998,
+      "ss": 480425,
     },
     {
       "e": 481007,
@@ -462,6 +516,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481003,
       "n": "gray",
       "s": 481003,
+      "ss": 480425,
     },
     {
       "e": 481018,
@@ -470,6 +525,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481009,
       "n": "cubehelix",
       "s": 481009,
+      "ss": 480425,
     },
     {
       "e": 481028,
@@ -478,6 +534,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481020,
       "n": "contours",
       "s": 481020,
+      "ss": 480425,
     },
     {
       "e": 481055,
@@ -486,6 +543,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481030,
       "n": "contourDensity",
       "s": 481041,
+      "ss": 480425,
     },
     {
       "e": 481065,
@@ -494,6 +552,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481057,
       "n": "dispatch",
       "s": 481057,
+      "ss": 480425,
     },
     {
       "e": 481071,
@@ -502,6 +561,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481067,
       "n": "drag",
       "s": 481067,
+      "ss": 480425,
     },
     {
       "e": 481084,
@@ -510,6 +570,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481073,
       "n": "dragDisable",
       "s": 481073,
+      "ss": 480425,
     },
     {
       "e": 481107,
@@ -518,6 +579,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481086,
       "n": "dragEnable",
       "s": 481097,
+      "ss": 480425,
     },
     {
       "e": 481118,
@@ -526,6 +588,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481109,
       "n": "dsvFormat",
       "s": 481109,
+      "ss": 480425,
     },
     {
       "e": 481128,
@@ -534,6 +597,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481120,
       "n": "csvParse",
       "s": 481120,
+      "ss": 480425,
     },
     {
       "e": 481142,
@@ -542,6 +606,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481130,
       "n": "csvParseRows",
       "s": 481130,
+      "ss": 480425,
     },
     {
       "e": 481153,
@@ -550,6 +615,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481144,
       "n": "csvFormat",
       "s": 481144,
+      "ss": 480425,
     },
     {
       "e": 481168,
@@ -558,6 +624,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481155,
       "n": "csvFormatRows",
       "s": 481155,
+      "ss": 480425,
     },
     {
       "e": 481178,
@@ -566,6 +633,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481170,
       "n": "tsvParse",
       "s": 481170,
+      "ss": 480425,
     },
     {
       "e": 481192,
@@ -574,6 +642,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481180,
       "n": "tsvParseRows",
       "s": 481180,
+      "ss": 480425,
     },
     {
       "e": 481203,
@@ -582,6 +651,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481194,
       "n": "tsvFormat",
       "s": 481194,
+      "ss": 480425,
     },
     {
       "e": 481218,
@@ -590,6 +660,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481205,
       "n": "tsvFormatRows",
       "s": 481205,
+      "ss": 480425,
     },
     {
       "e": 481242,
@@ -598,6 +669,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481220,
       "n": "easeLinear",
       "s": 481232,
+      "ss": 480425,
     },
     {
       "e": 481265,
@@ -606,6 +678,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481244,
       "n": "easeQuad",
       "s": 481257,
+      "ss": 480425,
     },
     {
       "e": 481287,
@@ -614,6 +687,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481267,
       "n": "easeQuadIn",
       "s": 481277,
+      "ss": 480425,
     },
     {
       "e": 481311,
@@ -622,6 +696,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481289,
       "n": "easeQuadOut",
       "s": 481300,
+      "ss": 480425,
     },
     {
       "e": 481339,
@@ -630,6 +705,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481313,
       "n": "easeQuadInOut",
       "s": 481326,
+      "ss": 480425,
     },
     {
       "e": 481364,
@@ -638,6 +714,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481341,
       "n": "easeCubic",
       "s": 481355,
+      "ss": 480425,
     },
     {
       "e": 481388,
@@ -646,6 +723,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481366,
       "n": "easeCubicIn",
       "s": 481377,
+      "ss": 480425,
     },
     {
       "e": 481414,
@@ -654,6 +732,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481390,
       "n": "easeCubicOut",
       "s": 481402,
+      "ss": 480425,
     },
     {
       "e": 481444,
@@ -662,6 +741,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481416,
       "n": "easeCubicInOut",
       "s": 481430,
+      "ss": 480425,
     },
     {
       "e": 481467,
@@ -670,6 +750,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481446,
       "n": "easePoly",
       "s": 481459,
+      "ss": 480425,
     },
     {
       "e": 481489,
@@ -678,6 +759,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481469,
       "n": "easePolyIn",
       "s": 481479,
+      "ss": 480425,
     },
     {
       "e": 481513,
@@ -686,6 +768,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481491,
       "n": "easePolyOut",
       "s": 481502,
+      "ss": 480425,
     },
     {
       "e": 481541,
@@ -694,6 +777,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481515,
       "n": "easePolyInOut",
       "s": 481528,
+      "ss": 480425,
     },
     {
       "e": 481562,
@@ -702,6 +786,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481543,
       "n": "easeSin",
       "s": 481555,
+      "ss": 480425,
     },
     {
       "e": 481582,
@@ -710,6 +795,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481564,
       "n": "easeSinIn",
       "s": 481573,
+      "ss": 480425,
     },
     {
       "e": 481604,
@@ -718,6 +804,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481584,
       "n": "easeSinOut",
       "s": 481594,
+      "ss": 480425,
     },
     {
       "e": 481630,
@@ -726,6 +813,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481606,
       "n": "easeSinInOut",
       "s": 481618,
+      "ss": 480425,
     },
     {
       "e": 481651,
@@ -734,6 +822,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481632,
       "n": "easeExp",
       "s": 481644,
+      "ss": 480425,
     },
     {
       "e": 481671,
@@ -742,6 +831,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481653,
       "n": "easeExpIn",
       "s": 481662,
+      "ss": 480425,
     },
     {
       "e": 481693,
@@ -750,6 +840,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481673,
       "n": "easeExpOut",
       "s": 481683,
+      "ss": 480425,
     },
     {
       "e": 481719,
@@ -758,6 +849,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481695,
       "n": "easeExpInOut",
       "s": 481707,
+      "ss": 480425,
     },
     {
       "e": 481746,
@@ -766,6 +858,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481721,
       "n": "easeCircle",
       "s": 481736,
+      "ss": 480425,
     },
     {
       "e": 481772,
@@ -774,6 +867,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481748,
       "n": "easeCircleIn",
       "s": 481760,
+      "ss": 480425,
     },
     {
       "e": 481800,
@@ -782,6 +876,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481774,
       "n": "easeCircleOut",
       "s": 481787,
+      "ss": 480425,
     },
     {
       "e": 481832,
@@ -790,6 +885,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481802,
       "n": "easeCircleInOut",
       "s": 481817,
+      "ss": 480425,
     },
     {
       "e": 481857,
@@ -798,6 +894,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481834,
       "n": "easeBounce",
       "s": 481847,
+      "ss": 480425,
     },
     {
       "e": 481883,
@@ -806,6 +903,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481859,
       "n": "easeBounceIn",
       "s": 481871,
+      "ss": 480425,
     },
     {
       "e": 481911,
@@ -814,6 +912,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481885,
       "n": "easeBounceOut",
       "s": 481898,
+      "ss": 480425,
     },
     {
       "e": 481943,
@@ -822,6 +921,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481913,
       "n": "easeBounceInOut",
       "s": 481928,
+      "ss": 480425,
     },
     {
       "e": 481966,
@@ -830,6 +930,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481945,
       "n": "easeBack",
       "s": 481958,
+      "ss": 480425,
     },
     {
       "e": 481988,
@@ -838,6 +939,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481968,
       "n": "easeBackIn",
       "s": 481978,
+      "ss": 480425,
     },
     {
       "e": 482012,
@@ -846,6 +948,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 481990,
       "n": "easeBackOut",
       "s": 482001,
+      "ss": 480425,
     },
     {
       "e": 482040,
@@ -854,6 +957,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482014,
       "n": "easeBackInOut",
       "s": 482027,
+      "ss": 480425,
     },
     {
       "e": 482067,
@@ -862,6 +966,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482042,
       "n": "easeElastic",
       "s": 482056,
+      "ss": 480425,
     },
     {
       "e": 482095,
@@ -870,6 +975,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482069,
       "n": "easeElasticIn",
       "s": 482082,
+      "ss": 480425,
     },
     {
       "e": 482125,
@@ -878,6 +984,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482097,
       "n": "easeElasticOut",
       "s": 482111,
+      "ss": 480425,
     },
     {
       "e": 482159,
@@ -886,6 +993,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482127,
       "n": "easeElasticInOut",
       "s": 482143,
+      "ss": 480425,
     },
     {
       "e": 482165,
@@ -894,6 +1002,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482161,
       "n": "blob",
       "s": 482161,
+      "ss": 480425,
     },
     {
       "e": 482173,
@@ -902,6 +1011,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482167,
       "n": "buffer",
       "s": 482167,
+      "ss": 480425,
     },
     {
       "e": 482178,
@@ -910,6 +1020,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482175,
       "n": "dsv",
       "s": 482175,
+      "ss": 480425,
     },
     {
       "e": 482192,
@@ -918,6 +1029,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482180,
       "n": "csv",
       "s": 482189,
+      "ss": 480425,
     },
     {
       "e": 482206,
@@ -926,6 +1038,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482194,
       "n": "tsv",
       "s": 482203,
+      "ss": 480425,
     },
     {
       "e": 482213,
@@ -934,6 +1047,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482208,
       "n": "image",
       "s": 482208,
+      "ss": 480425,
     },
     {
       "e": 482219,
@@ -942,6 +1056,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482215,
       "n": "json",
       "s": 482215,
+      "ss": 480425,
     },
     {
       "e": 482225,
@@ -950,6 +1065,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482221,
       "n": "text",
       "s": 482221,
+      "ss": 480425,
     },
     {
       "e": 482230,
@@ -958,6 +1074,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482227,
       "n": "xml",
       "s": 482227,
+      "ss": 480425,
     },
     {
       "e": 482236,
@@ -966,6 +1083,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482232,
       "n": "html",
       "s": 482232,
+      "ss": 480425,
     },
     {
       "e": 482241,
@@ -974,6 +1092,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482238,
       "n": "svg",
       "s": 482238,
+      "ss": 480425,
     },
     {
       "e": 482266,
@@ -982,6 +1101,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482243,
       "n": "forceCenter",
       "s": 482255,
+      "ss": 480425,
     },
     {
       "e": 482291,
@@ -990,6 +1110,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482268,
       "n": "forceCollide",
       "s": 482279,
+      "ss": 480425,
     },
     {
       "e": 482310,
@@ -998,6 +1119,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482293,
       "n": "forceLink",
       "s": 482301,
+      "ss": 480425,
     },
     {
       "e": 482337,
@@ -1006,6 +1128,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482312,
       "n": "forceManyBody",
       "s": 482324,
+      "ss": 480425,
     },
     {
       "e": 482360,
@@ -1014,6 +1137,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482339,
       "n": "forceRadial",
       "s": 482349,
+      "ss": 480425,
     },
     {
       "e": 482391,
@@ -1022,6 +1146,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482362,
       "n": "forceSimulation",
       "s": 482376,
+      "ss": 480425,
     },
     {
       "e": 482406,
@@ -1030,6 +1155,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482393,
       "n": "forceX",
       "s": 482400,
+      "ss": 480425,
     },
     {
       "e": 482421,
@@ -1038,6 +1164,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482408,
       "n": "forceY",
       "s": 482415,
+      "ss": 480425,
     },
     {
       "e": 482459,
@@ -1046,6 +1173,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482423,
       "n": "formatDefaultLocale",
       "s": 482440,
+      "ss": 480425,
     },
     {
       "e": 482467,
@@ -1054,6 +1182,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482461,
       "n": "format",
       "s": 482461,
+      "ss": 480425,
     },
     {
       "e": 482481,
@@ -1062,6 +1191,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482469,
       "n": "formatPrefix",
       "s": 482469,
+      "ss": 480425,
     },
     {
       "e": 482495,
@@ -1070,6 +1200,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482483,
       "n": "formatLocale",
       "s": 482483,
+      "ss": 480425,
     },
     {
       "e": 482512,
@@ -1078,6 +1209,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482497,
       "n": "formatSpecifier",
       "s": 482497,
+      "ss": 480425,
     },
     {
       "e": 482528,
@@ -1086,6 +1218,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482514,
       "n": "precisionFixed",
       "s": 482514,
+      "ss": 480425,
     },
     {
       "e": 482545,
@@ -1094,6 +1227,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482530,
       "n": "precisionPrefix",
       "s": 482530,
+      "ss": 480425,
     },
     {
       "e": 482561,
@@ -1102,6 +1236,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482547,
       "n": "precisionRound",
       "s": 482547,
+      "ss": 480425,
     },
     {
       "e": 482580,
@@ -1110,6 +1245,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482563,
       "n": "geoArea",
       "s": 482573,
+      "ss": 480425,
     },
     {
       "e": 482601,
@@ -1118,6 +1254,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482582,
       "n": "geoBounds",
       "s": 482592,
+      "ss": 480425,
     },
     {
       "e": 482626,
@@ -1126,6 +1263,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482603,
       "n": "geoCentroid",
       "s": 482615,
+      "ss": 480425,
     },
     {
       "e": 482647,
@@ -1134,6 +1272,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482628,
       "n": "geoCircle",
       "s": 482638,
+      "ss": 480425,
     },
     {
       "e": 482688,
@@ -1142,6 +1281,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482649,
       "n": "geoClipAntimeridian",
       "s": 482669,
+      "ss": 480425,
     },
     {
       "e": 482717,
@@ -1150,6 +1290,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482690,
       "n": "geoClipCircle",
       "s": 482704,
+      "ss": 480425,
     },
     {
       "e": 482744,
@@ -1158,6 +1299,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482719,
       "n": "geoClipExtent",
       "s": 482731,
+      "ss": 480425,
     },
     {
       "e": 482779,
@@ -1166,6 +1308,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482746,
       "n": "geoClipRectangle",
       "s": 482763,
+      "ss": 480425,
     },
     {
       "e": 482806,
@@ -1174,6 +1317,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482781,
       "n": "geoContains",
       "s": 482795,
+      "ss": 480425,
     },
     {
       "e": 482831,
@@ -1182,6 +1326,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482808,
       "n": "geoDistance",
       "s": 482820,
+      "ss": 480425,
     },
     {
       "e": 482858,
@@ -1190,6 +1335,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482833,
       "n": "geoGraticule",
       "s": 482846,
+      "ss": 480425,
     },
     {
       "e": 482889,
@@ -1198,6 +1344,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482860,
       "n": "geoGraticule10",
       "s": 482875,
+      "ss": 480425,
     },
     {
       "e": 482922,
@@ -1206,6 +1353,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482891,
       "n": "geoInterpolate",
       "s": 482908,
+      "ss": 480425,
     },
     {
       "e": 482945,
@@ -1214,6 +1362,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482924,
       "n": "geoLength",
       "s": 482936,
+      "ss": 480425,
     },
     {
       "e": 482965,
@@ -1222,6 +1371,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482947,
       "n": "geoPath",
       "s": 482958,
+      "ss": 480425,
     },
     {
       "e": 482986,
@@ -1230,6 +1380,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482967,
       "n": "geoAlbers",
       "s": 482977,
+      "ss": 480425,
     },
     {
       "e": 483013,
@@ -1238,6 +1389,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 482988,
       "n": "geoAlbersUsa",
       "s": 483001,
+      "ss": 480425,
     },
     {
       "e": 483058,
@@ -1246,6 +1398,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483015,
       "n": "geoAzimuthalEqualArea",
       "s": 483037,
+      "ss": 480425,
     },
     {
       "e": 483109,
@@ -1254,6 +1407,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483060,
       "n": "geoAzimuthalEqualAreaRaw",
       "s": 483085,
+      "ss": 480425,
     },
     {
       "e": 483158,
@@ -1262,6 +1416,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483111,
       "n": "geoAzimuthalEquidistant",
       "s": 483135,
+      "ss": 480425,
     },
     {
       "e": 483213,
@@ -1270,6 +1425,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483160,
       "n": "geoAzimuthalEquidistantRaw",
       "s": 483187,
+      "ss": 480425,
     },
     {
       "e": 483250,
@@ -1278,6 +1434,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483215,
       "n": "geoConicConformal",
       "s": 483233,
+      "ss": 480425,
     },
     {
       "e": 483293,
@@ -1286,6 +1443,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483252,
       "n": "geoConicConformalRaw",
       "s": 483273,
+      "ss": 480425,
     },
     {
       "e": 483330,
@@ -1294,6 +1452,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483295,
       "n": "geoConicEqualArea",
       "s": 483313,
+      "ss": 480425,
     },
     {
       "e": 483373,
@@ -1302,6 +1461,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483332,
       "n": "geoConicEqualAreaRaw",
       "s": 483353,
+      "ss": 480425,
     },
     {
       "e": 483414,
@@ -1310,6 +1470,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483375,
       "n": "geoConicEquidistant",
       "s": 483395,
+      "ss": 480425,
     },
     {
       "e": 483461,
@@ -1318,6 +1479,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483416,
       "n": "geoConicEquidistantRaw",
       "s": 483439,
+      "ss": 480425,
     },
     {
       "e": 483490,
@@ -1326,6 +1488,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483463,
       "n": "geoEqualEarth",
       "s": 483477,
+      "ss": 480425,
     },
     {
       "e": 483525,
@@ -1334,6 +1497,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483492,
       "n": "geoEqualEarthRaw",
       "s": 483509,
+      "ss": 480425,
     },
     {
       "e": 483564,
@@ -1342,6 +1506,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483527,
       "n": "geoEquirectangular",
       "s": 483546,
+      "ss": 480425,
     },
     {
       "e": 483609,
@@ -1350,6 +1515,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483566,
       "n": "geoEquirectangularRaw",
       "s": 483588,
+      "ss": 480425,
     },
     {
       "e": 483634,
@@ -1358,6 +1524,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483611,
       "n": "geoGnomonic",
       "s": 483623,
+      "ss": 480425,
     },
     {
       "e": 483665,
@@ -1366,6 +1533,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483636,
       "n": "geoGnomonicRaw",
       "s": 483651,
+      "ss": 480425,
     },
     {
       "e": 483692,
@@ -1374,6 +1542,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483667,
       "n": "geoIdentity",
       "s": 483681,
+      "ss": 480425,
     },
     {
       "e": 483721,
@@ -1382,6 +1551,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483694,
       "n": "geoProjection",
       "s": 483708,
+      "ss": 480425,
     },
     {
       "e": 483764,
@@ -1390,6 +1560,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483723,
       "n": "geoProjectionMutator",
       "s": 483744,
+      "ss": 480425,
     },
     {
       "e": 483789,
@@ -1398,6 +1569,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483766,
       "n": "geoMercator",
       "s": 483778,
+      "ss": 480425,
     },
     {
       "e": 483820,
@@ -1406,6 +1578,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483791,
       "n": "geoMercatorRaw",
       "s": 483806,
+      "ss": 480425,
     },
     {
       "e": 483855,
@@ -1414,6 +1587,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483822,
       "n": "geoNaturalEarth1",
       "s": 483839,
+      "ss": 480425,
     },
     {
       "e": 483896,
@@ -1422,6 +1596,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483857,
       "n": "geoNaturalEarth1Raw",
       "s": 483877,
+      "ss": 480425,
     },
     {
       "e": 483929,
@@ -1430,6 +1605,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483898,
       "n": "geoOrthographic",
       "s": 483914,
+      "ss": 480425,
     },
     {
       "e": 483968,
@@ -1438,6 +1614,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483931,
       "n": "geoOrthographicRaw",
       "s": 483950,
+      "ss": 480425,
     },
     {
       "e": 484003,
@@ -1446,6 +1623,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 483970,
       "n": "geoStereographic",
       "s": 483987,
+      "ss": 480425,
     },
     {
       "e": 484044,
@@ -1454,6 +1632,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484005,
       "n": "geoStereographicRaw",
       "s": 484025,
+      "ss": 480425,
     },
     {
       "e": 484089,
@@ -1462,6 +1641,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484046,
       "n": "geoTransverseMercator",
       "s": 484068,
+      "ss": 480425,
     },
     {
       "e": 484140,
@@ -1470,6 +1650,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484091,
       "n": "geoTransverseMercatorRaw",
       "s": 484116,
+      "ss": 480425,
     },
     {
       "e": 484165,
@@ -1478,6 +1659,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484142,
       "n": "geoRotation",
       "s": 484154,
+      "ss": 480425,
     },
     {
       "e": 484176,
@@ -1486,6 +1668,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484167,
       "n": "geoStream",
       "s": 484167,
+      "ss": 480425,
     },
     {
       "e": 484203,
@@ -1494,6 +1677,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484178,
       "n": "geoTransform",
       "s": 484191,
+      "ss": 480425,
     },
     {
       "e": 484212,
@@ -1502,6 +1686,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484205,
       "n": "cluster",
       "s": 484205,
+      "ss": 480425,
     },
     {
       "e": 484223,
@@ -1510,6 +1695,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484214,
       "n": "hierarchy",
       "s": 484214,
+      "ss": 480425,
     },
     {
       "e": 484240,
@@ -1518,6 +1704,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484225,
       "n": "pack",
       "s": 484236,
+      "ss": 480425,
     },
     {
       "e": 484266,
@@ -1526,6 +1713,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484242,
       "n": "packSiblings",
       "s": 484254,
+      "ss": 480425,
     },
     {
       "e": 484290,
@@ -1534,6 +1722,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484268,
       "n": "packEnclose",
       "s": 484279,
+      "ss": 480425,
     },
     {
       "e": 484301,
@@ -1542,6 +1731,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484292,
       "n": "partition",
       "s": 484292,
+      "ss": 480425,
     },
     {
       "e": 484311,
@@ -1550,6 +1740,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484303,
       "n": "stratify",
       "s": 484303,
+      "ss": 480425,
     },
     {
       "e": 484317,
@@ -1558,6 +1749,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484313,
       "n": "tree",
       "s": 484313,
+      "ss": 480425,
     },
     {
       "e": 484337,
@@ -1566,6 +1758,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484319,
       "n": "treemap",
       "s": 484330,
+      "ss": 480425,
     },
     {
       "e": 484362,
@@ -1574,6 +1767,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484339,
       "n": "treemapBinary",
       "s": 484349,
+      "ss": 480425,
     },
     {
       "e": 484375,
@@ -1582,6 +1776,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484364,
       "n": "treemapDice",
       "s": 484364,
+      "ss": 480425,
     },
     {
       "e": 484389,
@@ -1590,6 +1785,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484377,
       "n": "treemapSlice",
       "s": 484377,
+      "ss": 480425,
     },
     {
       "e": 484420,
@@ -1598,6 +1794,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484391,
       "n": "treemapSliceDice",
       "s": 484404,
+      "ss": 480425,
     },
     {
       "e": 484449,
@@ -1606,6 +1803,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484422,
       "n": "treemapSquarify",
       "s": 484434,
+      "ss": 480425,
     },
     {
       "e": 484482,
@@ -1614,6 +1812,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484451,
       "n": "treemapResquarify",
       "s": 484465,
+      "ss": 480425,
     },
     {
       "e": 484515,
@@ -1622,6 +1821,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484484,
       "n": "interpolate",
       "s": 484504,
+      "ss": 480425,
     },
     {
       "e": 484544,
@@ -1630,6 +1830,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484517,
       "n": "interpolateArray",
       "s": 484528,
+      "ss": 480425,
     },
     {
       "e": 484573,
@@ -1638,6 +1839,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484546,
       "n": "interpolateBasis",
       "s": 484557,
+      "ss": 480425,
     },
     {
       "e": 484612,
@@ -1646,6 +1848,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484575,
       "n": "interpolateBasisClosed",
       "s": 484590,
+      "ss": 480425,
     },
     {
       "e": 484637,
@@ -1654,6 +1857,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484614,
       "n": "interpolateDate",
       "s": 484622,
+      "ss": 480425,
     },
     {
       "e": 484670,
@@ -1662,6 +1866,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484639,
       "n": "interpolateDiscrete",
       "s": 484651,
+      "ss": 480425,
     },
     {
       "e": 484695,
@@ -1670,6 +1875,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484672,
       "n": "interpolateHue",
       "s": 484681,
+      "ss": 480425,
     },
     {
       "e": 484714,
@@ -1678,6 +1884,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484697,
       "n": "interpolateNumber",
       "s": 484697,
+      "ss": 480425,
     },
     {
       "e": 484743,
@@ -1686,6 +1893,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484716,
       "n": "interpolateObject",
       "s": 484726,
+      "ss": 480425,
     },
     {
       "e": 484761,
@@ -1694,6 +1902,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484745,
       "n": "interpolateRound",
       "s": 484745,
+      "ss": 480425,
     },
     {
       "e": 484780,
@@ -1702,6 +1911,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484763,
       "n": "interpolateString",
       "s": 484763,
+      "ss": 480425,
     },
     {
       "e": 484805,
@@ -1710,6 +1920,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484782,
       "n": "interpolateTransformCss",
       "s": 484782,
+      "ss": 480425,
     },
     {
       "e": 484830,
@@ -1718,6 +1929,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484807,
       "n": "interpolateTransformSvg",
       "s": 484807,
+      "ss": 480425,
     },
     {
       "e": 484847,
@@ -1726,6 +1938,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484832,
       "n": "interpolateZoom",
       "s": 484832,
+      "ss": 480425,
     },
     {
       "e": 484863,
@@ -1734,6 +1947,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484849,
       "n": "interpolateRgb",
       "s": 484849,
+      "ss": 480425,
     },
     {
       "e": 484896,
@@ -1742,6 +1956,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484865,
       "n": "interpolateRgbBasis",
       "s": 484877,
+      "ss": 480425,
     },
     {
       "e": 484941,
@@ -1750,6 +1965,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484898,
       "n": "interpolateRgbBasisClosed",
       "s": 484916,
+      "ss": 480425,
     },
     {
       "e": 484966,
@@ -1758,6 +1974,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484943,
       "n": "interpolateHsl",
       "s": 484952,
+      "ss": 480425,
     },
     {
       "e": 484997,
@@ -1766,6 +1983,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484968,
       "n": "interpolateHslLong",
       "s": 484979,
+      "ss": 480425,
     },
     {
       "e": 485022,
@@ -1774,6 +1992,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 484999,
       "n": "interpolateLab",
       "s": 485008,
+      "ss": 480425,
     },
     {
       "e": 485047,
@@ -1782,6 +2001,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485024,
       "n": "interpolateHcl",
       "s": 485033,
+      "ss": 480425,
     },
     {
       "e": 485078,
@@ -1790,6 +2010,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485049,
       "n": "interpolateHclLong",
       "s": 485060,
+      "ss": 480425,
     },
     {
       "e": 485115,
@@ -1798,6 +2019,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485080,
       "n": "interpolateCubehelix",
       "s": 485095,
+      "ss": 480425,
     },
     {
       "e": 485158,
@@ -1806,6 +2028,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485117,
       "n": "interpolateCubehelixLong",
       "s": 485134,
+      "ss": 480425,
     },
     {
       "e": 485169,
@@ -1814,6 +2037,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485160,
       "n": "piecewise",
       "s": 485160,
+      "ss": 480425,
     },
     {
       "e": 485179,
@@ -1822,6 +2046,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485171,
       "n": "quantize",
       "s": 485171,
+      "ss": 480425,
     },
     {
       "e": 485185,
@@ -1830,6 +2055,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485181,
       "n": "path",
       "s": 485181,
+      "ss": 480425,
     },
     {
       "e": 485208,
@@ -1838,6 +2064,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485187,
       "n": "polygonArea",
       "s": 485197,
+      "ss": 480425,
     },
     {
       "e": 485239,
@@ -1846,6 +2073,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485210,
       "n": "polygonCentroid",
       "s": 485224,
+      "ss": 480425,
     },
     {
       "e": 485260,
@@ -1854,6 +2082,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485241,
       "n": "polygonHull",
       "s": 485249,
+      "ss": 480425,
     },
     {
       "e": 485291,
@@ -1862,6 +2091,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485262,
       "n": "polygonContains",
       "s": 485276,
+      "ss": 480425,
     },
     {
       "e": 485318,
@@ -1870,6 +2100,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485293,
       "n": "polygonLength",
       "s": 485305,
+      "ss": 480425,
     },
     {
       "e": 485328,
@@ -1878,6 +2109,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485320,
       "n": "quadtree",
       "s": 485320,
+      "ss": 480425,
     },
     {
       "e": 485354,
@@ -1886,6 +2118,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485330,
       "n": "randomUniform",
       "s": 485341,
+      "ss": 480425,
     },
     {
       "e": 485378,
@@ -1894,6 +2127,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485356,
       "n": "randomNormal",
       "s": 485366,
+      "ss": 480425,
     },
     {
       "e": 485408,
@@ -1902,6 +2136,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485380,
       "n": "randomLogNormal",
       "s": 485393,
+      "ss": 480425,
     },
     {
       "e": 485430,
@@ -1910,6 +2145,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485410,
       "n": "randomBates",
       "s": 485419,
+      "ss": 480425,
     },
     {
       "e": 485460,
@@ -1918,6 +2154,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485432,
       "n": "randomIrwinHall",
       "s": 485445,
+      "ss": 480425,
     },
     {
       "e": 485496,
@@ -1926,6 +2163,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485462,
       "n": "randomExponential",
       "s": 485479,
+      "ss": 480425,
     },
     {
       "e": 485515,
@@ -1934,6 +2172,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485498,
       "n": "scaleBand",
       "s": 485506,
+      "ss": 480425,
     },
     {
       "e": 485538,
@@ -1942,6 +2181,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485517,
       "n": "scalePoint",
       "s": 485528,
+      "ss": 480425,
     },
     {
       "e": 485567,
@@ -1950,6 +2190,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485540,
       "n": "scaleIdentity",
       "s": 485554,
+      "ss": 480425,
     },
     {
       "e": 485592,
@@ -1958,6 +2199,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485569,
       "n": "scaleLinear",
       "s": 485581,
+      "ss": 480425,
     },
     {
       "e": 485611,
@@ -1966,6 +2208,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485594,
       "n": "scaleLog",
       "s": 485603,
+      "ss": 480425,
     },
     {
       "e": 485636,
@@ -1974,6 +2217,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485613,
       "n": "scaleOrdinal",
       "s": 485624,
+      "ss": 480425,
     },
     {
       "e": 485663,
@@ -1982,6 +2226,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485638,
       "n": "scaleImplicit",
       "s": 485650,
+      "ss": 480425,
     },
     {
       "e": 485682,
@@ -1990,6 +2235,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485665,
       "n": "scalePow",
       "s": 485674,
+      "ss": 480425,
     },
     {
       "e": 485703,
@@ -1998,6 +2244,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485684,
       "n": "scaleSqrt",
       "s": 485694,
+      "ss": 480425,
     },
     {
       "e": 485733,
@@ -2006,6 +2253,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485705,
       "n": "scaleQuantile",
       "s": 485720,
+      "ss": 480425,
     },
     {
       "e": 485762,
@@ -2014,6 +2262,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485735,
       "n": "scaleQuantize",
       "s": 485749,
+      "ss": 480425,
     },
     {
       "e": 485793,
@@ -2022,6 +2271,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485764,
       "n": "scaleThreshold",
       "s": 485779,
+      "ss": 480425,
     },
     {
       "e": 485812,
@@ -2030,6 +2280,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485795,
       "n": "scaleTime",
       "s": 485803,
+      "ss": 480425,
     },
     {
       "e": 485833,
@@ -2038,6 +2289,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485814,
       "n": "scaleUtc",
       "s": 485825,
+      "ss": 480425,
     },
     {
       "e": 485864,
@@ -2046,6 +2298,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485835,
       "n": "scaleSequential",
       "s": 485849,
+      "ss": 480425,
     },
     {
       "e": 485893,
@@ -2054,6 +2307,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485866,
       "n": "scaleDiverging",
       "s": 485879,
+      "ss": 480425,
     },
     {
       "e": 485925,
@@ -2062,6 +2316,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485895,
       "n": "schemeCategory10",
       "s": 485909,
+      "ss": 480425,
     },
     {
       "e": 485949,
@@ -2070,6 +2325,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485927,
       "n": "schemeAccent",
       "s": 485937,
+      "ss": 480425,
     },
     {
       "e": 485971,
@@ -2078,6 +2334,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485951,
       "n": "schemeDark2",
       "s": 485960,
+      "ss": 480425,
     },
     {
       "e": 485995,
@@ -2086,6 +2343,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485973,
       "n": "schemePaired",
       "s": 485983,
+      "ss": 480425,
     },
     {
       "e": 486021,
@@ -2094,6 +2352,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 485997,
       "n": "schemePastel1",
       "s": 486008,
+      "ss": 480425,
     },
     {
       "e": 486047,
@@ -2102,6 +2361,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486023,
       "n": "schemePastel2",
       "s": 486034,
+      "ss": 480425,
     },
     {
       "e": 486067,
@@ -2110,6 +2370,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486049,
       "n": "schemeSet1",
       "s": 486057,
+      "ss": 480425,
     },
     {
       "e": 486087,
@@ -2118,6 +2379,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486069,
       "n": "schemeSet2",
       "s": 486077,
+      "ss": 480425,
     },
     {
       "e": 486107,
@@ -2126,6 +2388,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486089,
       "n": "schemeSet3",
       "s": 486097,
+      "ss": 480425,
     },
     {
       "e": 486132,
@@ -2134,6 +2397,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486109,
       "n": "interpolateBrBG",
       "s": 486117,
+      "ss": 480425,
     },
     {
       "e": 486154,
@@ -2142,6 +2406,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486134,
       "n": "schemeBrBG",
       "s": 486144,
+      "ss": 480425,
     },
     {
       "e": 486179,
@@ -2150,6 +2415,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486156,
       "n": "interpolatePRGn",
       "s": 486164,
+      "ss": 480425,
     },
     {
       "e": 486203,
@@ -2158,6 +2424,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486181,
       "n": "schemePRGn",
       "s": 486193,
+      "ss": 480425,
     },
     {
       "e": 486228,
@@ -2166,6 +2433,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486205,
       "n": "interpolatePiYG",
       "s": 486213,
+      "ss": 480425,
     },
     {
       "e": 486252,
@@ -2174,6 +2442,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486230,
       "n": "schemePiYG",
       "s": 486242,
+      "ss": 480425,
     },
     {
       "e": 486277,
@@ -2182,6 +2451,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486254,
       "n": "interpolatePuOr",
       "s": 486262,
+      "ss": 480425,
     },
     {
       "e": 486301,
@@ -2190,6 +2460,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486279,
       "n": "schemePuOr",
       "s": 486291,
+      "ss": 480425,
     },
     {
       "e": 486326,
@@ -2198,6 +2469,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486303,
       "n": "interpolateRdBu",
       "s": 486311,
+      "ss": 480425,
     },
     {
       "e": 486350,
@@ -2206,6 +2478,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486328,
       "n": "schemeRdBu",
       "s": 486340,
+      "ss": 480425,
     },
     {
       "e": 486375,
@@ -2214,6 +2487,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486352,
       "n": "interpolateRdGy",
       "s": 486360,
+      "ss": 480425,
     },
     {
       "e": 486399,
@@ -2222,6 +2496,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486377,
       "n": "schemeRdGy",
       "s": 486389,
+      "ss": 480425,
     },
     {
       "e": 486428,
@@ -2230,6 +2505,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486401,
       "n": "interpolateRdYlBu",
       "s": 486411,
+      "ss": 480425,
     },
     {
       "e": 486454,
@@ -2238,6 +2514,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486430,
       "n": "schemeRdYlBu",
       "s": 486442,
+      "ss": 480425,
     },
     {
       "e": 486483,
@@ -2246,6 +2523,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486456,
       "n": "interpolateRdYlGn",
       "s": 486466,
+      "ss": 480425,
     },
     {
       "e": 486509,
@@ -2254,6 +2532,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486485,
       "n": "schemeRdYlGn",
       "s": 486497,
+      "ss": 480425,
     },
     {
       "e": 486542,
@@ -2262,6 +2541,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486511,
       "n": "interpolateSpectral",
       "s": 486523,
+      "ss": 480425,
     },
     {
       "e": 486570,
@@ -2270,6 +2550,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486544,
       "n": "schemeSpectral",
       "s": 486556,
+      "ss": 480425,
     },
     {
       "e": 486595,
@@ -2278,6 +2559,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486572,
       "n": "interpolateBuGn",
       "s": 486580,
+      "ss": 480425,
     },
     {
       "e": 486619,
@@ -2286,6 +2568,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486597,
       "n": "schemeBuGn",
       "s": 486609,
+      "ss": 480425,
     },
     {
       "e": 486644,
@@ -2294,6 +2577,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486621,
       "n": "interpolateBuPu",
       "s": 486629,
+      "ss": 480425,
     },
     {
       "e": 486668,
@@ -2302,6 +2586,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486646,
       "n": "schemeBuPu",
       "s": 486658,
+      "ss": 480425,
     },
     {
       "e": 486693,
@@ -2310,6 +2595,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486670,
       "n": "interpolateGnBu",
       "s": 486678,
+      "ss": 480425,
     },
     {
       "e": 486717,
@@ -2318,6 +2604,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486695,
       "n": "schemeGnBu",
       "s": 486707,
+      "ss": 480425,
     },
     {
       "e": 486742,
@@ -2326,6 +2613,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486719,
       "n": "interpolateOrRd",
       "s": 486727,
+      "ss": 480425,
     },
     {
       "e": 486766,
@@ -2334,6 +2622,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486744,
       "n": "schemeOrRd",
       "s": 486756,
+      "ss": 480425,
     },
     {
       "e": 486795,
@@ -2342,6 +2631,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486768,
       "n": "interpolatePuBuGn",
       "s": 486778,
+      "ss": 480425,
     },
     {
       "e": 486821,
@@ -2350,6 +2640,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486797,
       "n": "schemePuBuGn",
       "s": 486809,
+      "ss": 480425,
     },
     {
       "e": 486846,
@@ -2358,6 +2649,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486823,
       "n": "interpolatePuBu",
       "s": 486831,
+      "ss": 480425,
     },
     {
       "e": 486870,
@@ -2366,6 +2658,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486848,
       "n": "schemePuBu",
       "s": 486860,
+      "ss": 480425,
     },
     {
       "e": 486895,
@@ -2374,6 +2667,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486872,
       "n": "interpolatePuRd",
       "s": 486880,
+      "ss": 480425,
     },
     {
       "e": 486919,
@@ -2382,6 +2676,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486897,
       "n": "schemePuRd",
       "s": 486909,
+      "ss": 480425,
     },
     {
       "e": 486944,
@@ -2390,6 +2685,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486921,
       "n": "interpolateRdPu",
       "s": 486929,
+      "ss": 480425,
     },
     {
       "e": 486968,
@@ -2398,6 +2694,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486946,
       "n": "schemeRdPu",
       "s": 486958,
+      "ss": 480425,
     },
     {
       "e": 486997,
@@ -2406,6 +2703,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486970,
       "n": "interpolateYlGnBu",
       "s": 486980,
+      "ss": 480425,
     },
     {
       "e": 487023,
@@ -2414,6 +2712,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 486999,
       "n": "schemeYlGnBu",
       "s": 487011,
+      "ss": 480425,
     },
     {
       "e": 487048,
@@ -2422,6 +2721,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487025,
       "n": "interpolateYlGn",
       "s": 487033,
+      "ss": 480425,
     },
     {
       "e": 487072,
@@ -2430,6 +2730,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487050,
       "n": "schemeYlGn",
       "s": 487062,
+      "ss": 480425,
     },
     {
       "e": 487101,
@@ -2438,6 +2739,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487074,
       "n": "interpolateYlOrBr",
       "s": 487084,
+      "ss": 480425,
     },
     {
       "e": 487127,
@@ -2446,6 +2748,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487103,
       "n": "schemeYlOrBr",
       "s": 487115,
+      "ss": 480425,
     },
     {
       "e": 487156,
@@ -2454,6 +2757,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487129,
       "n": "interpolateYlOrRd",
       "s": 487139,
+      "ss": 480425,
     },
     {
       "e": 487182,
@@ -2462,6 +2766,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487158,
       "n": "schemeYlOrRd",
       "s": 487170,
+      "ss": 480425,
     },
     {
       "e": 487209,
@@ -2470,6 +2775,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487184,
       "n": "interpolateBlues",
       "s": 487193,
+      "ss": 480425,
     },
     {
       "e": 487234,
@@ -2478,6 +2784,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487211,
       "n": "schemeBlues",
       "s": 487223,
+      "ss": 480425,
     },
     {
       "e": 487263,
@@ -2486,6 +2793,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487236,
       "n": "interpolateGreens",
       "s": 487246,
+      "ss": 480425,
     },
     {
       "e": 487289,
@@ -2494,6 +2802,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487265,
       "n": "schemeGreens",
       "s": 487277,
+      "ss": 480425,
     },
     {
       "e": 487316,
@@ -2502,6 +2811,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487291,
       "n": "interpolateGreys",
       "s": 487300,
+      "ss": 480425,
     },
     {
       "e": 487341,
@@ -2510,6 +2820,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487318,
       "n": "schemeGreys",
       "s": 487330,
+      "ss": 480425,
     },
     {
       "e": 487372,
@@ -2518,6 +2829,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487343,
       "n": "interpolatePurples",
       "s": 487354,
+      "ss": 480425,
     },
     {
       "e": 487399,
@@ -2526,6 +2838,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487374,
       "n": "schemePurples",
       "s": 487386,
+      "ss": 480425,
     },
     {
       "e": 487424,
@@ -2534,6 +2847,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487401,
       "n": "interpolateReds",
       "s": 487409,
+      "ss": 480425,
     },
     {
       "e": 487448,
@@ -2542,6 +2856,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487426,
       "n": "schemeReds",
       "s": 487438,
+      "ss": 480425,
     },
     {
       "e": 487479,
@@ -2550,6 +2865,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487450,
       "n": "interpolateOranges",
       "s": 487461,
+      "ss": 480425,
     },
     {
       "e": 487506,
@@ -2558,6 +2874,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487481,
       "n": "schemeOranges",
       "s": 487493,
+      "ss": 480425,
     },
     {
       "e": 487550,
@@ -2566,6 +2883,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487508,
       "n": "interpolateCubehelixDefault",
       "s": 487523,
+      "ss": 480425,
     },
     {
       "e": 487581,
@@ -2574,6 +2892,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487552,
       "n": "interpolateRainbow",
       "s": 487563,
+      "ss": 480425,
     },
     {
       "e": 487606,
@@ -2582,6 +2901,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487583,
       "n": "interpolateWarm",
       "s": 487591,
+      "ss": 480425,
     },
     {
       "e": 487631,
@@ -2590,6 +2910,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487608,
       "n": "interpolateCool",
       "s": 487616,
+      "ss": 480425,
     },
     {
       "e": 487662,
@@ -2598,6 +2919,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487633,
       "n": "interpolateSinebow",
       "s": 487644,
+      "ss": 480425,
     },
     {
       "e": 487693,
@@ -2606,6 +2928,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487664,
       "n": "interpolateViridis",
       "s": 487675,
+      "ss": 480425,
     },
     {
       "e": 487720,
@@ -2614,6 +2937,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487695,
       "n": "interpolateMagma",
       "s": 487704,
+      "ss": 480425,
     },
     {
       "e": 487751,
@@ -2622,6 +2946,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487722,
       "n": "interpolateInferno",
       "s": 487733,
+      "ss": 480425,
     },
     {
       "e": 487780,
@@ -2630,6 +2955,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487753,
       "n": "interpolatePlasma",
       "s": 487763,
+      "ss": 480425,
     },
     {
       "e": 487788,
@@ -2638,6 +2964,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487782,
       "n": "create",
       "s": 487782,
+      "ss": 480425,
     },
     {
       "e": 487797,
@@ -2646,6 +2973,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487790,
       "n": "creator",
       "s": 487790,
+      "ss": 480425,
     },
     {
       "e": 487804,
@@ -2654,6 +2982,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487799,
       "n": "local",
       "s": 487799,
+      "ss": 480425,
     },
     {
       "e": 487826,
@@ -2662,6 +2991,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487806,
       "n": "matcher",
       "s": 487819,
+      "ss": 480425,
     },
     {
       "e": 487833,
@@ -2670,6 +3000,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487828,
       "n": "mouse",
       "s": 487828,
+      "ss": 480425,
     },
     {
       "e": 487844,
@@ -2678,6 +3009,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487835,
       "n": "namespace",
       "s": 487835,
+      "ss": 480425,
     },
     {
       "e": 487856,
@@ -2686,6 +3018,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487846,
       "n": "namespaces",
       "s": 487846,
+      "ss": 480425,
     },
     {
       "e": 487878,
@@ -2694,6 +3027,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487858,
       "n": "clientPoint",
       "s": 487867,
+      "ss": 480425,
     },
     {
       "e": 487886,
@@ -2702,6 +3036,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487880,
       "n": "select",
       "s": 487880,
+      "ss": 480425,
     },
     {
       "e": 487897,
@@ -2710,6 +3045,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487888,
       "n": "selectAll",
       "s": 487888,
+      "ss": 480425,
     },
     {
       "e": 487908,
@@ -2718,6 +3054,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487899,
       "n": "selection",
       "s": 487899,
+      "ss": 480425,
     },
     {
       "e": 487918,
@@ -2726,6 +3063,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487910,
       "n": "selector",
       "s": 487910,
+      "ss": 480425,
     },
     {
       "e": 487931,
@@ -2734,6 +3072,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487920,
       "n": "selectorAll",
       "s": 487920,
+      "ss": 480425,
     },
     {
       "e": 487952,
@@ -2742,6 +3081,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487933,
       "n": "style",
       "s": 487947,
+      "ss": 480425,
     },
     {
       "e": 487959,
@@ -2750,6 +3090,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487954,
       "n": "touch",
       "s": 487954,
+      "ss": 480425,
     },
     {
       "e": 487968,
@@ -2758,6 +3099,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487961,
       "n": "touches",
       "s": 487961,
+      "ss": 480425,
     },
     {
       "e": 487991,
@@ -2766,6 +3108,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487970,
       "n": "window",
       "s": 487985,
+      "ss": 480425,
     },
     {
       "e": 487998,
@@ -2774,6 +3117,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 487993,
       "n": "event",
       "s": 487993,
+      "ss": 480425,
     },
     {
       "e": 488011,
@@ -2782,6 +3126,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488000,
       "n": "customEvent",
       "s": 488000,
+      "ss": 480425,
     },
     {
       "e": 488016,
@@ -2790,6 +3135,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488013,
       "n": "arc",
       "s": 488013,
+      "ss": 480425,
     },
     {
       "e": 488032,
@@ -2798,6 +3144,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488018,
       "n": "area",
       "s": 488028,
+      "ss": 480425,
     },
     {
       "e": 488038,
@@ -2806,6 +3153,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488034,
       "n": "line",
       "s": 488034,
+      "ss": 480425,
     },
     {
       "e": 488043,
@@ -2814,6 +3162,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488040,
       "n": "pie",
       "s": 488040,
+      "ss": 480425,
     },
     {
       "e": 488055,
@@ -2822,6 +3171,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488045,
       "n": "areaRadial",
       "s": 488045,
+      "ss": 480425,
     },
     {
       "e": 488081,
@@ -2830,6 +3180,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488057,
       "n": "radialArea",
       "s": 488071,
+      "ss": 480425,
     },
     {
       "e": 488109,
@@ -2838,6 +3189,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488083,
       "n": "lineRadial",
       "s": 488099,
+      "ss": 480425,
     },
     {
       "e": 488137,
@@ -2846,6 +3198,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488111,
       "n": "radialLine",
       "s": 488127,
+      "ss": 480425,
     },
     {
       "e": 488150,
@@ -2854,6 +3207,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488139,
       "n": "pointRadial",
       "s": 488139,
+      "ss": 480425,
     },
     {
       "e": 488166,
@@ -2862,6 +3216,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488152,
       "n": "linkHorizontal",
       "s": 488152,
+      "ss": 480425,
     },
     {
       "e": 488180,
@@ -2870,6 +3225,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488168,
       "n": "linkVertical",
       "s": 488168,
+      "ss": 480425,
     },
     {
       "e": 488192,
@@ -2878,6 +3234,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488182,
       "n": "linkRadial",
       "s": 488182,
+      "ss": 480425,
     },
     {
       "e": 488200,
@@ -2886,6 +3243,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488194,
       "n": "symbol",
       "s": 488194,
+      "ss": 480425,
     },
     {
       "e": 488209,
@@ -2894,6 +3252,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488202,
       "n": "symbols",
       "s": 488202,
+      "ss": 480425,
     },
     {
       "e": 488235,
@@ -2902,6 +3261,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488211,
       "n": "symbolCircle",
       "s": 488223,
+      "ss": 480425,
     },
     {
       "e": 488259,
@@ -2910,6 +3270,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488237,
       "n": "symbolCross",
       "s": 488248,
+      "ss": 480425,
     },
     {
       "e": 488285,
@@ -2918,6 +3279,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488261,
       "n": "symbolDiamond",
       "s": 488272,
+      "ss": 480425,
     },
     {
       "e": 488309,
@@ -2926,6 +3288,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488287,
       "n": "symbolSquare",
       "s": 488297,
+      "ss": 480425,
     },
     {
       "e": 488329,
@@ -2934,6 +3297,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488311,
       "n": "symbolStar",
       "s": 488319,
+      "ss": 480425,
     },
     {
       "e": 488357,
@@ -2942,6 +3306,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488331,
       "n": "symbolTriangle",
       "s": 488343,
+      "ss": 480425,
     },
     {
       "e": 488375,
@@ -2950,6 +3315,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488359,
       "n": "symbolWye",
       "s": 488366,
+      "ss": 480425,
     },
     {
       "e": 488410,
@@ -2958,6 +3324,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488377,
       "n": "curveBasisClosed",
       "s": 488394,
+      "ss": 480425,
     },
     {
       "e": 488439,
@@ -2966,6 +3333,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488412,
       "n": "curveBasisOpen",
       "s": 488425,
+      "ss": 480425,
     },
     {
       "e": 488462,
@@ -2974,6 +3342,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488441,
       "n": "curveBasis",
       "s": 488452,
+      "ss": 480425,
     },
     {
       "e": 488485,
@@ -2982,6 +3351,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488464,
       "n": "curveBundle",
       "s": 488474,
+      "ss": 480425,
     },
     {
       "e": 488524,
@@ -2990,6 +3360,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488487,
       "n": "curveCardinalClosed",
       "s": 488505,
+      "ss": 480425,
     },
     {
       "e": 488559,
@@ -2998,6 +3369,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488526,
       "n": "curveCardinalOpen",
       "s": 488542,
+      "ss": 480425,
     },
     {
       "e": 488586,
@@ -3006,6 +3378,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488561,
       "n": "curveCardinal",
       "s": 488573,
+      "ss": 480425,
     },
     {
       "e": 488629,
@@ -3014,6 +3387,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488588,
       "n": "curveCatmullRomClosed",
       "s": 488608,
+      "ss": 480425,
     },
     {
       "e": 488668,
@@ -3022,6 +3396,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488631,
       "n": "curveCatmullRomOpen",
       "s": 488649,
+      "ss": 480425,
     },
     {
       "e": 488699,
@@ -3030,6 +3405,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488670,
       "n": "curveCatmullRom",
       "s": 488684,
+      "ss": 480425,
     },
     {
       "e": 488734,
@@ -3038,6 +3414,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488701,
       "n": "curveLinearClosed",
       "s": 488717,
+      "ss": 480425,
     },
     {
       "e": 488747,
@@ -3046,6 +3423,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488736,
       "n": "curveLinear",
       "s": 488736,
+      "ss": 480425,
     },
     {
       "e": 488776,
@@ -3054,6 +3432,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488749,
       "n": "curveMonotoneX",
       "s": 488762,
+      "ss": 480425,
     },
     {
       "e": 488805,
@@ -3062,6 +3441,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488778,
       "n": "curveMonotoneY",
       "s": 488791,
+      "ss": 480425,
     },
     {
       "e": 488830,
@@ -3070,6 +3450,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488807,
       "n": "curveNatural",
       "s": 488818,
+      "ss": 480425,
     },
     {
       "e": 488849,
@@ -3078,6 +3459,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488832,
       "n": "curveStep",
       "s": 488840,
+      "ss": 480425,
     },
     {
       "e": 488878,
@@ -3086,6 +3468,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488851,
       "n": "curveStepAfter",
       "s": 488864,
+      "ss": 480425,
     },
     {
       "e": 488909,
@@ -3094,6 +3477,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488880,
       "n": "curveStepBefore",
       "s": 488894,
+      "ss": 480425,
     },
     {
       "e": 488916,
@@ -3102,6 +3486,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488911,
       "n": "stack",
       "s": 488911,
+      "ss": 480425,
     },
     {
       "e": 488945,
@@ -3110,6 +3495,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488918,
       "n": "stackOffsetExpand",
       "s": 488928,
+      "ss": 480425,
     },
     {
       "e": 488982,
@@ -3118,6 +3504,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488947,
       "n": "stackOffsetDiverging",
       "s": 488962,
+      "ss": 480425,
     },
     {
       "e": 489009,
@@ -3126,6 +3513,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 488984,
       "n": "stackOffsetNone",
       "s": 488994,
+      "ss": 480425,
     },
     {
       "e": 489046,
@@ -3134,6 +3522,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489011,
       "n": "stackOffsetSilhouette",
       "s": 489025,
+      "ss": 480425,
     },
     {
       "e": 489075,
@@ -3142,6 +3531,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489048,
       "n": "stackOffsetWiggle",
       "s": 489058,
+      "ss": 480425,
     },
     {
       "e": 489111,
@@ -3150,6 +3540,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489077,
       "n": "stackOrderAscending",
       "s": 489092,
+      "ss": 480425,
     },
     {
       "e": 489149,
@@ -3158,6 +3549,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489113,
       "n": "stackOrderDescending",
       "s": 489129,
+      "ss": 480425,
     },
     {
       "e": 489183,
@@ -3166,6 +3558,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489151,
       "n": "stackOrderInsideOut",
       "s": 489164,
+      "ss": 480425,
     },
     {
       "e": 489209,
@@ -3174,6 +3567,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489185,
       "n": "stackOrderNone",
       "s": 489195,
+      "ss": 480425,
     },
     {
       "e": 489239,
@@ -3182,6 +3576,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489211,
       "n": "stackOrderReverse",
       "s": 489222,
+      "ss": 480425,
     },
     {
       "e": 489268,
@@ -3190,6 +3585,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489241,
       "n": "timeInterval",
       "s": 489256,
+      "ss": 480425,
     },
     {
       "e": 489300,
@@ -3198,6 +3594,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489270,
       "n": "timeMillisecond",
       "s": 489285,
+      "ss": 480425,
     },
     {
       "e": 489334,
@@ -3206,6 +3603,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489302,
       "n": "timeMilliseconds",
       "s": 489318,
+      "ss": 480425,
     },
     {
       "e": 489365,
@@ -3214,6 +3612,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489336,
       "n": "utcMillisecond",
       "s": 489351,
+      "ss": 480425,
     },
     {
       "e": 489398,
@@ -3222,6 +3621,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489367,
       "n": "utcMilliseconds",
       "s": 489383,
+      "ss": 480425,
     },
     {
       "e": 489420,
@@ -3230,6 +3630,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489400,
       "n": "timeSecond",
       "s": 489410,
+      "ss": 480425,
     },
     {
       "e": 489444,
@@ -3238,6 +3639,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489422,
       "n": "timeSeconds",
       "s": 489433,
+      "ss": 480425,
     },
     {
       "e": 489465,
@@ -3246,6 +3648,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489446,
       "n": "utcSecond",
       "s": 489456,
+      "ss": 480425,
     },
     {
       "e": 489488,
@@ -3254,6 +3657,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489467,
       "n": "utcSeconds",
       "s": 489478,
+      "ss": 480425,
     },
     {
       "e": 489510,
@@ -3262,6 +3666,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489490,
       "n": "timeMinute",
       "s": 489500,
+      "ss": 480425,
     },
     {
       "e": 489534,
@@ -3270,6 +3675,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489512,
       "n": "timeMinutes",
       "s": 489523,
+      "ss": 480425,
     },
     {
       "e": 489552,
@@ -3278,6 +3684,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489536,
       "n": "timeHour",
       "s": 489544,
+      "ss": 480425,
     },
     {
       "e": 489572,
@@ -3286,6 +3693,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489554,
       "n": "timeHours",
       "s": 489563,
+      "ss": 480425,
     },
     {
       "e": 489588,
@@ -3294,6 +3702,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489574,
       "n": "timeDay",
       "s": 489581,
+      "ss": 480425,
     },
     {
       "e": 489606,
@@ -3302,6 +3711,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489590,
       "n": "timeDays",
       "s": 489598,
+      "ss": 480425,
     },
     {
       "e": 489626,
@@ -3310,6 +3720,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489608,
       "n": "timeWeek",
       "s": 489618,
+      "ss": 480425,
     },
     {
       "e": 489648,
@@ -3318,6 +3729,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489628,
       "n": "timeWeeks",
       "s": 489639,
+      "ss": 480425,
     },
     {
       "e": 489670,
@@ -3326,6 +3738,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489650,
       "n": "timeSunday",
       "s": 489660,
+      "ss": 480425,
     },
     {
       "e": 489694,
@@ -3334,6 +3747,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489672,
       "n": "timeSundays",
       "s": 489683,
+      "ss": 480425,
     },
     {
       "e": 489716,
@@ -3342,6 +3756,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489696,
       "n": "timeMonday",
       "s": 489706,
+      "ss": 480425,
     },
     {
       "e": 489740,
@@ -3350,6 +3765,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489718,
       "n": "timeMondays",
       "s": 489729,
+      "ss": 480425,
     },
     {
       "e": 489764,
@@ -3358,6 +3774,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489742,
       "n": "timeTuesday",
       "s": 489753,
+      "ss": 480425,
     },
     {
       "e": 489790,
@@ -3366,6 +3783,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489766,
       "n": "timeTuesdays",
       "s": 489778,
+      "ss": 480425,
     },
     {
       "e": 489818,
@@ -3374,6 +3792,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489792,
       "n": "timeWednesday",
       "s": 489805,
+      "ss": 480425,
     },
     {
       "e": 489848,
@@ -3382,6 +3801,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489820,
       "n": "timeWednesdays",
       "s": 489834,
+      "ss": 480425,
     },
     {
       "e": 489874,
@@ -3390,6 +3810,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489850,
       "n": "timeThursday",
       "s": 489862,
+      "ss": 480425,
     },
     {
       "e": 489902,
@@ -3398,6 +3819,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489876,
       "n": "timeThursdays",
       "s": 489889,
+      "ss": 480425,
     },
     {
       "e": 489924,
@@ -3406,6 +3828,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489904,
       "n": "timeFriday",
       "s": 489914,
+      "ss": 480425,
     },
     {
       "e": 489948,
@@ -3414,6 +3837,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489926,
       "n": "timeFridays",
       "s": 489937,
+      "ss": 480425,
     },
     {
       "e": 489974,
@@ -3422,6 +3846,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489950,
       "n": "timeSaturday",
       "s": 489962,
+      "ss": 480425,
     },
     {
       "e": 490002,
@@ -3430,6 +3855,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 489976,
       "n": "timeSaturdays",
       "s": 489989,
+      "ss": 480425,
     },
     {
       "e": 490022,
@@ -3438,6 +3864,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490004,
       "n": "timeMonth",
       "s": 490013,
+      "ss": 480425,
     },
     {
       "e": 490044,
@@ -3446,6 +3873,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490024,
       "n": "timeMonths",
       "s": 490034,
+      "ss": 480425,
     },
     {
       "e": 490062,
@@ -3454,6 +3882,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490046,
       "n": "timeYear",
       "s": 490054,
+      "ss": 480425,
     },
     {
       "e": 490082,
@@ -3462,6 +3891,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490064,
       "n": "timeYears",
       "s": 490073,
+      "ss": 480425,
     },
     {
       "e": 490093,
@@ -3470,6 +3900,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490084,
       "n": "utcMinute",
       "s": 490084,
+      "ss": 480425,
     },
     {
       "e": 490105,
@@ -3478,6 +3909,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490095,
       "n": "utcMinutes",
       "s": 490095,
+      "ss": 480425,
     },
     {
       "e": 490114,
@@ -3486,6 +3918,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490107,
       "n": "utcHour",
       "s": 490107,
+      "ss": 480425,
     },
     {
       "e": 490124,
@@ -3494,6 +3927,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490116,
       "n": "utcHours",
       "s": 490116,
+      "ss": 480425,
     },
     {
       "e": 490132,
@@ -3502,6 +3936,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490126,
       "n": "utcDay",
       "s": 490126,
+      "ss": 480425,
     },
     {
       "e": 490141,
@@ -3510,6 +3945,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490134,
       "n": "utcDays",
       "s": 490134,
+      "ss": 480425,
     },
     {
       "e": 490163,
@@ -3518,6 +3954,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490143,
       "n": "utcWeek",
       "s": 490156,
+      "ss": 480425,
     },
     {
       "e": 490187,
@@ -3526,6 +3963,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490165,
       "n": "utcWeeks",
       "s": 490179,
+      "ss": 480425,
     },
     {
       "e": 490198,
@@ -3534,6 +3972,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490189,
       "n": "utcSunday",
       "s": 490189,
+      "ss": 480425,
     },
     {
       "e": 490210,
@@ -3542,6 +3981,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490200,
       "n": "utcSundays",
       "s": 490200,
+      "ss": 480425,
     },
     {
       "e": 490221,
@@ -3550,6 +3990,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490212,
       "n": "utcMonday",
       "s": 490212,
+      "ss": 480425,
     },
     {
       "e": 490233,
@@ -3558,6 +3999,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490223,
       "n": "utcMondays",
       "s": 490223,
+      "ss": 480425,
     },
     {
       "e": 490245,
@@ -3566,6 +4008,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490235,
       "n": "utcTuesday",
       "s": 490235,
+      "ss": 480425,
     },
     {
       "e": 490258,
@@ -3574,6 +4017,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490247,
       "n": "utcTuesdays",
       "s": 490247,
+      "ss": 480425,
     },
     {
       "e": 490272,
@@ -3582,6 +4026,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490260,
       "n": "utcWednesday",
       "s": 490260,
+      "ss": 480425,
     },
     {
       "e": 490287,
@@ -3590,6 +4035,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490274,
       "n": "utcWednesdays",
       "s": 490274,
+      "ss": 480425,
     },
     {
       "e": 490300,
@@ -3598,6 +4044,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490289,
       "n": "utcThursday",
       "s": 490289,
+      "ss": 480425,
     },
     {
       "e": 490314,
@@ -3606,6 +4053,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490302,
       "n": "utcThursdays",
       "s": 490302,
+      "ss": 480425,
     },
     {
       "e": 490325,
@@ -3614,6 +4062,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490316,
       "n": "utcFriday",
       "s": 490316,
+      "ss": 480425,
     },
     {
       "e": 490337,
@@ -3622,6 +4071,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490327,
       "n": "utcFridays",
       "s": 490327,
+      "ss": 480425,
     },
     {
       "e": 490350,
@@ -3630,6 +4080,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490339,
       "n": "utcSaturday",
       "s": 490339,
+      "ss": 480425,
     },
     {
       "e": 490364,
@@ -3638,6 +4089,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490352,
       "n": "utcSaturdays",
       "s": 490352,
+      "ss": 480425,
     },
     {
       "e": 490374,
@@ -3646,6 +4098,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490366,
       "n": "utcMonth",
       "s": 490366,
+      "ss": 480425,
     },
     {
       "e": 490385,
@@ -3654,6 +4107,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490376,
       "n": "utcMonths",
       "s": 490376,
+      "ss": 480425,
     },
     {
       "e": 490394,
@@ -3662,6 +4116,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490387,
       "n": "utcYear",
       "s": 490387,
+      "ss": 480425,
     },
     {
       "e": 490404,
@@ -3670,6 +4125,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490396,
       "n": "utcYears",
       "s": 490396,
+      "ss": 480425,
     },
     {
       "e": 490448,
@@ -3678,6 +4134,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490406,
       "n": "timeFormatDefaultLocale",
       "s": 490425,
+      "ss": 480425,
     },
     {
       "e": 490460,
@@ -3686,6 +4143,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490450,
       "n": "timeFormat",
       "s": 490450,
+      "ss": 480425,
     },
     {
       "e": 490471,
@@ -3694,6 +4152,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490462,
       "n": "timeParse",
       "s": 490462,
+      "ss": 480425,
     },
     {
       "e": 490482,
@@ -3702,6 +4161,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490473,
       "n": "utcFormat",
       "s": 490473,
+      "ss": 480425,
     },
     {
       "e": 490492,
@@ -3710,6 +4170,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490484,
       "n": "utcParse",
       "s": 490484,
+      "ss": 480425,
     },
     {
       "e": 490528,
@@ -3718,6 +4179,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490494,
       "n": "timeFormatLocale",
       "s": 490512,
+      "ss": 480425,
     },
     {
       "e": 490552,
@@ -3726,6 +4188,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490530,
       "n": "isoFormat",
       "s": 490543,
+      "ss": 480425,
     },
     {
       "e": 490574,
@@ -3734,6 +4197,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490554,
       "n": "isoParse",
       "s": 490566,
+      "ss": 480425,
     },
     {
       "e": 490579,
@@ -3742,6 +4206,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490576,
       "n": "now",
       "s": 490576,
+      "ss": 480425,
     },
     {
       "e": 490586,
@@ -3750,6 +4215,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490581,
       "n": "timer",
       "s": 490581,
+      "ss": 480425,
     },
     {
       "e": 490598,
@@ -3758,6 +4224,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490588,
       "n": "timerFlush",
       "s": 490588,
+      "ss": 480425,
     },
     {
       "e": 490620,
@@ -3766,6 +4233,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490600,
       "n": "timeout",
       "s": 490613,
+      "ss": 480425,
     },
     {
       "e": 490644,
@@ -3774,6 +4242,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490622,
       "n": "interval",
       "s": 490636,
+      "ss": 480425,
     },
     {
       "e": 490656,
@@ -3782,6 +4251,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490646,
       "n": "transition",
       "s": 490646,
+      "ss": 480425,
     },
     {
       "e": 490664,
@@ -3790,6 +4260,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490658,
       "n": "active",
       "s": 490658,
+      "ss": 480425,
     },
     {
       "e": 490675,
@@ -3798,6 +4269,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490666,
       "n": "interrupt",
       "s": 490666,
+      "ss": 480425,
     },
     {
       "e": 490684,
@@ -3806,6 +4278,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490677,
       "n": "voronoi",
       "s": 490677,
+      "ss": 480425,
     },
     {
       "e": 490690,
@@ -3814,6 +4287,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490686,
       "n": "zoom",
       "s": 490686,
+      "ss": 480425,
     },
     {
       "e": 490720,
@@ -3822,6 +4296,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490692,
       "n": "zoomTransform",
       "s": 490707,
+      "ss": 480425,
     },
     {
       "e": 490748,
@@ -3830,6 +4305,7 @@ exports[`Snapshot > d3.js 1`] = `
       "ls": 490722,
       "n": "zoomIdentity",
       "s": 490736,
+      "ss": 480425,
     },
   ],
   "facade": false,
@@ -3849,6 +4325,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264539,
       "n": "version",
       "s": 264539,
+      "ss": 264532,
     },
     {
       "e": 264568,
@@ -3857,6 +4334,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264547,
       "n": "bisect",
       "s": 264562,
+      "ss": 264532,
     },
     {
       "e": 264580,
@@ -3865,6 +4343,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264569,
       "n": "bisectRight",
       "s": 264569,
+      "ss": 264532,
     },
     {
       "e": 264591,
@@ -3873,6 +4352,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264581,
       "n": "bisectLeft",
       "s": 264581,
+      "ss": 264532,
     },
     {
       "e": 264601,
@@ -3881,6 +4361,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264592,
       "n": "ascending",
       "s": 264592,
+      "ss": 264532,
     },
     {
       "e": 264610,
@@ -3889,6 +4370,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264602,
       "n": "bisector",
       "s": 264602,
+      "ss": 264532,
     },
     {
       "e": 264616,
@@ -3897,6 +4379,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264611,
       "n": "cross",
       "s": 264611,
+      "ss": 264532,
     },
     {
       "e": 264627,
@@ -3905,6 +4388,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264617,
       "n": "descending",
       "s": 264617,
+      "ss": 264532,
     },
     {
       "e": 264637,
@@ -3913,6 +4397,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264628,
       "n": "deviation",
       "s": 264628,
+      "ss": 264532,
     },
     {
       "e": 264644,
@@ -3921,6 +4406,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264638,
       "n": "extent",
       "s": 264638,
+      "ss": 264532,
     },
     {
       "e": 264654,
@@ -3929,6 +4415,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264645,
       "n": "histogram",
       "s": 264645,
+      "ss": 264532,
     },
     {
       "e": 264700,
@@ -3937,6 +4424,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264655,
       "n": "thresholdFreedmanDiaconis",
       "s": 264675,
+      "ss": 264532,
     },
     {
       "e": 264724,
@@ -3945,6 +4433,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264701,
       "n": "thresholdScott",
       "s": 264710,
+      "ss": 264532,
     },
     {
       "e": 264741,
@@ -3953,6 +4442,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264725,
       "n": "thresholdSturges",
       "s": 264725,
+      "ss": 264532,
     },
     {
       "e": 264745,
@@ -3961,6 +4451,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264742,
       "n": "max",
       "s": 264742,
+      "ss": 264532,
     },
     {
       "e": 264750,
@@ -3969,6 +4460,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264746,
       "n": "mean",
       "s": 264746,
+      "ss": 264532,
     },
     {
       "e": 264757,
@@ -3977,6 +4469,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264751,
       "n": "median",
       "s": 264751,
+      "ss": 264532,
     },
     {
       "e": 264763,
@@ -3985,6 +4478,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264758,
       "n": "merge",
       "s": 264758,
+      "ss": 264532,
     },
     {
       "e": 264767,
@@ -3993,6 +4487,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264764,
       "n": "min",
       "s": 264764,
+      "ss": 264532,
     },
     {
       "e": 264773,
@@ -4001,6 +4496,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264768,
       "n": "pairs",
       "s": 264768,
+      "ss": 264532,
     },
     {
       "e": 264781,
@@ -4009,6 +4505,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264774,
       "n": "permute",
       "s": 264774,
+      "ss": 264532,
     },
     {
       "e": 264803,
@@ -4017,6 +4514,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264782,
       "n": "quantile",
       "s": 264795,
+      "ss": 264532,
     },
     {
       "e": 264821,
@@ -4025,6 +4523,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264804,
       "n": "range",
       "s": 264816,
+      "ss": 264532,
     },
     {
       "e": 264826,
@@ -4033,6 +4532,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264822,
       "n": "scan",
       "s": 264822,
+      "ss": 264532,
     },
     {
       "e": 264834,
@@ -4041,6 +4541,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264827,
       "n": "shuffle",
       "s": 264827,
+      "ss": 264532,
     },
     {
       "e": 264838,
@@ -4049,6 +4550,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264835,
       "n": "sum",
       "s": 264835,
+      "ss": 264532,
     },
     {
       "e": 264844,
@@ -4057,6 +4559,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264839,
       "n": "ticks",
       "s": 264839,
+      "ss": 264532,
     },
     {
       "e": 264858,
@@ -4065,6 +4568,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264845,
       "n": "tickIncrement",
       "s": 264845,
+      "ss": 264532,
     },
     {
       "e": 264867,
@@ -4073,6 +4577,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264859,
       "n": "tickStep",
       "s": 264859,
+      "ss": 264532,
     },
     {
       "e": 264877,
@@ -4081,6 +4586,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264868,
       "n": "transpose",
       "s": 264868,
+      "ss": 264532,
     },
     {
       "e": 264886,
@@ -4089,6 +4595,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264878,
       "n": "variance",
       "s": 264878,
+      "ss": 264532,
     },
     {
       "e": 264890,
@@ -4097,6 +4604,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264887,
       "n": "zip",
       "s": 264887,
+      "ss": 264532,
     },
     {
       "e": 264898,
@@ -4105,6 +4613,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264891,
       "n": "axisTop",
       "s": 264891,
+      "ss": 264532,
     },
     {
       "e": 264908,
@@ -4113,6 +4622,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264899,
       "n": "axisRight",
       "s": 264899,
+      "ss": 264532,
     },
     {
       "e": 264919,
@@ -4121,6 +4631,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264909,
       "n": "axisBottom",
       "s": 264909,
+      "ss": 264532,
     },
     {
       "e": 264928,
@@ -4129,6 +4640,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264920,
       "n": "axisLeft",
       "s": 264920,
+      "ss": 264532,
     },
     {
       "e": 264934,
@@ -4137,6 +4649,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264929,
       "n": "brush",
       "s": 264929,
+      "ss": 264532,
     },
     {
       "e": 264941,
@@ -4145,6 +4658,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264935,
       "n": "brushX",
       "s": 264935,
+      "ss": 264532,
     },
     {
       "e": 264948,
@@ -4153,6 +4667,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264942,
       "n": "brushY",
       "s": 264942,
+      "ss": 264532,
     },
     {
       "e": 264963,
@@ -4161,6 +4676,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264949,
       "n": "brushSelection",
       "s": 264949,
+      "ss": 264532,
     },
     {
       "e": 264969,
@@ -4169,6 +4685,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264964,
       "n": "chord",
       "s": 264964,
+      "ss": 264532,
     },
     {
       "e": 264976,
@@ -4177,6 +4694,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264970,
       "n": "ribbon",
       "s": 264970,
+      "ss": 264532,
     },
     {
       "e": 264981,
@@ -4185,6 +4703,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264977,
       "n": "nest",
       "s": 264977,
+      "ss": 264532,
     },
     {
       "e": 264994,
@@ -4193,6 +4712,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264982,
       "n": "set",
       "s": 264991,
+      "ss": 264532,
     },
     {
       "e": 265007,
@@ -4201,6 +4721,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 264995,
       "n": "map",
       "s": 265004,
+      "ss": 264532,
     },
     {
       "e": 265012,
@@ -4209,6 +4730,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265008,
       "n": "keys",
       "s": 265008,
+      "ss": 264532,
     },
     {
       "e": 265019,
@@ -4217,6 +4739,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265013,
       "n": "values",
       "s": 265013,
+      "ss": 264532,
     },
     {
       "e": 265027,
@@ -4225,6 +4748,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265020,
       "n": "entries",
       "s": 265020,
+      "ss": 264532,
     },
     {
       "e": 265033,
@@ -4233,6 +4757,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265028,
       "n": "color",
       "s": 265028,
+      "ss": 264532,
     },
     {
       "e": 265037,
@@ -4241,6 +4766,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265034,
       "n": "rgb",
       "s": 265034,
+      "ss": 264532,
     },
     {
       "e": 265041,
@@ -4249,6 +4775,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265038,
       "n": "hsl",
       "s": 265038,
+      "ss": 264532,
     },
     {
       "e": 265045,
@@ -4257,6 +4784,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265042,
       "n": "lab",
       "s": 265042,
+      "ss": 264532,
     },
     {
       "e": 265049,
@@ -4265,6 +4793,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265046,
       "n": "hcl",
       "s": 265046,
+      "ss": 264532,
     },
     {
       "e": 265053,
@@ -4273,6 +4802,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265050,
       "n": "lch",
       "s": 265050,
+      "ss": 264532,
     },
     {
       "e": 265058,
@@ -4281,6 +4811,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265054,
       "n": "gray",
       "s": 265054,
+      "ss": 264532,
     },
     {
       "e": 265068,
@@ -4289,6 +4820,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265059,
       "n": "cubehelix",
       "s": 265059,
+      "ss": 264532,
     },
     {
       "e": 265077,
@@ -4297,6 +4829,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265069,
       "n": "contours",
       "s": 265069,
+      "ss": 264532,
     },
     {
       "e": 265103,
@@ -4305,6 +4838,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265078,
       "n": "contourDensity",
       "s": 265089,
+      "ss": 264532,
     },
     {
       "e": 265112,
@@ -4313,6 +4847,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265104,
       "n": "dispatch",
       "s": 265104,
+      "ss": 264532,
     },
     {
       "e": 265117,
@@ -4321,6 +4856,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265113,
       "n": "drag",
       "s": 265113,
+      "ss": 264532,
     },
     {
       "e": 265129,
@@ -4329,6 +4865,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265118,
       "n": "dragDisable",
       "s": 265118,
+      "ss": 264532,
     },
     {
       "e": 265151,
@@ -4337,6 +4874,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265130,
       "n": "dragEnable",
       "s": 265141,
+      "ss": 264532,
     },
     {
       "e": 265161,
@@ -4345,6 +4883,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265152,
       "n": "dsvFormat",
       "s": 265152,
+      "ss": 264532,
     },
     {
       "e": 265170,
@@ -4353,6 +4892,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265162,
       "n": "csvParse",
       "s": 265162,
+      "ss": 264532,
     },
     {
       "e": 265183,
@@ -4361,6 +4901,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265171,
       "n": "csvParseRows",
       "s": 265171,
+      "ss": 264532,
     },
     {
       "e": 265193,
@@ -4369,6 +4910,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265184,
       "n": "csvFormat",
       "s": 265184,
+      "ss": 264532,
     },
     {
       "e": 265207,
@@ -4377,6 +4919,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265194,
       "n": "csvFormatRows",
       "s": 265194,
+      "ss": 264532,
     },
     {
       "e": 265216,
@@ -4385,6 +4928,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265208,
       "n": "tsvParse",
       "s": 265208,
+      "ss": 264532,
     },
     {
       "e": 265229,
@@ -4393,6 +4937,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265217,
       "n": "tsvParseRows",
       "s": 265217,
+      "ss": 264532,
     },
     {
       "e": 265239,
@@ -4401,6 +4946,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265230,
       "n": "tsvFormat",
       "s": 265230,
+      "ss": 264532,
     },
     {
       "e": 265253,
@@ -4409,6 +4955,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265240,
       "n": "tsvFormatRows",
       "s": 265240,
+      "ss": 264532,
     },
     {
       "e": 265276,
@@ -4417,6 +4964,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265254,
       "n": "easeLinear",
       "s": 265266,
+      "ss": 264532,
     },
     {
       "e": 265298,
@@ -4425,6 +4973,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265277,
       "n": "easeQuad",
       "s": 265290,
+      "ss": 264532,
     },
     {
       "e": 265319,
@@ -4433,6 +4982,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265299,
       "n": "easeQuadIn",
       "s": 265309,
+      "ss": 264532,
     },
     {
       "e": 265342,
@@ -4441,6 +4991,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265320,
       "n": "easeQuadOut",
       "s": 265331,
+      "ss": 264532,
     },
     {
       "e": 265369,
@@ -4449,6 +5000,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265343,
       "n": "easeQuadInOut",
       "s": 265356,
+      "ss": 264532,
     },
     {
       "e": 265393,
@@ -4457,6 +5009,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265370,
       "n": "easeCubic",
       "s": 265384,
+      "ss": 264532,
     },
     {
       "e": 265416,
@@ -4465,6 +5018,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265394,
       "n": "easeCubicIn",
       "s": 265405,
+      "ss": 264532,
     },
     {
       "e": 265441,
@@ -4473,6 +5027,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265417,
       "n": "easeCubicOut",
       "s": 265429,
+      "ss": 264532,
     },
     {
       "e": 265470,
@@ -4481,6 +5036,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265442,
       "n": "easeCubicInOut",
       "s": 265456,
+      "ss": 264532,
     },
     {
       "e": 265492,
@@ -4489,6 +5045,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265471,
       "n": "easePoly",
       "s": 265484,
+      "ss": 264532,
     },
     {
       "e": 265513,
@@ -4497,6 +5054,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265493,
       "n": "easePolyIn",
       "s": 265503,
+      "ss": 264532,
     },
     {
       "e": 265536,
@@ -4505,6 +5063,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265514,
       "n": "easePolyOut",
       "s": 265525,
+      "ss": 264532,
     },
     {
       "e": 265563,
@@ -4513,6 +5072,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265537,
       "n": "easePolyInOut",
       "s": 265550,
+      "ss": 264532,
     },
     {
       "e": 265583,
@@ -4521,6 +5081,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265564,
       "n": "easeSin",
       "s": 265576,
+      "ss": 264532,
     },
     {
       "e": 265602,
@@ -4529,6 +5090,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265584,
       "n": "easeSinIn",
       "s": 265593,
+      "ss": 264532,
     },
     {
       "e": 265623,
@@ -4537,6 +5099,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265603,
       "n": "easeSinOut",
       "s": 265613,
+      "ss": 264532,
     },
     {
       "e": 265648,
@@ -4545,6 +5108,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265624,
       "n": "easeSinInOut",
       "s": 265636,
+      "ss": 264532,
     },
     {
       "e": 265668,
@@ -4553,6 +5117,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265649,
       "n": "easeExp",
       "s": 265661,
+      "ss": 264532,
     },
     {
       "e": 265687,
@@ -4561,6 +5126,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265669,
       "n": "easeExpIn",
       "s": 265678,
+      "ss": 264532,
     },
     {
       "e": 265708,
@@ -4569,6 +5135,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265688,
       "n": "easeExpOut",
       "s": 265698,
+      "ss": 264532,
     },
     {
       "e": 265733,
@@ -4577,6 +5144,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265709,
       "n": "easeExpInOut",
       "s": 265721,
+      "ss": 264532,
     },
     {
       "e": 265759,
@@ -4585,6 +5153,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265734,
       "n": "easeCircle",
       "s": 265749,
+      "ss": 264532,
     },
     {
       "e": 265784,
@@ -4593,6 +5162,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265760,
       "n": "easeCircleIn",
       "s": 265772,
+      "ss": 264532,
     },
     {
       "e": 265811,
@@ -4601,6 +5171,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265785,
       "n": "easeCircleOut",
       "s": 265798,
+      "ss": 264532,
     },
     {
       "e": 265842,
@@ -4609,6 +5180,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265812,
       "n": "easeCircleInOut",
       "s": 265827,
+      "ss": 264532,
     },
     {
       "e": 265866,
@@ -4617,6 +5189,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265843,
       "n": "easeBounce",
       "s": 265856,
+      "ss": 264532,
     },
     {
       "e": 265891,
@@ -4625,6 +5198,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265867,
       "n": "easeBounceIn",
       "s": 265879,
+      "ss": 264532,
     },
     {
       "e": 265918,
@@ -4633,6 +5207,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265892,
       "n": "easeBounceOut",
       "s": 265905,
+      "ss": 264532,
     },
     {
       "e": 265949,
@@ -4641,6 +5216,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265919,
       "n": "easeBounceInOut",
       "s": 265934,
+      "ss": 264532,
     },
     {
       "e": 265971,
@@ -4649,6 +5225,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265950,
       "n": "easeBack",
       "s": 265963,
+      "ss": 264532,
     },
     {
       "e": 265992,
@@ -4657,6 +5234,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265972,
       "n": "easeBackIn",
       "s": 265982,
+      "ss": 264532,
     },
     {
       "e": 266015,
@@ -4665,6 +5243,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 265993,
       "n": "easeBackOut",
       "s": 266004,
+      "ss": 264532,
     },
     {
       "e": 266042,
@@ -4673,6 +5252,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266016,
       "n": "easeBackInOut",
       "s": 266029,
+      "ss": 264532,
     },
     {
       "e": 266068,
@@ -4681,6 +5261,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266043,
       "n": "easeElastic",
       "s": 266057,
+      "ss": 264532,
     },
     {
       "e": 266095,
@@ -4689,6 +5270,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266069,
       "n": "easeElasticIn",
       "s": 266082,
+      "ss": 264532,
     },
     {
       "e": 266124,
@@ -4697,6 +5279,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266096,
       "n": "easeElasticOut",
       "s": 266110,
+      "ss": 264532,
     },
     {
       "e": 266157,
@@ -4705,6 +5288,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266125,
       "n": "easeElasticInOut",
       "s": 266141,
+      "ss": 264532,
     },
     {
       "e": 266162,
@@ -4713,6 +5297,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266158,
       "n": "blob",
       "s": 266158,
+      "ss": 264532,
     },
     {
       "e": 266169,
@@ -4721,6 +5306,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266163,
       "n": "buffer",
       "s": 266163,
+      "ss": 264532,
     },
     {
       "e": 266173,
@@ -4729,6 +5315,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266170,
       "n": "dsv",
       "s": 266170,
+      "ss": 264532,
     },
     {
       "e": 266186,
@@ -4737,6 +5324,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266174,
       "n": "csv",
       "s": 266183,
+      "ss": 264532,
     },
     {
       "e": 266199,
@@ -4745,6 +5333,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266187,
       "n": "tsv",
       "s": 266196,
+      "ss": 264532,
     },
     {
       "e": 266205,
@@ -4753,6 +5342,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266200,
       "n": "image",
       "s": 266200,
+      "ss": 264532,
     },
     {
       "e": 266210,
@@ -4761,6 +5351,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266206,
       "n": "json",
       "s": 266206,
+      "ss": 264532,
     },
     {
       "e": 266215,
@@ -4769,6 +5360,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266211,
       "n": "text",
       "s": 266211,
+      "ss": 264532,
     },
     {
       "e": 266219,
@@ -4777,6 +5369,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266216,
       "n": "xml",
       "s": 266216,
+      "ss": 264532,
     },
     {
       "e": 266224,
@@ -4785,6 +5378,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266220,
       "n": "html",
       "s": 266220,
+      "ss": 264532,
     },
     {
       "e": 266228,
@@ -4793,6 +5387,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266225,
       "n": "svg",
       "s": 266225,
+      "ss": 264532,
     },
     {
       "e": 266252,
@@ -4801,6 +5396,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266229,
       "n": "forceCenter",
       "s": 266241,
+      "ss": 264532,
     },
     {
       "e": 266276,
@@ -4809,6 +5405,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266253,
       "n": "forceCollide",
       "s": 266264,
+      "ss": 264532,
     },
     {
       "e": 266294,
@@ -4817,6 +5414,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266277,
       "n": "forceLink",
       "s": 266285,
+      "ss": 264532,
     },
     {
       "e": 266320,
@@ -4825,6 +5423,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266295,
       "n": "forceManyBody",
       "s": 266307,
+      "ss": 264532,
     },
     {
       "e": 266342,
@@ -4833,6 +5432,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266321,
       "n": "forceRadial",
       "s": 266331,
+      "ss": 264532,
     },
     {
       "e": 266372,
@@ -4841,6 +5441,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266343,
       "n": "forceSimulation",
       "s": 266357,
+      "ss": 264532,
     },
     {
       "e": 266386,
@@ -4849,6 +5450,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266373,
       "n": "forceX",
       "s": 266380,
+      "ss": 264532,
     },
     {
       "e": 266400,
@@ -4857,6 +5459,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266387,
       "n": "forceY",
       "s": 266394,
+      "ss": 264532,
     },
     {
       "e": 266437,
@@ -4865,6 +5468,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266401,
       "n": "formatDefaultLocale",
       "s": 266418,
+      "ss": 264532,
     },
     {
       "e": 266444,
@@ -4873,6 +5477,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266438,
       "n": "format",
       "s": 266438,
+      "ss": 264532,
     },
     {
       "e": 266457,
@@ -4881,6 +5486,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266445,
       "n": "formatPrefix",
       "s": 266445,
+      "ss": 264532,
     },
     {
       "e": 266470,
@@ -4889,6 +5495,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266458,
       "n": "formatLocale",
       "s": 266458,
+      "ss": 264532,
     },
     {
       "e": 266486,
@@ -4897,6 +5504,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266471,
       "n": "formatSpecifier",
       "s": 266471,
+      "ss": 264532,
     },
     {
       "e": 266501,
@@ -4905,6 +5513,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266487,
       "n": "precisionFixed",
       "s": 266487,
+      "ss": 264532,
     },
     {
       "e": 266517,
@@ -4913,6 +5522,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266502,
       "n": "precisionPrefix",
       "s": 266502,
+      "ss": 264532,
     },
     {
       "e": 266532,
@@ -4921,6 +5531,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266518,
       "n": "precisionRound",
       "s": 266518,
+      "ss": 264532,
     },
     {
       "e": 266550,
@@ -4929,6 +5540,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266533,
       "n": "geoArea",
       "s": 266543,
+      "ss": 264532,
     },
     {
       "e": 266570,
@@ -4937,6 +5549,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266551,
       "n": "geoBounds",
       "s": 266561,
+      "ss": 264532,
     },
     {
       "e": 266594,
@@ -4945,6 +5558,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266571,
       "n": "geoCentroid",
       "s": 266583,
+      "ss": 264532,
     },
     {
       "e": 266614,
@@ -4953,6 +5567,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266595,
       "n": "geoCircle",
       "s": 266605,
+      "ss": 264532,
     },
     {
       "e": 266654,
@@ -4961,6 +5576,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266615,
       "n": "geoClipAntimeridian",
       "s": 266635,
+      "ss": 264532,
     },
     {
       "e": 266682,
@@ -4969,6 +5585,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266655,
       "n": "geoClipCircle",
       "s": 266669,
+      "ss": 264532,
     },
     {
       "e": 266708,
@@ -4977,6 +5594,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266683,
       "n": "geoClipExtent",
       "s": 266695,
+      "ss": 264532,
     },
     {
       "e": 266742,
@@ -4985,6 +5603,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266709,
       "n": "geoClipRectangle",
       "s": 266726,
+      "ss": 264532,
     },
     {
       "e": 266768,
@@ -4993,6 +5612,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266743,
       "n": "geoContains",
       "s": 266757,
+      "ss": 264532,
     },
     {
       "e": 266792,
@@ -5001,6 +5621,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266769,
       "n": "geoDistance",
       "s": 266781,
+      "ss": 264532,
     },
     {
       "e": 266818,
@@ -5009,6 +5630,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266793,
       "n": "geoGraticule",
       "s": 266806,
+      "ss": 264532,
     },
     {
       "e": 266848,
@@ -5017,6 +5639,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266819,
       "n": "geoGraticule10",
       "s": 266834,
+      "ss": 264532,
     },
     {
       "e": 266880,
@@ -5025,6 +5648,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266849,
       "n": "geoInterpolate",
       "s": 266866,
+      "ss": 264532,
     },
     {
       "e": 266902,
@@ -5033,6 +5657,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266881,
       "n": "geoLength",
       "s": 266893,
+      "ss": 264532,
     },
     {
       "e": 266921,
@@ -5041,6 +5666,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266903,
       "n": "geoPath",
       "s": 266914,
+      "ss": 264532,
     },
     {
       "e": 266941,
@@ -5049,6 +5675,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266922,
       "n": "geoAlbers",
       "s": 266932,
+      "ss": 264532,
     },
     {
       "e": 266967,
@@ -5057,6 +5684,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266942,
       "n": "geoAlbersUsa",
       "s": 266955,
+      "ss": 264532,
     },
     {
       "e": 267011,
@@ -5065,6 +5693,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 266968,
       "n": "geoAzimuthalEqualArea",
       "s": 266990,
+      "ss": 264532,
     },
     {
       "e": 267061,
@@ -5073,6 +5702,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267012,
       "n": "geoAzimuthalEqualAreaRaw",
       "s": 267037,
+      "ss": 264532,
     },
     {
       "e": 267109,
@@ -5081,6 +5711,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267062,
       "n": "geoAzimuthalEquidistant",
       "s": 267086,
+      "ss": 264532,
     },
     {
       "e": 267163,
@@ -5089,6 +5720,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267110,
       "n": "geoAzimuthalEquidistantRaw",
       "s": 267137,
+      "ss": 264532,
     },
     {
       "e": 267199,
@@ -5097,6 +5729,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267164,
       "n": "geoConicConformal",
       "s": 267182,
+      "ss": 264532,
     },
     {
       "e": 267241,
@@ -5105,6 +5738,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267200,
       "n": "geoConicConformalRaw",
       "s": 267221,
+      "ss": 264532,
     },
     {
       "e": 267277,
@@ -5113,6 +5747,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267242,
       "n": "geoConicEqualArea",
       "s": 267260,
+      "ss": 264532,
     },
     {
       "e": 267319,
@@ -5121,6 +5756,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267278,
       "n": "geoConicEqualAreaRaw",
       "s": 267299,
+      "ss": 264532,
     },
     {
       "e": 267359,
@@ -5129,6 +5765,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267320,
       "n": "geoConicEquidistant",
       "s": 267340,
+      "ss": 264532,
     },
     {
       "e": 267405,
@@ -5137,6 +5774,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267360,
       "n": "geoConicEquidistantRaw",
       "s": 267383,
+      "ss": 264532,
     },
     {
       "e": 267433,
@@ -5145,6 +5783,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267406,
       "n": "geoEqualEarth",
       "s": 267420,
+      "ss": 264532,
     },
     {
       "e": 267467,
@@ -5153,6 +5792,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267434,
       "n": "geoEqualEarthRaw",
       "s": 267451,
+      "ss": 264532,
     },
     {
       "e": 267505,
@@ -5161,6 +5801,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267468,
       "n": "geoEquirectangular",
       "s": 267487,
+      "ss": 264532,
     },
     {
       "e": 267549,
@@ -5169,6 +5810,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267506,
       "n": "geoEquirectangularRaw",
       "s": 267528,
+      "ss": 264532,
     },
     {
       "e": 267573,
@@ -5177,6 +5819,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267550,
       "n": "geoGnomonic",
       "s": 267562,
+      "ss": 264532,
     },
     {
       "e": 267603,
@@ -5185,6 +5828,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267574,
       "n": "geoGnomonicRaw",
       "s": 267589,
+      "ss": 264532,
     },
     {
       "e": 267629,
@@ -5193,6 +5837,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267604,
       "n": "geoIdentity",
       "s": 267618,
+      "ss": 264532,
     },
     {
       "e": 267657,
@@ -5201,6 +5846,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267630,
       "n": "geoProjection",
       "s": 267644,
+      "ss": 264532,
     },
     {
       "e": 267699,
@@ -5209,6 +5855,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267658,
       "n": "geoProjectionMutator",
       "s": 267679,
+      "ss": 264532,
     },
     {
       "e": 267723,
@@ -5217,6 +5864,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267700,
       "n": "geoMercator",
       "s": 267712,
+      "ss": 264532,
     },
     {
       "e": 267753,
@@ -5225,6 +5873,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267724,
       "n": "geoMercatorRaw",
       "s": 267739,
+      "ss": 264532,
     },
     {
       "e": 267787,
@@ -5233,6 +5882,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267754,
       "n": "geoNaturalEarth1",
       "s": 267771,
+      "ss": 264532,
     },
     {
       "e": 267827,
@@ -5241,6 +5891,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267788,
       "n": "geoNaturalEarth1Raw",
       "s": 267808,
+      "ss": 264532,
     },
     {
       "e": 267859,
@@ -5249,6 +5900,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267828,
       "n": "geoOrthographic",
       "s": 267844,
+      "ss": 264532,
     },
     {
       "e": 267897,
@@ -5257,6 +5909,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267860,
       "n": "geoOrthographicRaw",
       "s": 267879,
+      "ss": 264532,
     },
     {
       "e": 267931,
@@ -5265,6 +5918,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267898,
       "n": "geoStereographic",
       "s": 267915,
+      "ss": 264532,
     },
     {
       "e": 267971,
@@ -5273,6 +5927,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267932,
       "n": "geoStereographicRaw",
       "s": 267952,
+      "ss": 264532,
     },
     {
       "e": 268015,
@@ -5281,6 +5936,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 267972,
       "n": "geoTransverseMercator",
       "s": 267994,
+      "ss": 264532,
     },
     {
       "e": 268065,
@@ -5289,6 +5945,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268016,
       "n": "geoTransverseMercatorRaw",
       "s": 268041,
+      "ss": 264532,
     },
     {
       "e": 268089,
@@ -5297,6 +5954,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268066,
       "n": "geoRotation",
       "s": 268078,
+      "ss": 264532,
     },
     {
       "e": 268099,
@@ -5305,6 +5963,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268090,
       "n": "geoStream",
       "s": 268090,
+      "ss": 264532,
     },
     {
       "e": 268125,
@@ -5313,6 +5972,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268100,
       "n": "geoTransform",
       "s": 268113,
+      "ss": 264532,
     },
     {
       "e": 268133,
@@ -5321,6 +5981,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268126,
       "n": "cluster",
       "s": 268126,
+      "ss": 264532,
     },
     {
       "e": 268143,
@@ -5329,6 +5990,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268134,
       "n": "hierarchy",
       "s": 268134,
+      "ss": 264532,
     },
     {
       "e": 268159,
@@ -5337,6 +5999,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268144,
       "n": "pack",
       "s": 268155,
+      "ss": 264532,
     },
     {
       "e": 268184,
@@ -5345,6 +6008,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268160,
       "n": "packSiblings",
       "s": 268172,
+      "ss": 264532,
     },
     {
       "e": 268207,
@@ -5353,6 +6017,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268185,
       "n": "packEnclose",
       "s": 268196,
+      "ss": 264532,
     },
     {
       "e": 268217,
@@ -5361,6 +6026,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268208,
       "n": "partition",
       "s": 268208,
+      "ss": 264532,
     },
     {
       "e": 268226,
@@ -5369,6 +6035,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268218,
       "n": "stratify",
       "s": 268218,
+      "ss": 264532,
     },
     {
       "e": 268231,
@@ -5377,6 +6044,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268227,
       "n": "tree",
       "s": 268227,
+      "ss": 264532,
     },
     {
       "e": 268250,
@@ -5385,6 +6053,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268232,
       "n": "treemap",
       "s": 268243,
+      "ss": 264532,
     },
     {
       "e": 268274,
@@ -5393,6 +6062,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268251,
       "n": "treemapBinary",
       "s": 268261,
+      "ss": 264532,
     },
     {
       "e": 268286,
@@ -5401,6 +6071,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268275,
       "n": "treemapDice",
       "s": 268275,
+      "ss": 264532,
     },
     {
       "e": 268299,
@@ -5409,6 +6080,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268287,
       "n": "treemapSlice",
       "s": 268287,
+      "ss": 264532,
     },
     {
       "e": 268329,
@@ -5417,6 +6089,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268300,
       "n": "treemapSliceDice",
       "s": 268313,
+      "ss": 264532,
     },
     {
       "e": 268357,
@@ -5425,6 +6098,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268330,
       "n": "treemapSquarify",
       "s": 268342,
+      "ss": 264532,
     },
     {
       "e": 268389,
@@ -5433,6 +6107,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268358,
       "n": "treemapResquarify",
       "s": 268372,
+      "ss": 264532,
     },
     {
       "e": 268421,
@@ -5441,6 +6116,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268390,
       "n": "interpolate",
       "s": 268410,
+      "ss": 264532,
     },
     {
       "e": 268449,
@@ -5449,6 +6125,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268422,
       "n": "interpolateArray",
       "s": 268433,
+      "ss": 264532,
     },
     {
       "e": 268477,
@@ -5457,6 +6134,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268450,
       "n": "interpolateBasis",
       "s": 268461,
+      "ss": 264532,
     },
     {
       "e": 268515,
@@ -5465,6 +6143,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268478,
       "n": "interpolateBasisClosed",
       "s": 268493,
+      "ss": 264532,
     },
     {
       "e": 268539,
@@ -5473,6 +6152,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268516,
       "n": "interpolateDate",
       "s": 268524,
+      "ss": 264532,
     },
     {
       "e": 268571,
@@ -5481,6 +6161,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268540,
       "n": "interpolateDiscrete",
       "s": 268552,
+      "ss": 264532,
     },
     {
       "e": 268595,
@@ -5489,6 +6170,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268572,
       "n": "interpolateHue",
       "s": 268581,
+      "ss": 264532,
     },
     {
       "e": 268613,
@@ -5497,6 +6179,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268596,
       "n": "interpolateNumber",
       "s": 268596,
+      "ss": 264532,
     },
     {
       "e": 268641,
@@ -5505,6 +6188,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268614,
       "n": "interpolateObject",
       "s": 268624,
+      "ss": 264532,
     },
     {
       "e": 268658,
@@ -5513,6 +6197,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268642,
       "n": "interpolateRound",
       "s": 268642,
+      "ss": 264532,
     },
     {
       "e": 268676,
@@ -5521,6 +6206,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268659,
       "n": "interpolateString",
       "s": 268659,
+      "ss": 264532,
     },
     {
       "e": 268700,
@@ -5529,6 +6215,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268677,
       "n": "interpolateTransformCss",
       "s": 268677,
+      "ss": 264532,
     },
     {
       "e": 268724,
@@ -5537,6 +6224,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268701,
       "n": "interpolateTransformSvg",
       "s": 268701,
+      "ss": 264532,
     },
     {
       "e": 268740,
@@ -5545,6 +6233,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268725,
       "n": "interpolateZoom",
       "s": 268725,
+      "ss": 264532,
     },
     {
       "e": 268755,
@@ -5553,6 +6242,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268741,
       "n": "interpolateRgb",
       "s": 268741,
+      "ss": 264532,
     },
     {
       "e": 268787,
@@ -5561,6 +6251,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268756,
       "n": "interpolateRgbBasis",
       "s": 268768,
+      "ss": 264532,
     },
     {
       "e": 268831,
@@ -5569,6 +6260,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268788,
       "n": "interpolateRgbBasisClosed",
       "s": 268806,
+      "ss": 264532,
     },
     {
       "e": 268855,
@@ -5577,6 +6269,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268832,
       "n": "interpolateHsl",
       "s": 268841,
+      "ss": 264532,
     },
     {
       "e": 268885,
@@ -5585,6 +6278,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268856,
       "n": "interpolateHslLong",
       "s": 268867,
+      "ss": 264532,
     },
     {
       "e": 268909,
@@ -5593,6 +6287,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268886,
       "n": "interpolateLab",
       "s": 268895,
+      "ss": 264532,
     },
     {
       "e": 268933,
@@ -5601,6 +6296,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268910,
       "n": "interpolateHcl",
       "s": 268919,
+      "ss": 264532,
     },
     {
       "e": 268963,
@@ -5609,6 +6305,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268934,
       "n": "interpolateHclLong",
       "s": 268945,
+      "ss": 264532,
     },
     {
       "e": 268999,
@@ -5617,6 +6314,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 268964,
       "n": "interpolateCubehelix",
       "s": 268979,
+      "ss": 264532,
     },
     {
       "e": 269041,
@@ -5625,6 +6323,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269000,
       "n": "interpolateCubehelixLong",
       "s": 269017,
+      "ss": 264532,
     },
     {
       "e": 269051,
@@ -5633,6 +6332,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269042,
       "n": "piecewise",
       "s": 269042,
+      "ss": 264532,
     },
     {
       "e": 269060,
@@ -5641,6 +6341,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269052,
       "n": "quantize",
       "s": 269052,
+      "ss": 264532,
     },
     {
       "e": 269065,
@@ -5649,6 +6350,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269061,
       "n": "path",
       "s": 269061,
+      "ss": 264532,
     },
     {
       "e": 269087,
@@ -5657,6 +6359,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269066,
       "n": "polygonArea",
       "s": 269076,
+      "ss": 264532,
     },
     {
       "e": 269117,
@@ -5665,6 +6368,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269088,
       "n": "polygonCentroid",
       "s": 269102,
+      "ss": 264532,
     },
     {
       "e": 269137,
@@ -5673,6 +6377,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269118,
       "n": "polygonHull",
       "s": 269126,
+      "ss": 264532,
     },
     {
       "e": 269167,
@@ -5681,6 +6386,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269138,
       "n": "polygonContains",
       "s": 269152,
+      "ss": 264532,
     },
     {
       "e": 269193,
@@ -5689,6 +6395,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269168,
       "n": "polygonLength",
       "s": 269180,
+      "ss": 264532,
     },
     {
       "e": 269202,
@@ -5697,6 +6404,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269194,
       "n": "quadtree",
       "s": 269194,
+      "ss": 264532,
     },
     {
       "e": 269227,
@@ -5705,6 +6413,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269203,
       "n": "randomUniform",
       "s": 269214,
+      "ss": 264532,
     },
     {
       "e": 269250,
@@ -5713,6 +6422,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269228,
       "n": "randomNormal",
       "s": 269238,
+      "ss": 264532,
     },
     {
       "e": 269279,
@@ -5721,6 +6431,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269251,
       "n": "randomLogNormal",
       "s": 269264,
+      "ss": 264532,
     },
     {
       "e": 269300,
@@ -5729,6 +6440,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269280,
       "n": "randomBates",
       "s": 269289,
+      "ss": 264532,
     },
     {
       "e": 269329,
@@ -5737,6 +6449,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269301,
       "n": "randomIrwinHall",
       "s": 269314,
+      "ss": 264532,
     },
     {
       "e": 269364,
@@ -5745,6 +6458,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269330,
       "n": "randomExponential",
       "s": 269347,
+      "ss": 264532,
     },
     {
       "e": 269382,
@@ -5753,6 +6467,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269365,
       "n": "scaleBand",
       "s": 269373,
+      "ss": 264532,
     },
     {
       "e": 269404,
@@ -5761,6 +6476,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269383,
       "n": "scalePoint",
       "s": 269394,
+      "ss": 264532,
     },
     {
       "e": 269432,
@@ -5769,6 +6485,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269405,
       "n": "scaleIdentity",
       "s": 269419,
+      "ss": 264532,
     },
     {
       "e": 269456,
@@ -5777,6 +6494,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269433,
       "n": "scaleLinear",
       "s": 269445,
+      "ss": 264532,
     },
     {
       "e": 269474,
@@ -5785,6 +6503,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269457,
       "n": "scaleLog",
       "s": 269466,
+      "ss": 264532,
     },
     {
       "e": 269498,
@@ -5793,6 +6512,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269475,
       "n": "scaleOrdinal",
       "s": 269486,
+      "ss": 264532,
     },
     {
       "e": 269524,
@@ -5801,6 +6521,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269499,
       "n": "scaleImplicit",
       "s": 269511,
+      "ss": 264532,
     },
     {
       "e": 269542,
@@ -5809,6 +6530,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269525,
       "n": "scalePow",
       "s": 269534,
+      "ss": 264532,
     },
     {
       "e": 269562,
@@ -5817,6 +6539,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269543,
       "n": "scaleSqrt",
       "s": 269553,
+      "ss": 264532,
     },
     {
       "e": 269591,
@@ -5825,6 +6548,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269563,
       "n": "scaleQuantile",
       "s": 269578,
+      "ss": 264532,
     },
     {
       "e": 269619,
@@ -5833,6 +6557,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269592,
       "n": "scaleQuantize",
       "s": 269606,
+      "ss": 264532,
     },
     {
       "e": 269649,
@@ -5841,6 +6566,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269620,
       "n": "scaleThreshold",
       "s": 269635,
+      "ss": 264532,
     },
     {
       "e": 269667,
@@ -5849,6 +6575,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269650,
       "n": "scaleTime",
       "s": 269658,
+      "ss": 264532,
     },
     {
       "e": 269687,
@@ -5857,6 +6584,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269668,
       "n": "scaleUtc",
       "s": 269679,
+      "ss": 264532,
     },
     {
       "e": 269717,
@@ -5865,6 +6593,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269688,
       "n": "scaleSequential",
       "s": 269702,
+      "ss": 264532,
     },
     {
       "e": 269745,
@@ -5873,6 +6602,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269718,
       "n": "scaleDiverging",
       "s": 269731,
+      "ss": 264532,
     },
     {
       "e": 269776,
@@ -5881,6 +6611,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269746,
       "n": "schemeCategory10",
       "s": 269760,
+      "ss": 264532,
     },
     {
       "e": 269799,
@@ -5889,6 +6620,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269777,
       "n": "schemeAccent",
       "s": 269787,
+      "ss": 264532,
     },
     {
       "e": 269820,
@@ -5897,6 +6629,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269800,
       "n": "schemeDark2",
       "s": 269809,
+      "ss": 264532,
     },
     {
       "e": 269843,
@@ -5905,6 +6638,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269821,
       "n": "schemePaired",
       "s": 269831,
+      "ss": 264532,
     },
     {
       "e": 269868,
@@ -5913,6 +6647,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269844,
       "n": "schemePastel1",
       "s": 269855,
+      "ss": 264532,
     },
     {
       "e": 269893,
@@ -5921,6 +6656,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269869,
       "n": "schemePastel2",
       "s": 269880,
+      "ss": 264532,
     },
     {
       "e": 269912,
@@ -5929,6 +6665,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269894,
       "n": "schemeSet1",
       "s": 269902,
+      "ss": 264532,
     },
     {
       "e": 269931,
@@ -5937,6 +6674,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269913,
       "n": "schemeSet2",
       "s": 269921,
+      "ss": 264532,
     },
     {
       "e": 269950,
@@ -5945,6 +6683,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269932,
       "n": "schemeSet3",
       "s": 269940,
+      "ss": 264532,
     },
     {
       "e": 269974,
@@ -5953,6 +6692,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269951,
       "n": "interpolateBrBG",
       "s": 269959,
+      "ss": 264532,
     },
     {
       "e": 269995,
@@ -5961,6 +6701,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269975,
       "n": "schemeBrBG",
       "s": 269985,
+      "ss": 264532,
     },
     {
       "e": 270019,
@@ -5969,6 +6710,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 269996,
       "n": "interpolatePRGn",
       "s": 270004,
+      "ss": 264532,
     },
     {
       "e": 270042,
@@ -5977,6 +6719,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270020,
       "n": "schemePRGn",
       "s": 270032,
+      "ss": 264532,
     },
     {
       "e": 270066,
@@ -5985,6 +6728,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270043,
       "n": "interpolatePiYG",
       "s": 270051,
+      "ss": 264532,
     },
     {
       "e": 270089,
@@ -5993,6 +6737,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270067,
       "n": "schemePiYG",
       "s": 270079,
+      "ss": 264532,
     },
     {
       "e": 270113,
@@ -6001,6 +6746,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270090,
       "n": "interpolatePuOr",
       "s": 270098,
+      "ss": 264532,
     },
     {
       "e": 270136,
@@ -6009,6 +6755,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270114,
       "n": "schemePuOr",
       "s": 270126,
+      "ss": 264532,
     },
     {
       "e": 270160,
@@ -6017,6 +6764,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270137,
       "n": "interpolateRdBu",
       "s": 270145,
+      "ss": 264532,
     },
     {
       "e": 270183,
@@ -6025,6 +6773,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270161,
       "n": "schemeRdBu",
       "s": 270173,
+      "ss": 264532,
     },
     {
       "e": 270207,
@@ -6033,6 +6782,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270184,
       "n": "interpolateRdGy",
       "s": 270192,
+      "ss": 264532,
     },
     {
       "e": 270230,
@@ -6041,6 +6791,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270208,
       "n": "schemeRdGy",
       "s": 270220,
+      "ss": 264532,
     },
     {
       "e": 270258,
@@ -6049,6 +6800,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270231,
       "n": "interpolateRdYlBu",
       "s": 270241,
+      "ss": 264532,
     },
     {
       "e": 270283,
@@ -6057,6 +6809,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270259,
       "n": "schemeRdYlBu",
       "s": 270271,
+      "ss": 264532,
     },
     {
       "e": 270311,
@@ -6065,6 +6818,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270284,
       "n": "interpolateRdYlGn",
       "s": 270294,
+      "ss": 264532,
     },
     {
       "e": 270336,
@@ -6073,6 +6827,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270312,
       "n": "schemeRdYlGn",
       "s": 270324,
+      "ss": 264532,
     },
     {
       "e": 270368,
@@ -6081,6 +6836,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270337,
       "n": "interpolateSpectral",
       "s": 270349,
+      "ss": 264532,
     },
     {
       "e": 270395,
@@ -6089,6 +6845,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270369,
       "n": "schemeSpectral",
       "s": 270381,
+      "ss": 264532,
     },
     {
       "e": 270419,
@@ -6097,6 +6854,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270396,
       "n": "interpolateBuGn",
       "s": 270404,
+      "ss": 264532,
     },
     {
       "e": 270442,
@@ -6105,6 +6863,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270420,
       "n": "schemeBuGn",
       "s": 270432,
+      "ss": 264532,
     },
     {
       "e": 270466,
@@ -6113,6 +6872,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270443,
       "n": "interpolateBuPu",
       "s": 270451,
+      "ss": 264532,
     },
     {
       "e": 270489,
@@ -6121,6 +6881,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270467,
       "n": "schemeBuPu",
       "s": 270479,
+      "ss": 264532,
     },
     {
       "e": 270513,
@@ -6129,6 +6890,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270490,
       "n": "interpolateGnBu",
       "s": 270498,
+      "ss": 264532,
     },
     {
       "e": 270536,
@@ -6137,6 +6899,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270514,
       "n": "schemeGnBu",
       "s": 270526,
+      "ss": 264532,
     },
     {
       "e": 270560,
@@ -6145,6 +6908,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270537,
       "n": "interpolateOrRd",
       "s": 270545,
+      "ss": 264532,
     },
     {
       "e": 270583,
@@ -6153,6 +6917,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270561,
       "n": "schemeOrRd",
       "s": 270573,
+      "ss": 264532,
     },
     {
       "e": 270611,
@@ -6161,6 +6926,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270584,
       "n": "interpolatePuBuGn",
       "s": 270594,
+      "ss": 264532,
     },
     {
       "e": 270636,
@@ -6169,6 +6935,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270612,
       "n": "schemePuBuGn",
       "s": 270624,
+      "ss": 264532,
     },
     {
       "e": 270660,
@@ -6177,6 +6944,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270637,
       "n": "interpolatePuBu",
       "s": 270645,
+      "ss": 264532,
     },
     {
       "e": 270683,
@@ -6185,6 +6953,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270661,
       "n": "schemePuBu",
       "s": 270673,
+      "ss": 264532,
     },
     {
       "e": 270707,
@@ -6193,6 +6962,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270684,
       "n": "interpolatePuRd",
       "s": 270692,
+      "ss": 264532,
     },
     {
       "e": 270730,
@@ -6201,6 +6971,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270708,
       "n": "schemePuRd",
       "s": 270720,
+      "ss": 264532,
     },
     {
       "e": 270754,
@@ -6209,6 +6980,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270731,
       "n": "interpolateRdPu",
       "s": 270739,
+      "ss": 264532,
     },
     {
       "e": 270777,
@@ -6217,6 +6989,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270755,
       "n": "schemeRdPu",
       "s": 270767,
+      "ss": 264532,
     },
     {
       "e": 270805,
@@ -6225,6 +6998,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270778,
       "n": "interpolateYlGnBu",
       "s": 270788,
+      "ss": 264532,
     },
     {
       "e": 270830,
@@ -6233,6 +7007,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270806,
       "n": "schemeYlGnBu",
       "s": 270818,
+      "ss": 264532,
     },
     {
       "e": 270854,
@@ -6241,6 +7016,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270831,
       "n": "interpolateYlGn",
       "s": 270839,
+      "ss": 264532,
     },
     {
       "e": 270877,
@@ -6249,6 +7025,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270855,
       "n": "schemeYlGn",
       "s": 270867,
+      "ss": 264532,
     },
     {
       "e": 270905,
@@ -6257,6 +7034,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270878,
       "n": "interpolateYlOrBr",
       "s": 270888,
+      "ss": 264532,
     },
     {
       "e": 270930,
@@ -6265,6 +7043,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270906,
       "n": "schemeYlOrBr",
       "s": 270918,
+      "ss": 264532,
     },
     {
       "e": 270958,
@@ -6273,6 +7052,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270931,
       "n": "interpolateYlOrRd",
       "s": 270941,
+      "ss": 264532,
     },
     {
       "e": 270983,
@@ -6281,6 +7061,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270959,
       "n": "schemeYlOrRd",
       "s": 270971,
+      "ss": 264532,
     },
     {
       "e": 271009,
@@ -6289,6 +7070,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 270984,
       "n": "interpolateBlues",
       "s": 270993,
+      "ss": 264532,
     },
     {
       "e": 271033,
@@ -6297,6 +7079,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271010,
       "n": "schemeBlues",
       "s": 271022,
+      "ss": 264532,
     },
     {
       "e": 271061,
@@ -6305,6 +7088,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271034,
       "n": "interpolateGreens",
       "s": 271044,
+      "ss": 264532,
     },
     {
       "e": 271086,
@@ -6313,6 +7097,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271062,
       "n": "schemeGreens",
       "s": 271074,
+      "ss": 264532,
     },
     {
       "e": 271112,
@@ -6321,6 +7106,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271087,
       "n": "interpolateGreys",
       "s": 271096,
+      "ss": 264532,
     },
     {
       "e": 271136,
@@ -6329,6 +7115,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271113,
       "n": "schemeGreys",
       "s": 271125,
+      "ss": 264532,
     },
     {
       "e": 271166,
@@ -6337,6 +7124,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271137,
       "n": "interpolatePurples",
       "s": 271148,
+      "ss": 264532,
     },
     {
       "e": 271192,
@@ -6345,6 +7133,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271167,
       "n": "schemePurples",
       "s": 271179,
+      "ss": 264532,
     },
     {
       "e": 271216,
@@ -6353,6 +7142,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271193,
       "n": "interpolateReds",
       "s": 271201,
+      "ss": 264532,
     },
     {
       "e": 271239,
@@ -6361,6 +7151,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271217,
       "n": "schemeReds",
       "s": 271229,
+      "ss": 264532,
     },
     {
       "e": 271269,
@@ -6369,6 +7160,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271240,
       "n": "interpolateOranges",
       "s": 271251,
+      "ss": 264532,
     },
     {
       "e": 271295,
@@ -6377,6 +7169,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271270,
       "n": "schemeOranges",
       "s": 271282,
+      "ss": 264532,
     },
     {
       "e": 271338,
@@ -6385,6 +7178,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271296,
       "n": "interpolateCubehelixDefault",
       "s": 271311,
+      "ss": 264532,
     },
     {
       "e": 271368,
@@ -6393,6 +7187,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271339,
       "n": "interpolateRainbow",
       "s": 271350,
+      "ss": 264532,
     },
     {
       "e": 271392,
@@ -6401,6 +7196,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271369,
       "n": "interpolateWarm",
       "s": 271377,
+      "ss": 264532,
     },
     {
       "e": 271416,
@@ -6409,6 +7205,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271393,
       "n": "interpolateCool",
       "s": 271401,
+      "ss": 264532,
     },
     {
       "e": 271446,
@@ -6417,6 +7214,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271417,
       "n": "interpolateSinebow",
       "s": 271428,
+      "ss": 264532,
     },
     {
       "e": 271476,
@@ -6425,6 +7223,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271447,
       "n": "interpolateViridis",
       "s": 271458,
+      "ss": 264532,
     },
     {
       "e": 271502,
@@ -6433,6 +7232,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271477,
       "n": "interpolateMagma",
       "s": 271486,
+      "ss": 264532,
     },
     {
       "e": 271532,
@@ -6441,6 +7241,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271503,
       "n": "interpolateInferno",
       "s": 271514,
+      "ss": 264532,
     },
     {
       "e": 271560,
@@ -6449,6 +7250,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271533,
       "n": "interpolatePlasma",
       "s": 271543,
+      "ss": 264532,
     },
     {
       "e": 271567,
@@ -6457,6 +7259,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271561,
       "n": "create",
       "s": 271561,
+      "ss": 264532,
     },
     {
       "e": 271575,
@@ -6465,6 +7268,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271568,
       "n": "creator",
       "s": 271568,
+      "ss": 264532,
     },
     {
       "e": 271581,
@@ -6473,6 +7277,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271576,
       "n": "local",
       "s": 271576,
+      "ss": 264532,
     },
     {
       "e": 271602,
@@ -6481,6 +7286,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271582,
       "n": "matcher",
       "s": 271595,
+      "ss": 264532,
     },
     {
       "e": 271608,
@@ -6489,6 +7295,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271603,
       "n": "mouse",
       "s": 271603,
+      "ss": 264532,
     },
     {
       "e": 271618,
@@ -6497,6 +7304,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271609,
       "n": "namespace",
       "s": 271609,
+      "ss": 264532,
     },
     {
       "e": 271629,
@@ -6505,6 +7313,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271619,
       "n": "namespaces",
       "s": 271619,
+      "ss": 264532,
     },
     {
       "e": 271650,
@@ -6513,6 +7322,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271630,
       "n": "clientPoint",
       "s": 271639,
+      "ss": 264532,
     },
     {
       "e": 271657,
@@ -6521,6 +7331,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271651,
       "n": "select",
       "s": 271651,
+      "ss": 264532,
     },
     {
       "e": 271667,
@@ -6529,6 +7340,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271658,
       "n": "selectAll",
       "s": 271658,
+      "ss": 264532,
     },
     {
       "e": 271677,
@@ -6537,6 +7349,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271668,
       "n": "selection",
       "s": 271668,
+      "ss": 264532,
     },
     {
       "e": 271686,
@@ -6545,6 +7358,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271678,
       "n": "selector",
       "s": 271678,
+      "ss": 264532,
     },
     {
       "e": 271698,
@@ -6553,6 +7367,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271687,
       "n": "selectorAll",
       "s": 271687,
+      "ss": 264532,
     },
     {
       "e": 271718,
@@ -6561,6 +7376,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271699,
       "n": "style",
       "s": 271713,
+      "ss": 264532,
     },
     {
       "e": 271724,
@@ -6569,6 +7385,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271719,
       "n": "touch",
       "s": 271719,
+      "ss": 264532,
     },
     {
       "e": 271732,
@@ -6577,6 +7394,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271725,
       "n": "touches",
       "s": 271725,
+      "ss": 264532,
     },
     {
       "e": 271754,
@@ -6585,6 +7403,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271733,
       "n": "window",
       "s": 271748,
+      "ss": 264532,
     },
     {
       "e": 271760,
@@ -6593,6 +7412,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271755,
       "n": "event",
       "s": 271755,
+      "ss": 264532,
     },
     {
       "e": 271772,
@@ -6601,6 +7421,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271761,
       "n": "customEvent",
       "s": 271761,
+      "ss": 264532,
     },
     {
       "e": 271776,
@@ -6609,6 +7430,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271773,
       "n": "arc",
       "s": 271773,
+      "ss": 264532,
     },
     {
       "e": 271791,
@@ -6617,6 +7439,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271777,
       "n": "area",
       "s": 271787,
+      "ss": 264532,
     },
     {
       "e": 271796,
@@ -6625,6 +7448,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271792,
       "n": "line",
       "s": 271792,
+      "ss": 264532,
     },
     {
       "e": 271800,
@@ -6633,6 +7457,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271797,
       "n": "pie",
       "s": 271797,
+      "ss": 264532,
     },
     {
       "e": 271811,
@@ -6641,6 +7466,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271801,
       "n": "areaRadial",
       "s": 271801,
+      "ss": 264532,
     },
     {
       "e": 271836,
@@ -6649,6 +7475,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271812,
       "n": "radialArea",
       "s": 271826,
+      "ss": 264532,
     },
     {
       "e": 271863,
@@ -6657,6 +7484,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271837,
       "n": "lineRadial",
       "s": 271853,
+      "ss": 264532,
     },
     {
       "e": 271890,
@@ -6665,6 +7493,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271864,
       "n": "radialLine",
       "s": 271880,
+      "ss": 264532,
     },
     {
       "e": 271902,
@@ -6673,6 +7502,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271891,
       "n": "pointRadial",
       "s": 271891,
+      "ss": 264532,
     },
     {
       "e": 271917,
@@ -6681,6 +7511,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271903,
       "n": "linkHorizontal",
       "s": 271903,
+      "ss": 264532,
     },
     {
       "e": 271930,
@@ -6689,6 +7520,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271918,
       "n": "linkVertical",
       "s": 271918,
+      "ss": 264532,
     },
     {
       "e": 271941,
@@ -6697,6 +7529,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271931,
       "n": "linkRadial",
       "s": 271931,
+      "ss": 264532,
     },
     {
       "e": 271948,
@@ -6705,6 +7538,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271942,
       "n": "symbol",
       "s": 271942,
+      "ss": 264532,
     },
     {
       "e": 271956,
@@ -6713,6 +7547,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271949,
       "n": "symbols",
       "s": 271949,
+      "ss": 264532,
     },
     {
       "e": 271981,
@@ -6721,6 +7556,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271957,
       "n": "symbolCircle",
       "s": 271969,
+      "ss": 264532,
     },
     {
       "e": 272004,
@@ -6729,6 +7565,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 271982,
       "n": "symbolCross",
       "s": 271993,
+      "ss": 264532,
     },
     {
       "e": 272029,
@@ -6737,6 +7574,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272005,
       "n": "symbolDiamond",
       "s": 272016,
+      "ss": 264532,
     },
     {
       "e": 272052,
@@ -6745,6 +7583,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272030,
       "n": "symbolSquare",
       "s": 272040,
+      "ss": 264532,
     },
     {
       "e": 272071,
@@ -6753,6 +7592,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272053,
       "n": "symbolStar",
       "s": 272061,
+      "ss": 264532,
     },
     {
       "e": 272098,
@@ -6761,6 +7601,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272072,
       "n": "symbolTriangle",
       "s": 272084,
+      "ss": 264532,
     },
     {
       "e": 272115,
@@ -6769,6 +7610,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272099,
       "n": "symbolWye",
       "s": 272106,
+      "ss": 264532,
     },
     {
       "e": 272149,
@@ -6777,6 +7619,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272116,
       "n": "curveBasisClosed",
       "s": 272133,
+      "ss": 264532,
     },
     {
       "e": 272177,
@@ -6785,6 +7628,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272150,
       "n": "curveBasisOpen",
       "s": 272163,
+      "ss": 264532,
     },
     {
       "e": 272199,
@@ -6793,6 +7637,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272178,
       "n": "curveBasis",
       "s": 272189,
+      "ss": 264532,
     },
     {
       "e": 272221,
@@ -6801,6 +7646,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272200,
       "n": "curveBundle",
       "s": 272210,
+      "ss": 264532,
     },
     {
       "e": 272259,
@@ -6809,6 +7655,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272222,
       "n": "curveCardinalClosed",
       "s": 272240,
+      "ss": 264532,
     },
     {
       "e": 272293,
@@ -6817,6 +7664,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272260,
       "n": "curveCardinalOpen",
       "s": 272276,
+      "ss": 264532,
     },
     {
       "e": 272319,
@@ -6825,6 +7673,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272294,
       "n": "curveCardinal",
       "s": 272306,
+      "ss": 264532,
     },
     {
       "e": 272361,
@@ -6833,6 +7682,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272320,
       "n": "curveCatmullRomClosed",
       "s": 272340,
+      "ss": 264532,
     },
     {
       "e": 272399,
@@ -6841,6 +7691,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272362,
       "n": "curveCatmullRomOpen",
       "s": 272380,
+      "ss": 264532,
     },
     {
       "e": 272429,
@@ -6849,6 +7700,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272400,
       "n": "curveCatmullRom",
       "s": 272414,
+      "ss": 264532,
     },
     {
       "e": 272463,
@@ -6857,6 +7709,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272430,
       "n": "curveLinearClosed",
       "s": 272446,
+      "ss": 264532,
     },
     {
       "e": 272475,
@@ -6865,6 +7718,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272464,
       "n": "curveLinear",
       "s": 272464,
+      "ss": 264532,
     },
     {
       "e": 272503,
@@ -6873,6 +7727,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272476,
       "n": "curveMonotoneX",
       "s": 272489,
+      "ss": 264532,
     },
     {
       "e": 272531,
@@ -6881,6 +7736,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272504,
       "n": "curveMonotoneY",
       "s": 272517,
+      "ss": 264532,
     },
     {
       "e": 272555,
@@ -6889,6 +7745,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272532,
       "n": "curveNatural",
       "s": 272543,
+      "ss": 264532,
     },
     {
       "e": 272573,
@@ -6897,6 +7754,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272556,
       "n": "curveStep",
       "s": 272564,
+      "ss": 264532,
     },
     {
       "e": 272601,
@@ -6905,6 +7763,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272574,
       "n": "curveStepAfter",
       "s": 272587,
+      "ss": 264532,
     },
     {
       "e": 272631,
@@ -6913,6 +7772,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272602,
       "n": "curveStepBefore",
       "s": 272616,
+      "ss": 264532,
     },
     {
       "e": 272637,
@@ -6921,6 +7781,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272632,
       "n": "stack",
       "s": 272632,
+      "ss": 264532,
     },
     {
       "e": 272665,
@@ -6929,6 +7790,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272638,
       "n": "stackOffsetExpand",
       "s": 272648,
+      "ss": 264532,
     },
     {
       "e": 272701,
@@ -6937,6 +7799,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272666,
       "n": "stackOffsetDiverging",
       "s": 272681,
+      "ss": 264532,
     },
     {
       "e": 272727,
@@ -6945,6 +7808,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272702,
       "n": "stackOffsetNone",
       "s": 272712,
+      "ss": 264532,
     },
     {
       "e": 272763,
@@ -6953,6 +7817,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272728,
       "n": "stackOffsetSilhouette",
       "s": 272742,
+      "ss": 264532,
     },
     {
       "e": 272791,
@@ -6961,6 +7826,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272764,
       "n": "stackOffsetWiggle",
       "s": 272774,
+      "ss": 264532,
     },
     {
       "e": 272826,
@@ -6969,6 +7835,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272792,
       "n": "stackOrderAscending",
       "s": 272807,
+      "ss": 264532,
     },
     {
       "e": 272863,
@@ -6977,6 +7844,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272827,
       "n": "stackOrderDescending",
       "s": 272843,
+      "ss": 264532,
     },
     {
       "e": 272896,
@@ -6985,6 +7853,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272864,
       "n": "stackOrderInsideOut",
       "s": 272877,
+      "ss": 264532,
     },
     {
       "e": 272921,
@@ -6993,6 +7862,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272897,
       "n": "stackOrderNone",
       "s": 272907,
+      "ss": 264532,
     },
     {
       "e": 272950,
@@ -7001,6 +7871,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272922,
       "n": "stackOrderReverse",
       "s": 272933,
+      "ss": 264532,
     },
     {
       "e": 272978,
@@ -7009,6 +7880,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272951,
       "n": "timeInterval",
       "s": 272966,
+      "ss": 264532,
     },
     {
       "e": 273009,
@@ -7017,6 +7889,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 272979,
       "n": "timeMillisecond",
       "s": 272994,
+      "ss": 264532,
     },
     {
       "e": 273042,
@@ -7025,6 +7898,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273010,
       "n": "timeMilliseconds",
       "s": 273026,
+      "ss": 264532,
     },
     {
       "e": 273072,
@@ -7033,6 +7907,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273043,
       "n": "utcMillisecond",
       "s": 273058,
+      "ss": 264532,
     },
     {
       "e": 273104,
@@ -7041,6 +7916,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273073,
       "n": "utcMilliseconds",
       "s": 273089,
+      "ss": 264532,
     },
     {
       "e": 273125,
@@ -7049,6 +7925,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273105,
       "n": "timeSecond",
       "s": 273115,
+      "ss": 264532,
     },
     {
       "e": 273148,
@@ -7057,6 +7934,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273126,
       "n": "timeSeconds",
       "s": 273137,
+      "ss": 264532,
     },
     {
       "e": 273168,
@@ -7065,6 +7943,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273149,
       "n": "utcSecond",
       "s": 273159,
+      "ss": 264532,
     },
     {
       "e": 273190,
@@ -7073,6 +7952,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273169,
       "n": "utcSeconds",
       "s": 273180,
+      "ss": 264532,
     },
     {
       "e": 273211,
@@ -7081,6 +7961,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273191,
       "n": "timeMinute",
       "s": 273201,
+      "ss": 264532,
     },
     {
       "e": 273234,
@@ -7089,6 +7970,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273212,
       "n": "timeMinutes",
       "s": 273223,
+      "ss": 264532,
     },
     {
       "e": 273251,
@@ -7097,6 +7979,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273235,
       "n": "timeHour",
       "s": 273243,
+      "ss": 264532,
     },
     {
       "e": 273270,
@@ -7105,6 +7988,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273252,
       "n": "timeHours",
       "s": 273261,
+      "ss": 264532,
     },
     {
       "e": 273285,
@@ -7113,6 +7997,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273271,
       "n": "timeDay",
       "s": 273278,
+      "ss": 264532,
     },
     {
       "e": 273302,
@@ -7121,6 +8006,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273286,
       "n": "timeDays",
       "s": 273294,
+      "ss": 264532,
     },
     {
       "e": 273321,
@@ -7129,6 +8015,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273303,
       "n": "timeWeek",
       "s": 273313,
+      "ss": 264532,
     },
     {
       "e": 273342,
@@ -7137,6 +8024,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273322,
       "n": "timeWeeks",
       "s": 273333,
+      "ss": 264532,
     },
     {
       "e": 273363,
@@ -7145,6 +8033,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273343,
       "n": "timeSunday",
       "s": 273353,
+      "ss": 264532,
     },
     {
       "e": 273386,
@@ -7153,6 +8042,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273364,
       "n": "timeSundays",
       "s": 273375,
+      "ss": 264532,
     },
     {
       "e": 273407,
@@ -7161,6 +8051,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273387,
       "n": "timeMonday",
       "s": 273397,
+      "ss": 264532,
     },
     {
       "e": 273430,
@@ -7169,6 +8060,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273408,
       "n": "timeMondays",
       "s": 273419,
+      "ss": 264532,
     },
     {
       "e": 273453,
@@ -7177,6 +8069,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273431,
       "n": "timeTuesday",
       "s": 273442,
+      "ss": 264532,
     },
     {
       "e": 273478,
@@ -7185,6 +8078,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273454,
       "n": "timeTuesdays",
       "s": 273466,
+      "ss": 264532,
     },
     {
       "e": 273505,
@@ -7193,6 +8087,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273479,
       "n": "timeWednesday",
       "s": 273492,
+      "ss": 264532,
     },
     {
       "e": 273534,
@@ -7201,6 +8096,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273506,
       "n": "timeWednesdays",
       "s": 273520,
+      "ss": 264532,
     },
     {
       "e": 273559,
@@ -7209,6 +8105,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273535,
       "n": "timeThursday",
       "s": 273547,
+      "ss": 264532,
     },
     {
       "e": 273586,
@@ -7217,6 +8114,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273560,
       "n": "timeThursdays",
       "s": 273573,
+      "ss": 264532,
     },
     {
       "e": 273607,
@@ -7225,6 +8123,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273587,
       "n": "timeFriday",
       "s": 273597,
+      "ss": 264532,
     },
     {
       "e": 273630,
@@ -7233,6 +8132,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273608,
       "n": "timeFridays",
       "s": 273619,
+      "ss": 264532,
     },
     {
       "e": 273655,
@@ -7241,6 +8141,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273631,
       "n": "timeSaturday",
       "s": 273643,
+      "ss": 264532,
     },
     {
       "e": 273682,
@@ -7249,6 +8150,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273656,
       "n": "timeSaturdays",
       "s": 273669,
+      "ss": 264532,
     },
     {
       "e": 273701,
@@ -7257,6 +8159,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273683,
       "n": "timeMonth",
       "s": 273692,
+      "ss": 264532,
     },
     {
       "e": 273722,
@@ -7265,6 +8168,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273702,
       "n": "timeMonths",
       "s": 273712,
+      "ss": 264532,
     },
     {
       "e": 273739,
@@ -7273,6 +8177,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273723,
       "n": "timeYear",
       "s": 273731,
+      "ss": 264532,
     },
     {
       "e": 273758,
@@ -7281,6 +8186,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273740,
       "n": "timeYears",
       "s": 273749,
+      "ss": 264532,
     },
     {
       "e": 273768,
@@ -7289,6 +8195,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273759,
       "n": "utcMinute",
       "s": 273759,
+      "ss": 264532,
     },
     {
       "e": 273779,
@@ -7297,6 +8204,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273769,
       "n": "utcMinutes",
       "s": 273769,
+      "ss": 264532,
     },
     {
       "e": 273787,
@@ -7305,6 +8213,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273780,
       "n": "utcHour",
       "s": 273780,
+      "ss": 264532,
     },
     {
       "e": 273796,
@@ -7313,6 +8222,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273788,
       "n": "utcHours",
       "s": 273788,
+      "ss": 264532,
     },
     {
       "e": 273803,
@@ -7321,6 +8231,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273797,
       "n": "utcDay",
       "s": 273797,
+      "ss": 264532,
     },
     {
       "e": 273811,
@@ -7329,6 +8240,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273804,
       "n": "utcDays",
       "s": 273804,
+      "ss": 264532,
     },
     {
       "e": 273832,
@@ -7337,6 +8249,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273812,
       "n": "utcWeek",
       "s": 273825,
+      "ss": 264532,
     },
     {
       "e": 273855,
@@ -7345,6 +8258,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273833,
       "n": "utcWeeks",
       "s": 273847,
+      "ss": 264532,
     },
     {
       "e": 273865,
@@ -7353,6 +8267,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273856,
       "n": "utcSunday",
       "s": 273856,
+      "ss": 264532,
     },
     {
       "e": 273876,
@@ -7361,6 +8276,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273866,
       "n": "utcSundays",
       "s": 273866,
+      "ss": 264532,
     },
     {
       "e": 273886,
@@ -7369,6 +8285,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273877,
       "n": "utcMonday",
       "s": 273877,
+      "ss": 264532,
     },
     {
       "e": 273897,
@@ -7377,6 +8294,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273887,
       "n": "utcMondays",
       "s": 273887,
+      "ss": 264532,
     },
     {
       "e": 273908,
@@ -7385,6 +8303,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273898,
       "n": "utcTuesday",
       "s": 273898,
+      "ss": 264532,
     },
     {
       "e": 273920,
@@ -7393,6 +8312,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273909,
       "n": "utcTuesdays",
       "s": 273909,
+      "ss": 264532,
     },
     {
       "e": 273933,
@@ -7401,6 +8321,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273921,
       "n": "utcWednesday",
       "s": 273921,
+      "ss": 264532,
     },
     {
       "e": 273947,
@@ -7409,6 +8330,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273934,
       "n": "utcWednesdays",
       "s": 273934,
+      "ss": 264532,
     },
     {
       "e": 273959,
@@ -7417,6 +8339,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273948,
       "n": "utcThursday",
       "s": 273948,
+      "ss": 264532,
     },
     {
       "e": 273972,
@@ -7425,6 +8348,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273960,
       "n": "utcThursdays",
       "s": 273960,
+      "ss": 264532,
     },
     {
       "e": 273982,
@@ -7433,6 +8357,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273973,
       "n": "utcFriday",
       "s": 273973,
+      "ss": 264532,
     },
     {
       "e": 273993,
@@ -7441,6 +8366,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273983,
       "n": "utcFridays",
       "s": 273983,
+      "ss": 264532,
     },
     {
       "e": 274005,
@@ -7449,6 +8375,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 273994,
       "n": "utcSaturday",
       "s": 273994,
+      "ss": 264532,
     },
     {
       "e": 274018,
@@ -7457,6 +8384,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274006,
       "n": "utcSaturdays",
       "s": 274006,
+      "ss": 264532,
     },
     {
       "e": 274027,
@@ -7465,6 +8393,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274019,
       "n": "utcMonth",
       "s": 274019,
+      "ss": 264532,
     },
     {
       "e": 274037,
@@ -7473,6 +8402,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274028,
       "n": "utcMonths",
       "s": 274028,
+      "ss": 264532,
     },
     {
       "e": 274045,
@@ -7481,6 +8411,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274038,
       "n": "utcYear",
       "s": 274038,
+      "ss": 264532,
     },
     {
       "e": 274054,
@@ -7489,6 +8420,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274046,
       "n": "utcYears",
       "s": 274046,
+      "ss": 264532,
     },
     {
       "e": 274097,
@@ -7497,6 +8429,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274055,
       "n": "timeFormatDefaultLocale",
       "s": 274074,
+      "ss": 264532,
     },
     {
       "e": 274108,
@@ -7505,6 +8438,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274098,
       "n": "timeFormat",
       "s": 274098,
+      "ss": 264532,
     },
     {
       "e": 274118,
@@ -7513,6 +8447,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274109,
       "n": "timeParse",
       "s": 274109,
+      "ss": 264532,
     },
     {
       "e": 274128,
@@ -7521,6 +8456,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274119,
       "n": "utcFormat",
       "s": 274119,
+      "ss": 264532,
     },
     {
       "e": 274137,
@@ -7529,6 +8465,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274129,
       "n": "utcParse",
       "s": 274129,
+      "ss": 264532,
     },
     {
       "e": 274172,
@@ -7537,6 +8474,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274138,
       "n": "timeFormatLocale",
       "s": 274156,
+      "ss": 264532,
     },
     {
       "e": 274195,
@@ -7545,6 +8483,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274173,
       "n": "isoFormat",
       "s": 274186,
+      "ss": 264532,
     },
     {
       "e": 274216,
@@ -7553,6 +8492,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274196,
       "n": "isoParse",
       "s": 274208,
+      "ss": 264532,
     },
     {
       "e": 274220,
@@ -7561,6 +8501,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274217,
       "n": "now",
       "s": 274217,
+      "ss": 264532,
     },
     {
       "e": 274226,
@@ -7569,6 +8510,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274221,
       "n": "timer",
       "s": 274221,
+      "ss": 264532,
     },
     {
       "e": 274237,
@@ -7577,6 +8519,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274227,
       "n": "timerFlush",
       "s": 274227,
+      "ss": 264532,
     },
     {
       "e": 274258,
@@ -7585,6 +8528,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274238,
       "n": "timeout",
       "s": 274251,
+      "ss": 264532,
     },
     {
       "e": 274281,
@@ -7593,6 +8537,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274259,
       "n": "interval",
       "s": 274273,
+      "ss": 264532,
     },
     {
       "e": 274292,
@@ -7601,6 +8546,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274282,
       "n": "transition",
       "s": 274282,
+      "ss": 264532,
     },
     {
       "e": 274299,
@@ -7609,6 +8555,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274293,
       "n": "active",
       "s": 274293,
+      "ss": 264532,
     },
     {
       "e": 274309,
@@ -7617,6 +8564,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274300,
       "n": "interrupt",
       "s": 274300,
+      "ss": 264532,
     },
     {
       "e": 274317,
@@ -7625,6 +8573,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274310,
       "n": "voronoi",
       "s": 274310,
+      "ss": 264532,
     },
     {
       "e": 274322,
@@ -7633,6 +8582,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274318,
       "n": "zoom",
       "s": 274318,
+      "ss": 264532,
     },
     {
       "e": 274351,
@@ -7641,6 +8591,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274323,
       "n": "zoomTransform",
       "s": 274338,
+      "ss": 264532,
     },
     {
       "e": 274378,
@@ -7649,6 +8600,7 @@ exports[`Snapshot > d3.min.js 1`] = `
       "ls": 274352,
       "n": "zoomIdentity",
       "s": 274366,
+      "ss": 264532,
     },
   ],
   "facade": false,
@@ -7667,6 +8619,7 @@ exports[`Snapshot > magic-string.js 1`] = `
       "ls": -1,
       "n": "default",
       "s": 33698,
+      "ss": 33691,
     },
     {
       "e": 33734,
@@ -7675,6 +8628,7 @@ exports[`Snapshot > magic-string.js 1`] = `
       "ls": 33728,
       "n": "Bundle",
       "s": 33728,
+      "ss": 33719,
     },
     {
       "e": 33745,
@@ -7683,6 +8637,7 @@ exports[`Snapshot > magic-string.js 1`] = `
       "ls": 33736,
       "n": "SourceMap",
       "s": 33736,
+      "ss": 33719,
     },
   ],
   "facade": false,
@@ -7712,6 +8667,7 @@ exports[`Snapshot > magic-string.min.js 1`] = `
       "ls": -1,
       "n": "default",
       "s": 19723,
+      "ss": 19716,
     },
     {
       "e": 19756,
@@ -7720,6 +8676,7 @@ exports[`Snapshot > magic-string.min.js 1`] = `
       "ls": 19750,
       "n": "Bundle",
       "s": 19750,
+      "ss": 19743,
     },
     {
       "e": 19766,
@@ -7728,6 +8685,7 @@ exports[`Snapshot > magic-string.min.js 1`] = `
       "ls": 19757,
       "n": "SourceMap",
       "s": 19757,
+      "ss": 19743,
     },
   ],
   "facade": false,
@@ -7758,6 +8716,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "ls": 901896,
       "n": "rollup",
       "s": 901896,
+      "ss": 901887,
     },
     {
       "e": 901920,
@@ -7766,6 +8725,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "ls": 901904,
       "n": "watch",
       "s": 901915,
+      "ss": 901887,
     },
     {
       "e": 901942,
@@ -7774,6 +8734,7 @@ exports[`Snapshot > rollup.js 1`] = `
       "ls": 901922,
       "n": "VERSION",
       "s": 901935,
+      "ss": 901887,
     },
   ],
   "facade": false,
@@ -7854,6 +8815,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "ls": 427091,
       "n": "rollup",
       "s": 427091,
+      "ss": 427084,
     },
     {
       "e": 427114,
@@ -7862,6 +8824,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "ls": 427098,
       "n": "watch",
       "s": 427109,
+      "ss": 427084,
     },
     {
       "e": 427135,
@@ -7870,6 +8833,7 @@ exports[`Snapshot > rollup.min.js 1`] = `
       "ls": 427115,
       "n": "VERSION",
       "s": 427128,
+      "ss": 427084,
     },
   ],
   "facade": false,
