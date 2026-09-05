@@ -147,7 +147,7 @@ impl ImportExportVisitor {
         self.exports.push(export);
     }
 
-    fn add_export_from_ident(&mut self, ident: &ast::Ident) {
+    fn add_export_from_ident(&mut self, ident: &ast::Ident, export_start: i32) {
         let name = ident.sym.to_string();
         let (start, end) = self.get_real_span(ident.span);
         self.add_export(ExportSpecifier {
@@ -157,10 +157,15 @@ impl ImportExportVisitor {
             e: end,
             ls: start,
             le: end,
+            ss: export_start,
         })
     }
 
-    fn parse_export_spec(&mut self, specifier: &ast::ExportSpecifier) -> bool {
+    fn parse_export_spec(
+        &mut self,
+        specifier: &ast::ExportSpecifier,
+        export_start: i32,
+    ) -> bool {
         match specifier {
             ast::ExportSpecifier::Named(named) => {
                 // skip type
@@ -227,6 +232,7 @@ impl ImportExportVisitor {
                     e: end,
                     ls: ln_start,
                     le: ln_end,
+                    ss: export_start,
                 });
 
                 return true;
@@ -248,6 +254,7 @@ impl ImportExportVisitor {
                         e: ident_span.1,
                         ls: *NOT,
                         le: *NOT,
+                        ss: export_start,
                     });
                     return true;
                 }
@@ -272,9 +279,11 @@ impl ImportExportVisitor {
             return false;
         }
 
+        let export_span = self.get_real_span(export.span);
+        let export_start = export_span.0;
         let mut is_need_add_import = false;
         for specifier in &export.specifiers {
-            let need_add_import = self.parse_export_spec(specifier);
+            let need_add_import = self.parse_export_spec(specifier, export_start);
             if need_add_import && !is_need_add_import {
                 is_need_add_import = true;
             }
@@ -285,7 +294,8 @@ impl ImportExportVisitor {
     fn parse_default_export_expr(&mut self, export: &ast::ExportDefaultExpr) {
         let name = DEFAULT_EXPORT.to_string();
         let export_span = self.get_real_span(export.span);
-        let find_start = export_span.0 + *EXPORT_LEN;
+        let export_start = export_span.0;
+        let find_start = export_start + *EXPORT_LEN;
         // find 'default' index start
         let start = self.find_code_idx_by_string(find_start, *DEFAULT_EXPORT);
         let end = start + *DEFAULT_EXPORT_LEN;
@@ -296,14 +306,17 @@ impl ImportExportVisitor {
             e: end,
             ls: *NOT,
             le: *NOT,
+            ss: export_start,
         })
     }
 
     fn parse_export_decl(&mut self, export: &ast::ExportDecl) -> bool {
+        let export_span = self.get_real_span(export.span);
+        let export_start = export_span.0;
         let mut need_eager_return = false;
         match &export.decl {
-            ast::Decl::Class(decl) => self.add_export_from_ident(&decl.ident),
-            ast::Decl::Fn(decl) => self.add_export_from_ident(&decl.ident),
+            ast::Decl::Class(decl) => self.add_export_from_ident(&decl.ident, export_start),
+            ast::Decl::Fn(decl) => self.add_export_from_ident(&decl.ident, export_start),
             ast::Decl::Var(decl) => {
                 decl.decls.iter().for_each(|decl| {
                     // support export const a = 1, b = 2
@@ -318,6 +331,7 @@ impl ImportExportVisitor {
                                 e: end,
                                 ls: start,
                                 le: end,
+                                ss: export_start,
                             })
                         }
                         ast::Pat::Object(pat) => {
@@ -335,6 +349,7 @@ impl ImportExportVisitor {
                                             e: end,
                                             ls: start,
                                             le: end,
+                                            ss: export_start,
                                         })
                                     }
                                     ast::ObjectPatProp::KeyValue(kv) => {
@@ -351,6 +366,7 @@ impl ImportExportVisitor {
                                                     e: end,
                                                     ls: start,
                                                     le: end,
+                                                    ss: export_start,
                                                 })
                                             }
                                             _ => {
@@ -378,6 +394,7 @@ impl ImportExportVisitor {
                                             e: end,
                                             ls: start,
                                             le: end,
+                                            ss: export_start,
                                         })
                                     }
                                 }
@@ -398,6 +415,7 @@ impl ImportExportVisitor {
                     e: end,
                     ls: start,
                     le: end,
+                    ss: export_start,
                 })
             }
             ast::Decl::TsModule(decl) => {
@@ -411,6 +429,7 @@ impl ImportExportVisitor {
                         e: end,
                         ls: start,
                         le: end,
+                        ss: export_start,
                     })
                 }
                 // do not visit import / export within namespace
@@ -424,7 +443,8 @@ impl ImportExportVisitor {
 
     fn parse_export_default_decl(&mut self, export: &ast::ExportDefaultDecl) {
         let export_span = self.get_real_span(export.span);
-        let find_start = export_span.0 + *EXPORT_LEN;
+        let export_start = export_span.0;
+        let find_start = export_start + *EXPORT_LEN;
         let start = self.find_code_idx_by_string(find_start, *DEFAULT_EXPORT);
         let end = start + *DEFAULT_EXPORT_LEN;
         match &export.decl {
@@ -441,6 +461,7 @@ impl ImportExportVisitor {
                         e: end,
                         ls: origin_start,
                         le: origin_end,
+                        ss: export_start,
                     })
                 } else {
                     let name = DEFAULT_EXPORT.to_string();
@@ -451,6 +472,7 @@ impl ImportExportVisitor {
                         e: end,
                         ls: *NOT,
                         le: *NOT,
+                        ss: export_start,
                     })
                 }
             }
@@ -467,6 +489,7 @@ impl ImportExportVisitor {
                         e: end,
                         ls: origin_start,
                         le: origin_end,
+                        ss: export_start,
                     })
                 } else {
                     let name = DEFAULT_EXPORT.to_string();
@@ -477,6 +500,7 @@ impl ImportExportVisitor {
                         e: end,
                         ls: *NOT,
                         le: *NOT,
+                        ss: export_start,
                     })
                 }
             }

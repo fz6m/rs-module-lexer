@@ -104,6 +104,8 @@ pub struct ExportSpecifier {
     pub ls: i32,
     #[doc = " Export origin name end index "]
     pub le: i32,
+    #[doc = " Export statement start index "]
+    pub ss: i32,
 }
 
 }
