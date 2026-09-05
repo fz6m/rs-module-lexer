@@ -196,6 +196,83 @@ describe('Lexer', () => {
     await isEqual(FILENAME, source)
   })
 
+  test(`Dynamic import no-substitution template specifier`, async () => {
+    // A no-substitution template literal is a constant string, so n is set the
+    // same as for the quoted forms; an interpolated template has no constant
+    // value, so n stays undefined.
+    const source_1 = 'import("./x.js")'
+    await isEqual(FILENAME, source_1)
+
+    const source_2 = "import('./x.js')"
+    await isEqual(FILENAME, source_2)
+
+    const source_3 = 'import(`./x.js`)'
+    await isEqual(FILENAME, source_3)
+
+    const source_4 = 'import(`./a${x}.js`)'
+    await isEqual(FILENAME, source_4)
+  })
+
+  test(`Dynamic import template specifier with escapes and attributes`, async () => {
+    // \\${ is an escaped dollar, not a substitution, so the literal is constant.
+    const source_1 = 'import(`./a\\${x}.js`)'
+    await isEqual(FILENAME, source_1)
+
+    // Quotes inside the template are ordinary characters.
+    const source_2 = 'import(`./\'q".js`)'
+    await isEqual(FILENAME, source_2)
+
+    // A constant template specifier is still detected when an import attribute
+    // argument follows it.
+    const source_3 = "import(`./x.js`, { with: { type: 'json' } })"
+    await isEqual(FILENAME, source_3)
+  })
+
+  test(`Dynamic import multi-line no-substitution template specifier`, () => {
+    // Template literals permit raw line breaks; the constant value keeps them.
+    const source = 'import(`./a\nb.js`)'
+    return isEqual(FILENAME, source)
+  })
+
+  test(`Method named import is not a dynamic import`, async () => {
+    // A class/object method or shorthand named `import` with 2+ params was
+    // misreported as a dynamic import: the `)`-then-`{` guard used the wrong
+    // offset once a comma moved the recorded end.
+    const methodSources = [
+      'class C { import(a, b) {} }',
+      'class C { async import(keys, values) {} }',
+      'class C { static import(a, b) {} }',
+      'class C { import(a, b, c) {} }',
+      'class C { *import(a, b) {} }',
+      'class C { async *import(a, b) {} }',
+      'const o = { import(a, b) {} };',
+      'const o = { async import(a, b) {} };',
+      // shapes that already lexed correctly and must stay non-imports
+      'class C { import(a) {} }',
+      'class C { import() {} }',
+      'class C { get import() {} }',
+      'class C { set import(v) {} }',
+    ]
+    for (const source of methodSources) {
+      await isEqual(FILENAME, source)
+    }
+  })
+
+  test(`Real dynamic import with options still detected`, async () => {
+    // Regression guard for the method-name fix: genuine dynamic imports,
+    // including the two-argument import(specifier, options) form, must remain.
+    const dynamicSources = [
+      "import('x')",
+      'import(x)',
+      "import(x, { with: { type: 'json' } })",
+      "import('x', { with: { type: 'json' } })",
+      `import(foo, { type: 'json' })`,
+    ]
+    for (const source of dynamicSources) {
+      await isEqual(FILENAME, source)
+    }
+  })
+
   // 🟡 `es-module-lexer` seems to be parsed incorrectly.
   test.skip(`Simple export destructuring`, async () => {
     const source = `
