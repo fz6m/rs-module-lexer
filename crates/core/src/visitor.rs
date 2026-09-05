@@ -861,8 +861,14 @@ impl VisitMut for ImportExportVisitor {
                             }
                         }
                         // import(`abc`)
-                        ast::Expr::Tpl(_tpl) => {
-                            // TODO: actually, we know what is in there. but `es-module-lexer` does not know.
+                        ast::Expr::Tpl(tpl) => {
+                            if tpl.exprs.is_empty() {
+                                if let Some(quasi) = tpl.quasis.first() {
+                                    if let Some(cooked) = &quasi.cooked {
+                                        name = Some(cooked.to_string());
+                                    }
+                                }
+                            }
                         }
                         _ => {}
                     }

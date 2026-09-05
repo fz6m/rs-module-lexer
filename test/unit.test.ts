@@ -771,6 +771,23 @@ function x() {
     `
     await isEqual(FILENAME, source)
   })
+
+  test('Export statement start', async () => {
+    const source = [
+      `export const x = 1;`,
+      `export function fn () {}`,
+      `export class C {}`,
+      `export default 42;`,
+      `export { c, d };`,
+      `export * as ns from './mod';`,
+      `export { e, f as g } from './re';`,
+    ]
+
+    for (const line of source) {
+      await isEqual(FILENAME, line)
+    }
+    await isEqual(FILENAME, source.join('\n'))
+  })
 })
 
 describe('Import From', () => {
