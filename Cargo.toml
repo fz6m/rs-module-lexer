@@ -5,16 +5,16 @@ members = ["crates/core", "crates/binding_node", "crates/binding_wasm"]
 resolver = "2"
 
 [workspace.dependencies]
-serde = { version = "1.0.228", features = ["derive"] }
-serde_json = "1.0.149"
-wasm-bindgen = "0.2.114"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+wasm-bindgen = "0.2.128"
 napi = { version = "2.16.17", default-features = false, features = [
     "napi4",
     "error_anyhow",
     "serde-json",
 ] }
 napi-derive = "2.16.13"
-anyhow = { version = "1.0.102" }
+anyhow = { version = "1.0.104" }
 
 [profile.release]
 opt-level = 3
