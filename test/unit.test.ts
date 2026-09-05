@@ -448,6 +448,22 @@ export var p = 5;
     await isEqual(FILENAME, source)
   })
 
+  test('Identifier runs preserve template and punctuation boundaries', async () => {
+    const source = `
+      const tag = String.raw;
+      const extraordinarilyLongIdentifier = 6;
+      const \\u0065scapedIdentifier = extraordinarilyLongIdentifier / 2;
+      const templateResult = tag\`value \${import('template-edge')}\`;
+      class LongClassName {
+        #privateField = import('class-edge');
+        method () { return /import\\('ignored'\\)/.test(''); }
+      }
+      \u00a0import('nbsp-edge');
+      export { templateResult, LongClassName };
+    `
+    await isEqual(FILENAME, source)
+  })
+
   test('Division operator case', async () => {
     const source = `
       function log(r){
