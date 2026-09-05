@@ -3,6 +3,48 @@ import { isEqual } from './equal'
 
 const FILENAME = 'test.ts'
 describe('Lexer', () => {
+  test('Division of `of` identifier in for statement', async () => {
+    const sources = [
+      'for (i = of / 2;;) break',
+      'for (; of / 2;) break',
+      'for (;; of / 2) break',
+      'for (i + of / 2;;) break',
+      'for (i - of / 2;;) break',
+      'for (i * of / 2;;) break',
+      'for (i, of / 2;;) break',
+      'for (i < of / 2;;) break',
+      'for (i | of / 2;;) break',
+      'for (i & of / 2;;) break',
+      'for (i ? of / 2 : 0;;) break',
+      'for ((of) / 2;;) break',
+    ]
+    for (const source of sources) {
+      await isEqual(FILENAME, source)
+    }
+  })
+
+  test('for-of with regex iterable retains regex parsing', async () => {
+    const sources = [
+      'for (i of /regex/) break',
+      'for (let x of /regex/) break',
+      'for (const x of /regex/) break',
+      'for (var x of /regex/) break',
+      'for ([a] of /regex/) break',
+      'for ({a} of /regex/) break',
+      'for ((x) of /regex/) break',
+      'for(let t of/[0-9]+/g.exec(e)){}',
+      'for ([x]of /regex/) break',
+      'for ({x}of /regex/) break',
+      'for ((x)of /regex/) break',
+      'for (i  of /regex/) break',
+      'for (i\tof /regex/) break',
+      'for (i\nof /regex/) break',
+    ]
+    for (const source of sources) {
+      await isEqual(FILENAME, source)
+    }
+  })
+
   test(`Defer phase imports`, async () => {
     const source = `
       import defer
