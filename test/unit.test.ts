@@ -1215,4 +1215,9 @@ export { d as a, p as b, z as c, r as d, q }`
       await isEqual(FILENAME, source)
     }).rejects.toThrowError()
   })
+
+  test('Large source', async () => {
+    const source = `import 'a';\nconst x = "${'a'.repeat(5 * 1024 * 1024)}";\nexport { x }`
+    await await isEqual(FILENAME, source)
+  })
 })
