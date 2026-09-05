@@ -141,6 +141,61 @@ describe('Lexer', () => {
     await isEqual(FILENAME, source)
   })
 
+  test(`Dynamic import expression range 7`, async () => {
+    const source = 'import((() => { return "foo" })(x, y), attributes)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 8`, async () => {
+    const source = 'import({ x, y }, attributes)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 9`, async () => {
+    const source = 'import([ x, y ], attributes)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 10`, async () => {
+    const source = `import(foo, { type: 'json' })`
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 11`, async () => {
+    const source = `import(foo, /*c*/ { type: 'json' })`
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 12`, async () => {
+    const source = 'import(foo, [1, 2])'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 13`, async () => {
+    const source = 'import(x, "y")'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 14`, async () => {
+    const source = 'import(x, (y))'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 15`, async () => {
+    const source = 'import(x, `tmpl`)'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 16`, async () => {
+    const source = 'import((a, b))'
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Dynamic import expression range 17`, async () => {
+    const source = 'import((a, b), attrs)'
+    await isEqual(FILENAME, source)
+  })
+
   // 🟡 `es-module-lexer` seems to be parsed incorrectly.
   test.skip(`Simple export destructuring`, async () => {
     const source = `

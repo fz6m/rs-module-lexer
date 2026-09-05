@@ -846,11 +846,8 @@ impl VisitMut for ImportExportVisitor {
                     // calc assert
                     let second_arg = call.args.get(1);
                     if let Some(arg) = second_arg {
-                        // support object only
-                        if let ast::Expr::Object(obj) = arg.expr.as_ref() {
-                            let obj_span = self.get_real_span(obj.span);
-                            a = obj_span.0;
-                        }
+                        let obj_span = self.get_real_span(arg.span());
+                        a = obj_span.0;
                     }
 
                     let t: Option<ImportType>;
