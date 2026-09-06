@@ -273,12 +273,137 @@ describe('Lexer', () => {
     }
   })
 
-  // 🟡 `es-module-lexer` seems to be parsed incorrectly.
-  test.skip(`Simple export destructuring`, async () => {
+  test(`Simple export destructuring`, async () => {
     const source = `
       export const{URI,Utils,...Another}=LIB
       export var p, { z } = {};
       export var { aa, qq: { z } } = { qq: {} }, pp = {};
+    `
+    // Every bound name is reported: the rest element (Another), nested
+    // destructured names (both z's) and trailing declarators (pp). qq is a
+    // property key, not a binding, so it is not an export.
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export declaration multiple declarators`, async () => {
+    const source = `
+      export var a = 'asdf', q = z;
+      export const obj = { x: 1, y: 2 }, arr = [1, 2], call = fn(a, b);
+      export let str = "a,b", re = /,/g, tpl = \`a\${x},\${y}\`, last = 1;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export destructuring aliases, defaults, nesting and rest`, async () => {
+    const source = `
+      export const { a: x, b = 1, c: { d }, ...rest } = obj;
+      export const [ e, , f, [ g ], ...tail ] = arr;
+      export const { ['computed']: h, "str": i } = o, j = 1;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export declaration stops at ASI without reading next statement`, async () => {
+    const source = `
+      export const k = 1
+      foo, bar;
+      export const m = 2
+      const n = 3, o = 4
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export initializer disambiguates regex, division and comments`, async () => {
+    const source = `
+      export const re = () => /x/g, a = 1;
+      export const div = (b) / c, d = 2;
+      export const nw = new Foo(x, y), e = 3;
+      export const cm = /* , */ 4 /* , */, f = 5;
+    `
+    // '/' after '=>' opens a regex; '/' after ')' is division; commas inside
+    // block comments never split the declarator list.
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export initializer treats non-ASCII identifiers as values`, async () => {
+    const source = `
+      export const a = π / 2, b = 3;
+      export const café = x / 2, d = 4;
+    `
+    // A '/' after a Unicode identifier is division, not a regex, so the comma
+    // and the trailing declarator are still seen.
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export initializer skips nested templates and arrow bodies`, async () => {
+    const source = `
+      export const t = \`a\${ \`b\${ c }d\` }e\`, u = 1;
+      export const o = \`\${ { a: 1, b: 2 } }\`, v = 2;
+      export const fn = (a) => a, w = 3;
+      export const opt = a?.b?.c, x = 4;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export destructuring computed keys, holes and nested rest`, async () => {
+    const source = `
+      export const { [a[0]]: y, [\`k\`]: z } = o, p = 1;
+      export const [ , q, , , r ] = arr;
+      export const [ ...[ s, t ] ] = arr2;
+      export const { u: [ v, { w } ] } = obj;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  // 🟡 The following cases are invalid syntax. Unlike `es-module-lexer`, we only parse valid syntax, so we ignore these cases.
+  test(`Export declaration does not read past a truncated binding list`, async () => {
+    // Regression: a binding list reaching EOF must stop at the source
+    // terminator instead of scanning into the analysis heap and reporting a
+    // phantom export.
+    // await isEqual(FILENAME, `export const`)
+    // await isEqual(FILENAME, `export let a,`)
+    // await isEqual(FILENAME, `export const = 1`)
+  })
+
+  test(`Export initializer: '/' after a value keyword is a regex`, async () => {
+    // Regression: skipExpression shares the main tokenizer, so a value keyword
+    // (return/typeof/yield/void) before '/' opens a regex - the comma inside it
+    // must not split the declarator list.
+    const source = `
+      export const f = () => { return /,/g }, b = 2;
+      export const h = typeof /,/g, c = 3;
+      export const g = function*(){ yield /,/g }, d = 4;
+      export const v = void /,/g, e = 5;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export initializer: regex in statement position inside a nested body`, async () => {
+    // A '}' that closes a block (not an object) leaves the next '/' in statement
+    // position, so it is a regex; the shared tokenizer tracks the brace kinds.
+    const source = `
+      export const fn = () => { if (x) {} /,/.test(y); return 1 }, a = 2;
+      export const cl = class { m() { switch (x) {} /,/.exec(y) } }, b = 3;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export initializer: dynamic import is detected`, async () => {
+    // Regression: skipExpression must still surface import() found inside an
+    // initializer or a destructuring default.
+    const source = `
+      export const x = import("a"), y = 2;
+      export const z = (async () => await import("b"))(), w = 3;
+      export const { p = import("c") } = o;
+    `
+    await isEqual(FILENAME, source)
+  })
+
+  test(`Export destructuring numeric and BigInt property keys`, async () => {
+    // Regression: a numeric/BigInt key must be consumed whole; a partial read
+    // stopped at the '.' of 0.5 and mis-parsed the rest of the pattern.
+    const source = `
+      export const { 0: a, 0.5: b, 1e3: c, 1n: d, 0xff: e } = o, f = 1;
     `
     await isEqual(FILENAME, source)
   })

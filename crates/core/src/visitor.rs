@@ -6,6 +6,7 @@ use swc_common::{
     {sync::Lrc, SourceFile, SourceMap, Span},
 };
 use swc_ecmascript::ast::{self, ImportPhase};
+use swc_ecmascript::utils::for_each_binding_ident;
 use swc_ecmascript::visit::{VisitMut, VisitMutWith};
 
 use crate::constants::*;
@@ -318,91 +319,11 @@ impl ImportExportVisitor {
             ast::Decl::Class(decl) => self.add_export_from_ident(&decl.ident, export_start),
             ast::Decl::Fn(decl) => self.add_export_from_ident(&decl.ident, export_start),
             ast::Decl::Var(decl) => {
-                decl.decls.iter().for_each(|decl| {
-                    // support export const a = 1, b = 2
-                    match &decl.name {
-                        ast::Pat::Ident(ident) => {
-                            let name = ident.sym.to_string();
-                            let (start, end) = self.get_real_span(ident.span);
-                            self.add_export(ExportSpecifier {
-                                n: name.clone(),
-                                ln: Some(name),
-                                s: start,
-                                e: end,
-                                ls: start,
-                                le: end,
-                                ss: export_start,
-                            })
-                        }
-                        ast::Pat::Object(pat) => {
-                            pat.props.iter().for_each(|prop| {
-                                match &prop {
-                                    // export const { a, b } = {}
-                                    ast::ObjectPatProp::Assign(assign) => {
-                                        let ident = &assign.key;
-                                        let name = ident.sym.to_string();
-                                        let (start, end) = self.get_real_span(ident.span);
-                                        self.add_export(ExportSpecifier {
-                                            n: name.clone(),
-                                            ln: Some(name),
-                                            s: start,
-                                            e: end,
-                                            ls: start,
-                                            le: end,
-                                            ss: export_start,
-                                        })
-                                    }
-                                    ast::ObjectPatProp::KeyValue(kv) => {
-                                        match kv.value.as_ref() {
-                                            // FIXME: es-module-lexer parse this case will get name:`a`, not `b`, it's a bug.
-                                            ast::Pat::Ident(ident) => {
-                                                // only support value is ident
-                                                let name = ident.sym.to_string();
-                                                let (start, end) = self.get_real_span(ident.span);
-                                                self.add_export(ExportSpecifier {
-                                                    n: name.clone(),
-                                                    ln: Some(name),
-                                                    s: start,
-                                                    e: end,
-                                                    ls: start,
-                                                    le: end,
-                                                    ss: export_start,
-                                                })
-                                            }
-                                            _ => {
-                                                // Not support
-                                            }
-                                        }
-                                    }
-                                    // Not support case: export const { a, ...b } = {}
-                                    // es-module-lexer not support find the `b` index
-                                    ast::ObjectPatProp::Rest(_) => {}
-                                }
-                            })
-                        }
-                        ast::Pat::Array(pat) => {
-                            pat.elems.iter().for_each(|elm| {
-                                if elm.is_some() {
-                                    // only support export const [a, b] = []
-                                    if let ast::Pat::Ident(ident) = &elm.as_ref().unwrap() {
-                                        let name = ident.sym.to_string();
-                                        let (start, end) = self.get_real_span(ident.span);
-                                        self.add_export(ExportSpecifier {
-                                            n: name.clone(),
-                                            ln: Some(name),
-                                            s: start,
-                                            e: end,
-                                            ls: start,
-                                            le: end,
-                                            ss: export_start,
-                                        })
-                                    }
-                                }
-                            })
-                        }
-                        _ => {}
-                    }
-                })
+                for decl in &decl.decls {
+                    for_each_binding_ident(&decl.name, |ident| {
+                        self.add_export_from_ident(&ident.id, export_start)
+                    });
+                }
             }
             ast::Decl::Using(_) => {}
             ast::Decl::TsEnum(decl) => {

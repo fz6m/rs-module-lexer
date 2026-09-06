@@ -13,7 +13,7 @@ wasm = ["tsify-next", "wasm-bindgen", "serde_repr"]
 
 [dependencies]
 swc_common = { version = "26.0.0" }
-swc_ecmascript = { version = "70.1.0", features = ["parser", "visit"] }
+swc_ecmascript = { version = "70.1.0", features = ["parser", "utils", "visit"] }
 swc_compiler_base = { version = "64.0.0" }
 swc_error_reporters = { version = "28.0.0" }
 swc_config = { version = "6.0.0" }

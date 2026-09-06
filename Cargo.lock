@@ -1570,6 +1570,7 @@ checksum = "f87f38aa69aee432730ccb564f0ed2419e6ce33a59459f86f4c2b55a0f563855"
 dependencies = [
  "swc_ecma_ast",
  "swc_ecma_parser",
+ "swc_ecma_utils",
  "swc_ecma_visit",
 ]
 
