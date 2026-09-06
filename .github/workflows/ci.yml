@@ -236,7 +236,14 @@ jobs:
         run: ls -R .
         shell: bash
       - name: Test bindings
-        run: docker run --rm -v $(pwd):/${{ env.APP_NAME }} -w /${{ env.APP_NAME }} node:${{ matrix.node }}-slim sh -c "npm i -g pnpm && pnpm i && pnpm test"
+        run: |
+          package_manager="$(node -p "require('./package.json').packageManager")"
+          docker run --rm \
+            -e PACKAGE_MANAGER="$package_manager" \
+            -v $(pwd):/${{ env.APP_NAME }} \
+            -w /${{ env.APP_NAME }} \
+            node:${{ matrix.node }}-slim \
+            sh -c 'npm i -g "$PACKAGE_MANAGER" && pnpm i && pnpm test'
   
   test-linux-x64-musl-binding:
     name: Test bindings on x86_64-unknown-linux-musl - node@${{ matrix.node }}
@@ -262,7 +269,14 @@ jobs:
         run: ls -R .
         shell: bash
       - name: Test bindings
-        run: docker run --rm -v $(pwd):/${{ env.APP_NAME }} -w /${{ env.APP_NAME }} node:${{ matrix.node }}-alpine sh -c "npm i -g pnpm && pnpm i && pnpm test"
+        run: |
+          package_manager="$(node -p "require('./package.json').packageManager")"
+          docker run --rm \
+            -e PACKAGE_MANAGER="$package_manager" \
+            -v $(pwd):/${{ env.APP_NAME }} \
+            -w /${{ env.APP_NAME }} \
+            node:${{ matrix.node }}-alpine \
+            sh -c 'npm i -g "$PACKAGE_MANAGER" && pnpm i && pnpm test'
   
   test-linux-aarch64-musl-binding:
     name: Test bindings on aarch64-unknown-linux-musl - node@${{ matrix.node }}
@@ -436,4 +450,3 @@ jobs:
         run: pnpm release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          
