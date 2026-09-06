@@ -319,6 +319,9 @@ impl ImportExportVisitor {
             ast::Decl::Class(decl) => self.add_export_from_ident(&decl.ident, export_start),
             ast::Decl::Fn(decl) => self.add_export_from_ident(&decl.ident, export_start),
             ast::Decl::Var(decl) => {
+                // e.g. export const a = 1, b = 2 -> a, b
+                // e.g. export const { a, b: c, d = 1, ...rest } = obj -> a, c, d, rest
+                // e.g. export const [e, [f], ...tail] = arr -> e, f, tail
                 for decl in &decl.decls {
                     for_each_binding_ident(&decl.name, |ident| {
                         self.add_export_from_ident(&ident.id, export_start)
