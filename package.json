@@ -47,7 +47,7 @@
     "push": "vary push",
     "release": "vary np",
     "release:only": "vary release:only",
-    "release:root": "vary np --root",
+    "release:root": "tsx ./scripts/checkWasmPublished.ts && vary np --root",
     "release:wasm": "vary np --wasm",
     "test": "vitest --run",
     "test:wasm": "TEST_WASM=1 vitest --run",
