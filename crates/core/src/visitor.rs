@@ -700,10 +700,14 @@ impl ImportExportVisitor {
                             let is_dynamic_import = call.callee.is_import();
                             if is_dynamic_import {
                                 if call.args.len() == 1 {
-                                    if let ast::Expr::Lit(lit) = call.args[0].expr.as_ref() {
-                                        if let ast::Lit::Str(_) = lit {
-                                            continue;
-                                        }
+                                    // TODO: We consider dynamic imports runtime expressions, but es-module-lexer treats statically resolvable ones as facades; follow upstream.
+                                    match call.args[0].expr.as_ref() {
+                                        // e.g. import('abc'): we expect false, but es-module-lexer returns true.
+                                        ast::Expr::Lit(ast::Lit::Str(_)) => continue,
+                                        // e.g. import(`abc`): we expect false, but es-module-lexer returns true.
+                                        ast::Expr::Tpl(tpl) if tpl.exprs.is_empty() => continue,
+                                        // e.g. import(foo): both we and es-module-lexer return false.
+                                        _ => {}
                                     }
                                 }
                             }
